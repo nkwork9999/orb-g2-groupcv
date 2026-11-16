@@ -14,8 +14,8 @@ from .mlx_geometry import ZBL, geometric_features
 
 
 class VectorEnergyCore(DenseCore):
-    def __init__(self, model):
-        super().__init__(model)
+    def __init__(self, model, backend_device="gpu"):
+        super().__init__(model, backend_device=backend_device)
         graph = model.model
         angular = graph.angular_transform
         radial = graph.rbf_transform
@@ -76,8 +76,8 @@ class VectorEnergyCore(DenseCore):
         return raw + reference
 
     def evaluate_vectors(self, vectors, node, senders, receivers, numbers, reference):
-        if mx.default_device() != mx.gpu:
-            raise ValueError("MLX GPU runtime required")
+        if mx.default_device() != self.device:
+            raise ValueError("declared MLX device is not active")
         if not len(vectors):
             value = self.isolated_raw_value(mx.array(node), mx.array(reference))
             mx.eval(value)
@@ -95,10 +95,10 @@ class VectorEnergyCore(DenseCore):
 class NativeCalculator(Calculator):
     implemented_properties: ClassVar[list[str]] = ["energy", "forces", "stress"]
 
-    def __init__(self, model):
+    def __init__(self, model, backend_device="gpu"):
         super().__init__()
         self.model = model
-        self.core = VectorEnergyCore(model)
+        self.core = VectorEnergyCore(model, backend_device=backend_device)
         self._composition_cache = None
         head = model.heads[model.energy_name]
         self._mu = np.float32(head.normalizer.bn.running_mean.detach().numpy()[0])

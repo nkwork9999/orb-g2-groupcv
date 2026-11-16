@@ -51,11 +51,14 @@ def convert_module(module, arrays=None):
 class DenseCore:
     """Immutable encoder/attention/energy-MLP port, single general ASE graph."""
 
-    def __init__(self, model):
+    def __init__(self, model, backend_device="gpu"):
         if model.training:
             raise ValueError("inference-only frozen model required")
-        if mx.default_device() != mx.gpu:
-            raise ValueError("MLX GPU runtime required")
+        if backend_device not in ("cpu", "gpu"):
+            raise ValueError("unsupported MLX backend device")
+        self.device = mx.cpu if backend_device == "cpu" else mx.gpu
+        if mx.default_device() != self.device:
+            raise ValueError("declared MLX device is not active")
         net = model.model
         arrays = []
         self.encode_node = convert_module(net._encoder._node_fn, arrays)
@@ -132,8 +135,8 @@ class DenseCore:
         return self.readout(pooled).sum()
 
     def evaluate(self, edge, cutoff, node, senders, receivers):
-        if mx.default_device() != mx.gpu:
-            raise ValueError("MLX GPU runtime required")
+        if mx.default_device() != self.device:
+            raise ValueError("declared MLX device is not active")
         if len(edge) == 0:
             # Empty graphs have no geometric dependence. Avoid MLX's zero-size
             # scatter-gradient compiler path; these exact VJPs are empty zeros.

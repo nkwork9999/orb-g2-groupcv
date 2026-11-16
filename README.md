@@ -4,6 +4,10 @@ A frozen ORB-v3 conservative MPA backbone with a 36-coefficient smooth, conserva
 
 The model was trained on **83 multi-atom G2 molecules from 68 formula groups**. A metadata-only split fixed before target export reserves **19 molecules from 18 disjoint formula groups**. Isomers remain together. All one/two-atom systems were excluded from this fine-tuning dataset. Official Matbench Discovery reference labels were not used as fitting targets or hyperparameter objectives.
 
+## Rejected native MLX CPU experiment
+
+This branch is an unselected CPU backend experiment. Three E/F/stress smoke cases and all73 source tests pass (dependency warnings remain), but its fixed training-geometry median was21.79ms versus14.18ms on GPU. It fails the prospective20% speed reduction threshold. The full183-case CPU numerical gate was therefore not run, no official CPU benchmark was performed, and this branch is not deployed or submitted. Learned state remains unchanged. GPU v0.1.3 remains the deployed candidate, with local comparison4/48.
+
 ## Runtime deployment 0.1.3
 
 The trained head, model weights, training IDs and selection remain unchanged from v0.1.0. Original ORB spherical harmonics, Bessel features, cutoff and ZBL equations now run alongside the dense network on MLX. A single vector-energy derivative supplies conservative forces and symmetric virial stress. CPU topology construction and original atomic-index conventions are preserved. A single-composition cache stores only fixed input features/reference energy, never coordinates, predictions or labels; custom input features bypass it.
