@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-11-16T17:07:56.871516+00:00",
+  "parent_source": "7f80d510bfe454ef5f7a744880ca447cda690437",
+  "prior_official_result": "v0.1.3 CDS0.8274968474,106.5s,rank4/48; historical test-informed status retained",
+  "purpose": "Reduce general scalar ASE adapter and CPU topology overhead without changing learned state, physical equations or test scores",
+  "design": [
+    "Call full-EFS capable inner calculator once per changed outer state instead of three ASE property-state checks; preserve caching/public get_property semantics",
+    "Use original CPU PBC radius-graph search/wrap/dtype order but omit unused lattice/tags/targets and detached autograd graph",
+    "Optionally retain one-composition MLX input arrays; never cache coordinates, energy/force/stress predictions, curves or targets"
+  ],
+  "validation": "TDD compares exact topology/order/vectors against original, including boundary wrapping, mixed PBC rejection, periodic self images, custom features, atom permutation, empty edges. E/F/stress numerical gate remains atol1e-4+rtol1e-5 for83training+100synthetic; no tolerance changes.",
+  "timing": "5paired alternating repetitions of fixed first20 sorted training structures plus fixed perturbation sequences of same training structures. Combined median must improve at least20% over frozen v0.1.3; each subset must not regress by more than5%. GPU synchronized,CPUthreads4 fixed,no concurrent heavy jobs. Preserve failures.",
+  "selection_data": "training geometries and synthetic data only; no holdout/official targets for timing/equivalence selection",
+  "official_eval": "If gated, freeze exact new source/artifact then run complete shared runner once; prior results remain; no submission unless current defaultCDS top3 confirmed"
+}

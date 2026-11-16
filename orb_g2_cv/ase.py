@@ -26,10 +26,13 @@ def verify_file(path, expected):
 class CalibratedCalculator(Calculator):
     implemented_properties: ClassVar[list[str]] = ["energy", "forces", "stress"]
 
-    def __init__(self, base, head):
+    def __init__(self, base, head, *, direct_base_calculation=False):
         super().__init__()
         self.base = base
         self.head = head
+        # Opt in only for adapters known to honor a joint E/F/stress request.
+        # General ASE calculators may implement their own get_property guards.
+        self.direct_base_calculation = direct_base_calculation
 
     def calculate(self, atoms=None, properties=None, system_changes=all_changes):
         super().calculate(atoms, properties, system_changes)
@@ -46,9 +49,18 @@ class CalibratedCalculator(Calculator):
         ):
             extent = float(np.max(np.ptp(base_atoms.positions, axis=0)))
             base_atoms.set_cell([max(50.0, 2 * extent + 20.0)] * 3)
-        e = float(self.base.get_potential_energy(base_atoms))
-        f = self.base.get_forces(base_atoms)
-        s = self.base.get_stress(base_atoms)
+        if self.direct_base_calculation:
+            self.base.results = {}
+            self.base.calculate(
+                base_atoms, ["energy", "forces", "stress"], system_changes=all_changes
+            )
+            e = float(self.base.results["energy"])
+            f = self.base.results["forces"]
+            s = self.base.results["stress"]
+        else:
+            e = float(self.base.get_potential_energy(base_atoms))
+            f = self.base.get_forces(base_atoms)
+            s = self.base.get_stress(base_atoms)
         de, df, ds = self.head.evaluate(self.atoms)
         self.results = {
             "energy": e + de,
@@ -152,7 +164,9 @@ def load_calculator(
             base.get_forces(atoms)
             base.get_stress(atoms)
         base.reset()
-    calculator = CalibratedCalculator(base, head)
+    calculator = CalibratedCalculator(
+        base, head, direct_base_calculation=device == "mps"
+    )
     if compiled:
         calculator.mbd_acceleration = ("torch_compile",)
     if device == "mps":

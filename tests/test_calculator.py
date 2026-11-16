@@ -1,9 +1,12 @@
 import hashlib
+
 import numpy as np
 import pytest
-from ase import Atoms
 from ase.build import bulk, molecule
+from ase.calculators.calculator import PropertyNotImplementedError, all_changes
 from ase.calculators.lj import LennardJones
+from ase.calculators.singlepoint import SinglePointCalculator
+
 from orb_g2_cv.ase import CalibratedCalculator, load_calculator, verify_file
 from orb_g2_cv.potential import RadialHead
 
@@ -130,3 +133,65 @@ def test_unknown_geometry_backend_is_rejected_before_weight_io(tmp_path, geometr
     p.write_text(json.dumps(artifact))
     with pytest.raises(ValueError, match="geometry"):
         load_calculator(p, base_checkpoint=tmp_path / "missing.ckpt")
+
+
+class ObservedLennardJones(LennardJones):
+    """Instrument the real potential without replacing its calculations."""
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.requests = []
+        self.state_checks = 0
+
+    def calculate(self, atoms=None, properties=None, system_changes=all_changes):
+        self.requests.append(tuple(properties))
+        super().calculate(atoms, properties, system_changes)
+
+    def check_state(self, atoms, tol=1e-15):
+        self.state_checks += 1
+        return super().check_state(atoms, tol)
+
+
+@pytest.mark.parametrize("periodic", [False, True])
+def test_direct_base_efs_preserves_values_and_calculates_once_per_changed_outer_state(
+    periodic,
+):
+    atoms = bulk("H", "fcc", a=4.2, cubic=True) if periodic else molecule("CH4")
+    original_cell = atoms.cell.array.copy()
+    original_positions = atoms.positions.copy()
+    head = RadialHead(np.linspace(-0.001, 0.001, 36), width=0.8)
+    base = ObservedLennardJones(rc=5)
+    atoms.calc = CalibratedCalculator(base, head, direct_base_calculation=True)
+    for step in range(2):
+        expected = atoms.copy()
+        if not periodic:
+            expected.set_cell([50] * 3)
+        expected.calc = LennardJones(rc=5)
+        de, df, ds = head.evaluate(atoms)
+        assert atoms.get_potential_energy() == pytest.approx(
+            expected.get_potential_energy() + de
+        )
+        np.testing.assert_allclose(atoms.get_forces(), expected.get_forces() + df)
+        np.testing.assert_allclose(atoms.get_stress(), expected.get_stress() + ds)
+        # Outer repeated-property reads must not re-run the inner potential.
+        atoms.get_potential_energy()
+        atoms.get_forces()
+        assert base.requests == [("energy", "forces", "stress")] * (step + 1)
+        assert base.state_checks == 0
+        np.testing.assert_array_equal(atoms.cell.array, original_cell)
+        if step == 0:
+            np.testing.assert_array_equal(atoms.positions, original_positions)
+            atoms.positions[1, 0] += 0.1
+
+
+def test_default_wrapper_keeps_single_point_stale_state_protection():
+    atoms = molecule("H2O")
+    atoms.set_cell([50] * 3)
+    base = SinglePointCalculator(
+        atoms, energy=1.25, forces=np.zeros((3, 3)), stress=np.zeros(6)
+    )
+    atoms.calc = CalibratedCalculator(base, RadialHead(np.zeros(36), width=0.8))
+    assert atoms.get_potential_energy() == 1.25
+    atoms.positions[1, 0] += 0.1
+    with pytest.raises(PropertyNotImplementedError):
+        atoms.get_potential_energy()

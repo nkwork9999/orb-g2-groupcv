@@ -1,16 +1,18 @@
 """Full geometric/dense vector-energy differentiation on MLX; CPU topology only."""
 
+from types import SimpleNamespace
 from typing import ClassVar
 
 import mlx.core as mx
 import numpy as np
 import torch
 from ase.calculators.calculator import Calculator, all_changes
-from orb_models.forcefield.atomic_system import ase_atoms_to_atom_graphs
+from orb_models.forcefield.featurization_utilities import get_atom_embedding
 
 from .edge_derivatives import assemble_edge_derivatives
 from .mlx_dense import DenseCore
 from .mlx_geometry import ZBL, geometric_features
+from .mlx_topology import prepare_geometry
 
 
 class VectorEnergyCore(DenseCore):
@@ -107,7 +109,7 @@ class NativeCalculator(Calculator):
         )
         self._atom_avg = head.atom_avg
 
-    def _composition(self, batch):
+    def _composition(self):
         # Frozen atom-number-only input features may be reused for any geometry.
         # Caller-supplied node features bypass the cache completely.
         cacheable = not self.atoms.info.get("node_features")
@@ -118,6 +120,22 @@ class NativeCalculator(Calculator):
             and self._composition_cache[0] == key
         ):
             return self._composition_cache[1:]
+        numbers_tensor = torch.from_numpy(self.atoms.numbers).long()
+        embedding = self.atoms.info.get("node_features", {}).get(
+            "atomic_numbers_embedding"
+        )
+        if embedding is None:
+            embedding = get_atom_embedding(self.atoms, k_hot=False)
+        if torch.is_floating_point(embedding):
+            embedding = embedding.float()
+        batch = SimpleNamespace(
+            node_features={
+                "atomic_numbers": numbers_tensor,
+                "atomic_numbers_embedding": embedding,
+            },
+            atomic_numbers=numbers_tensor,
+            n_node=torch.tensor([len(self.atoms)]),
+        )
         node = self.model.model.featurize_nodes(batch).detach().numpy().copy()
         numbers = (
             batch.node_features["atomic_numbers_embedding"].argmax(dim=1).numpy().copy()
@@ -148,24 +166,14 @@ class NativeCalculator(Calculator):
         super().calculate(atoms, properties, system_changes)
         if not len(self.atoms) or not np.isfinite(self.atoms.positions).all():
             raise ValueError("nonempty finite atoms required")
-        batch = ase_atoms_to_atom_graphs(
-            self.atoms,
-            system_config=self.model.system_config,
-            device="cpu",
-            output_dtype=torch.float32,
-            graph_construction_dtype=torch.float32,
+        vectors, senders, receivers, cell = prepare_geometry(
+            self.atoms, self.model.system_config
         )
-        vectors, _, _ = batch.compute_differentiable_edge_vectors(
-            use_stress_displacement=False, use_rotation=False
-        )
-        vectors = vectors.detach().numpy()
         if not np.isfinite(vectors).all() or np.any(
             np.linalg.norm(vectors, axis=1) <= 0
         ):
             raise ValueError("nonfinite or coincident neighbor vectors")
-        node, numbers, reference = self._composition(batch)
-        senders = batch.senders.numpy()
-        receivers = batch.receivers.numpy()
+        node, numbers, reference = self._composition()
         raw, gradient = self.core.evaluate_vectors(
             vectors, node, senders, receivers, numbers, reference
         )
@@ -175,7 +183,7 @@ class NativeCalculator(Calculator):
             senders,
             receivers,
             len(self.atoms),
-            batch.system_features["cell"][0].numpy(),
+            cell,
         )
         self.results = {
             "energy": self._reported_energy(raw, reference, len(self.atoms)),

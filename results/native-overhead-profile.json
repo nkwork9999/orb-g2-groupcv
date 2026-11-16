@@ -1,0 +1,2744 @@
+{
+  "adopt": false,
+  "median_seconds": {
+    "baseline": 0.011395166497095488,
+    "candidate": 0.010864312498597428
+  },
+  "subset_median_seconds": {
+    "changing_composition": {
+      "baseline": 0.011314312505419366,
+      "candidate": 0.010888770499150269
+    },
+    "training_perturbation_sequence": {
+      "baseline": 0.011464916504337452,
+      "candidate": 0.01085208349104505
+    }
+  },
+  "speedup": 1.0488621805168612,
+  "maximum_normalized_error": 0.3573932940706261,
+  "atol": 0.0001,
+  "rtol": 1e-05,
+  "n_training_geometries": 83,
+  "n_synthetic_geometries": 100,
+  "all_learned_weights_unchanged": true,
+  "official_labels_used": false,
+  "equivalence": [
+    {
+      "index": 0,
+      "formula": "C4H6",
+      "maximum_normalized_error": 0.27645092518389836
+    },
+    {
+      "index": 1,
+      "formula": "AlF3",
+      "maximum_normalized_error": 0.06910840616211111
+    },
+    {
+      "index": 2,
+      "formula": "BCl3",
+      "maximum_normalized_error": 0.03347323654011073
+    },
+    {
+      "index": 3,
+      "formula": "BF3",
+      "maximum_normalized_error": 0.044648061925678294
+    },
+    {
+      "index": 4,
+      "formula": "C2F4",
+      "maximum_normalized_error": 0.2836756448285063
+    },
+    {
+      "index": 5,
+      "formula": "C2H2",
+      "maximum_normalized_error": 0.3573932940706261
+    },
+    {
+      "index": 6,
+      "formula": "C2H6",
+      "maximum_normalized_error": 0.05858289258090699
+    },
+    {
+      "index": 7,
+      "formula": "C3H8O",
+      "maximum_normalized_error": 0.11334106678146456
+    },
+    {
+      "index": 8,
+      "formula": "C2H7N",
+      "maximum_normalized_error": 0.10679353080984902
+    },
+    {
+      "index": 9,
+      "formula": "C2H6OS",
+      "maximum_normalized_error": 0.05271518057241413
+    },
+    {
+      "index": 10,
+      "formula": "C3H4",
+      "maximum_normalized_error": 0.17454491907373912
+    },
+    {
+      "index": 11,
+      "formula": "C3H4",
+      "maximum_normalized_error": 0.2948711359123392
+    },
+    {
+      "index": 12,
+      "formula": "C3H4",
+      "maximum_normalized_error": 0.1940153762136572
+    },
+    {
+      "index": 13,
+      "formula": "C3H6",
+      "maximum_normalized_error": 0.14535867057599416
+    },
+    {
+      "index": 14,
+      "formula": "C3H6",
+      "maximum_normalized_error": 0.12442977088723502
+    },
+    {
+      "index": 15,
+      "formula": "C3H7Cl",
+      "maximum_normalized_error": 0.1021137748503071
+    },
+    {
+      "index": 16,
+      "formula": "C3H8",
+      "maximum_normalized_error": 0.07212066281524562
+    },
+    {
+      "index": 17,
+      "formula": "C4H5N",
+      "maximum_normalized_error": 0.18715474818395303
+    },
+    {
+      "index": 18,
+      "formula": "C4H4O",
+      "maximum_normalized_error": 0.17373496933868612
+    },
+    {
+      "index": 19,
+      "formula": "C5H5N",
+      "maximum_normalized_error": 0.1365592081755298
+    },
+    {
+      "index": 20,
+      "formula": "C5H8",
+      "maximum_normalized_error": 0.1263951405806663
+    },
+    {
+      "index": 21,
+      "formula": "C6H6",
+      "maximum_normalized_error": 0.13211489859064576
+    },
+    {
+      "index": 22,
+      "formula": "CCl4",
+      "maximum_normalized_error": 0.07583448348673569
+    },
+    {
+      "index": 23,
+      "formula": "C2F3N",
+      "maximum_normalized_error": 0.27289018596554526
+    },
+    {
+      "index": 24,
+      "formula": "CF4",
+      "maximum_normalized_error": 0.09946294948515552
+    },
+    {
+      "index": 25,
+      "formula": "C2H5N",
+      "maximum_normalized_error": 0.11877875758492402
+    },
+    {
+      "index": 26,
+      "formula": "CH2",
+      "maximum_normalized_error": 0.03634287272177851
+    },
+    {
+      "index": 27,
+      "formula": "C2H5Cl",
+      "maximum_normalized_error": 0.09088807874910143
+    },
+    {
+      "index": 28,
+      "formula": "C2H7N",
+      "maximum_normalized_error": 0.08794531682573897
+    },
+    {
+      "index": 29,
+      "formula": "C3H8O",
+      "maximum_normalized_error": 0.0958994796038971
+    },
+    {
+      "index": 30,
+      "formula": "C2H6O",
+      "maximum_normalized_error": 0.08139516928822815
+    },
+    {
+      "index": 31,
+      "formula": "C2H6S",
+      "maximum_normalized_error": 0.06601321117285264
+    },
+    {
+      "index": 32,
+      "formula": "C3H6O",
+      "maximum_normalized_error": 0.2580374962759907
+    },
+    {
+      "index": 33,
+      "formula": "C2H3ClO",
+      "maximum_normalized_error": 0.24229676262469485
+    },
+    {
+      "index": 34,
+      "formula": "C2H3FO",
+      "maximum_normalized_error": 0.2137288282376235
+    },
+    {
+      "index": 35,
+      "formula": "C2H5NO",
+      "maximum_normalized_error": 0.13180917900245623
+    },
+    {
+      "index": 36,
+      "formula": "C2H4O2",
+      "maximum_normalized_error": 0.16523936308536327
+    },
+    {
+      "index": 37,
+      "formula": "CH3Cl",
+      "maximum_normalized_error": 0.053207904136581455
+    },
+    {
+      "index": 38,
+      "formula": "CH3NO2",
+      "maximum_normalized_error": 0.08332261685467736
+    },
+    {
+      "index": 39,
+      "formula": "C2H6O",
+      "maximum_normalized_error": 0.06956252802819997
+    },
+    {
+      "index": 40,
+      "formula": "CH3NO2",
+      "maximum_normalized_error": 0.0919589502898757
+    },
+    {
+      "index": 41,
+      "formula": "C2H6S",
+      "maximum_normalized_error": 0.06833301670180295
+    },
+    {
+      "index": 42,
+      "formula": "CH4S",
+      "maximum_normalized_error": 0.06695943366093621
+    },
+    {
+      "index": 43,
+      "formula": "CH6Si",
+      "maximum_normalized_error": 0.06033105435747353
+    },
+    {
+      "index": 44,
+      "formula": "CH4",
+      "maximum_normalized_error": 0.09506313522019501
+    },
+    {
+      "index": 45,
+      "formula": "CF2O",
+      "maximum_normalized_error": 0.2432424909234676
+    },
+    {
+      "index": 46,
+      "formula": "CS2",
+      "maximum_normalized_error": 0.02143737293760153
+    },
+    {
+      "index": 47,
+      "formula": "ClF3",
+      "maximum_normalized_error": 0.041076275159735456
+    },
+    {
+      "index": 48,
+      "formula": "ClNO",
+      "maximum_normalized_error": 0.11878922875988698
+    },
+    {
+      "index": 49,
+      "formula": "F2O",
+      "maximum_normalized_error": 0.046411205770599165
+    },
+    {
+      "index": 50,
+      "formula": "C3H3N",
+      "maximum_normalized_error": 0.28357642203195566
+    },
+    {
+      "index": 51,
+      "formula": "C2H3F",
+      "maximum_normalized_error": 0.2063958447956309
+    },
+    {
+      "index": 52,
+      "formula": "C2H2O",
+      "maximum_normalized_error": 0.28358231196088474
+    },
+    {
+      "index": 53,
+      "formula": "CH2Cl2",
+      "maximum_normalized_error": 0.06674797058800078
+    },
+    {
+      "index": 54,
+      "formula": "CH2F2",
+      "maximum_normalized_error": 0.11649547892412984
+    },
+    {
+      "index": 55,
+      "formula": "CH2O",
+      "maximum_normalized_error": 0.2727556161300134
+    },
+    {
+      "index": 56,
+      "formula": "CH5N",
+      "maximum_normalized_error": 0.09956810181038786
+    },
+    {
+      "index": 57,
+      "formula": "CHF3",
+      "maximum_normalized_error": 0.08209833405568065
+    },
+    {
+      "index": 58,
+      "formula": "C2H4O2",
+      "maximum_normalized_error": 0.1952791565375295
+    },
+    {
+      "index": 59,
+      "formula": "CH2O2",
+      "maximum_normalized_error": 0.21065954361093817
+    },
+    {
+      "index": 60,
+      "formula": "H4N2",
+      "maximum_normalized_error": 0.0881831012599459
+    },
+    {
+      "index": 61,
+      "formula": "N2O",
+      "maximum_normalized_error": 0.17059036264321636
+    },
+    {
+      "index": 62,
+      "formula": "C2N2",
+      "maximum_normalized_error": 0.355223706839409
+    },
+    {
+      "index": 63,
+      "formula": "F3N",
+      "maximum_normalized_error": 0.0798260347465411
+    },
+    {
+      "index": 64,
+      "formula": "H3N",
+      "maximum_normalized_error": 0.043775184869038884
+    },
+    {
+      "index": 65,
+      "formula": "O3",
+      "maximum_normalized_error": 0.0659876581624605
+    },
+    {
+      "index": 66,
+      "formula": "C2H2O2",
+      "maximum_normalized_error": 0.08819393496012361
+    },
+    {
+      "index": 67,
+      "formula": "COS",
+      "maximum_normalized_error": 0.10874282336154494
+    },
+    {
+      "index": 68,
+      "formula": "F3P",
+      "maximum_normalized_error": 0.04275615269672786
+    },
+    {
+      "index": 69,
+      "formula": "H3P",
+      "maximum_normalized_error": 0.07786450747533247
+    },
+    {
+      "index": 70,
+      "formula": "H2S",
+      "maximum_normalized_error": 0.01537155843745775
+    },
+    {
+      "index": 71,
+      "formula": "H6Si2",
+      "maximum_normalized_error": 0.05554574768598332
+    },
+    {
+      "index": 72,
+      "formula": "Cl4Si",
+      "maximum_normalized_error": 0.07330970235507613
+    },
+    {
+      "index": 73,
+      "formula": "F4Si",
+      "maximum_normalized_error": 0.1149418232207444
+    },
+    {
+      "index": 74,
+      "formula": "H4Si",
+      "maximum_normalized_error": 0.03188213351633618
+    },
+    {
+      "index": 75,
+      "formula": "C4H6",
+      "maximum_normalized_error": 0.09634632088009085
+    },
+    {
+      "index": 76,
+      "formula": "C4H6",
+      "maximum_normalized_error": 0.2022609708576216
+    },
+    {
+      "index": 77,
+      "formula": "C4H8",
+      "maximum_normalized_error": 0.1045273804006021
+    },
+    {
+      "index": 78,
+      "formula": "C4H6",
+      "maximum_normalized_error": 0.08437192666288341
+    },
+    {
+      "index": 79,
+      "formula": "C4H10",
+      "maximum_normalized_error": 0.0524680562978885
+    },
+    {
+      "index": 80,
+      "formula": "C4H8",
+      "maximum_normalized_error": 0.13128919566093522
+    },
+    {
+      "index": 81,
+      "formula": "C4H6",
+      "maximum_normalized_error": 0.16264356122634047
+    },
+    {
+      "index": 82,
+      "formula": "C4H10",
+      "maximum_normalized_error": 0.05830269999689477
+    },
+    {
+      "index": 83,
+      "formula": "H",
+      "maximum_normalized_error": 0.0
+    },
+    {
+      "index": 84,
+      "formula": "Si",
+      "maximum_normalized_error": 0.0014441252530419633
+    },
+    {
+      "index": 85,
+      "formula": "Fe2",
+      "maximum_normalized_error": 0.01812090564959138
+    },
+    {
+      "index": 86,
+      "formula": "CH",
+      "maximum_normalized_error": 0.1324813658131545
+    },
+    {
+      "index": 87,
+      "formula": "CH",
+      "maximum_normalized_error": 0.005996443061804877
+    },
+    {
+      "index": 88,
+      "formula": "CH",
+      "maximum_normalized_error": 0.02860874111083309
+    },
+    {
+      "index": 89,
+      "formula": "CH",
+      "maximum_normalized_error": 0.0
+    },
+    {
+      "index": 90,
+      "formula": "CH",
+      "maximum_normalized_error": 0.0
+    },
+    {
+      "index": 91,
+      "formula": "CH",
+      "maximum_normalized_error": 0.0007066130929070788
+    },
+    {
+      "index": 92,
+      "formula": "CHe",
+      "maximum_normalized_error": 0.03710223809583313
+    },
+    {
+      "index": 93,
+      "formula": "CLi",
+      "maximum_normalized_error": 0.006887993057278963
+    },
+    {
+      "index": 94,
+      "formula": "CBe",
+      "maximum_normalized_error": 0.020053238566143407
+    },
+    {
+      "index": 95,
+      "formula": "CB",
+      "maximum_normalized_error": 0.009978055891183196
+    },
+    {
+      "index": 96,
+      "formula": "C2",
+      "maximum_normalized_error": 0.0297664492154847
+    },
+    {
+      "index": 97,
+      "formula": "CN",
+      "maximum_normalized_error": 0.018262880989841853
+    },
+    {
+      "index": 98,
+      "formula": "CO",
+      "maximum_normalized_error": 0.015093230370923253
+    },
+    {
+      "index": 99,
+      "formula": "CF",
+      "maximum_normalized_error": 0.02316136360572717
+    },
+    {
+      "index": 100,
+      "formula": "CNe",
+      "maximum_normalized_error": 0.08971744165830518
+    },
+    {
+      "index": 101,
+      "formula": "CNa",
+      "maximum_normalized_error": 0.024068062911603037
+    },
+    {
+      "index": 102,
+      "formula": "CMg",
+      "maximum_normalized_error": 0.03900932866130319
+    },
+    {
+      "index": 103,
+      "formula": "CAl",
+      "maximum_normalized_error": 0.04149902787637688
+    },
+    {
+      "index": 104,
+      "formula": "CSi",
+      "maximum_normalized_error": 0.063101937108499
+    },
+    {
+      "index": 105,
+      "formula": "CP",
+      "maximum_normalized_error": 0.05668948421491441
+    },
+    {
+      "index": 106,
+      "formula": "CS",
+      "maximum_normalized_error": 0.006516711850956875
+    },
+    {
+      "index": 107,
+      "formula": "CCl",
+      "maximum_normalized_error": 0.017325323903091477
+    },
+    {
+      "index": 108,
+      "formula": "CAr",
+      "maximum_normalized_error": 0.06385189176270015
+    },
+    {
+      "index": 109,
+      "formula": "CK",
+      "maximum_normalized_error": 0.027317276784385006
+    },
+    {
+      "index": 110,
+      "formula": "CCa",
+      "maximum_normalized_error": 0.0572595834063393
+    },
+    {
+      "index": 111,
+      "formula": "CSc",
+      "maximum_normalized_error": 0.11781957043657873
+    },
+    {
+      "index": 112,
+      "formula": "CTi",
+      "maximum_normalized_error": 0.12179732395623856
+    },
+    {
+      "index": 113,
+      "formula": "CV",
+      "maximum_normalized_error": 0.03090654260444562
+    },
+    {
+      "index": 114,
+      "formula": "CCr",
+      "maximum_normalized_error": 0.048058968821787194
+    },
+    {
+      "index": 115,
+      "formula": "CMn",
+      "maximum_normalized_error": 0.03557568328473947
+    },
+    {
+      "index": 116,
+      "formula": "CFe",
+      "maximum_normalized_error": 0.02019711947947543
+    },
+    {
+      "index": 117,
+      "formula": "CCo",
+      "maximum_normalized_error": 0.004422964328014253
+    },
+    {
+      "index": 118,
+      "formula": "CNi",
+      "maximum_normalized_error": 0.02609631589609723
+    },
+    {
+      "index": 119,
+      "formula": "CCu",
+      "maximum_normalized_error": 0.05962415359658959
+    },
+    {
+      "index": 120,
+      "formula": "CZn",
+      "maximum_normalized_error": 0.04701426033186225
+    },
+    {
+      "index": 121,
+      "formula": "CGa",
+      "maximum_normalized_error": 0.10555877106631446
+    },
+    {
+      "index": 122,
+      "formula": "CGe",
+      "maximum_normalized_error": 0.060552819997811015
+    },
+    {
+      "index": 123,
+      "formula": "CAs",
+      "maximum_normalized_error": 0.06770099606420044
+    },
+    {
+      "index": 124,
+      "formula": "CSe",
+      "maximum_normalized_error": 0.07552587713065867
+    },
+    {
+      "index": 125,
+      "formula": "CBr",
+      "maximum_normalized_error": 0.16779430233841616
+    },
+    {
+      "index": 126,
+      "formula": "CKr",
+      "maximum_normalized_error": 0.044613005793392446
+    },
+    {
+      "index": 127,
+      "formula": "CRb",
+      "maximum_normalized_error": 0.05591810681420845
+    },
+    {
+      "index": 128,
+      "formula": "CSr",
+      "maximum_normalized_error": 0.033837749850542886
+    },
+    {
+      "index": 129,
+      "formula": "CY",
+      "maximum_normalized_error": 0.11140949994111211
+    },
+    {
+      "index": 130,
+      "formula": "CZr",
+      "maximum_normalized_error": 0.0813634035646735
+    },
+    {
+      "index": 131,
+      "formula": "CNb",
+      "maximum_normalized_error": 0.14785079938196
+    },
+    {
+      "index": 132,
+      "formula": "CMo",
+      "maximum_normalized_error": 0.05167054708861977
+    },
+    {
+      "index": 133,
+      "formula": "CTc",
+      "maximum_normalized_error": 0.12115481456657523
+    },
+    {
+      "index": 134,
+      "formula": "CRu",
+      "maximum_normalized_error": 0.08820073567083178
+    },
+    {
+      "index": 135,
+      "formula": "CRh",
+      "maximum_normalized_error": 0.0461152441471685
+    },
+    {
+      "index": 136,
+      "formula": "CPd",
+      "maximum_normalized_error": 0.05222282994122843
+    },
+    {
+      "index": 137,
+      "formula": "CAg",
+      "maximum_normalized_error": 0.04135212403255327
+    },
+    {
+      "index": 138,
+      "formula": "CCd",
+      "maximum_normalized_error": 0.037328503522690876
+    },
+    {
+      "index": 139,
+      "formula": "CIn",
+      "maximum_normalized_error": 0.1860524133835315
+    },
+    {
+      "index": 140,
+      "formula": "CSn",
+      "maximum_normalized_error": 0.052241008669395385
+    },
+    {
+      "index": 141,
+      "formula": "CSb",
+      "maximum_normalized_error": 0.16417819998401675
+    },
+    {
+      "index": 142,
+      "formula": "CTe",
+      "maximum_normalized_error": 0.2971186530084726
+    },
+    {
+      "index": 143,
+      "formula": "CI",
+      "maximum_normalized_error": 0.10701150052596152
+    },
+    {
+      "index": 144,
+      "formula": "CXe",
+      "maximum_normalized_error": 0.13312275648743976
+    },
+    {
+      "index": 145,
+      "formula": "CCs",
+      "maximum_normalized_error": 0.19338491206453345
+    },
+    {
+      "index": 146,
+      "formula": "CBa",
+      "maximum_normalized_error": 0.3111382461751887
+    },
+    {
+      "index": 147,
+      "formula": "CLa",
+      "maximum_normalized_error": 0.03608848511606618
+    },
+    {
+      "index": 148,
+      "formula": "CCe",
+      "maximum_normalized_error": 0.004679798806089728
+    },
+    {
+      "index": 149,
+      "formula": "CPr",
+      "maximum_normalized_error": 0.07107910971638103
+    },
+    {
+      "index": 150,
+      "formula": "CNd",
+      "maximum_normalized_error": 0.03664036605924115
+    },
+    {
+      "index": 151,
+      "formula": "CPm",
+      "maximum_normalized_error": 0.052006930916404195
+    },
+    {
+      "index": 152,
+      "formula": "CSm",
+      "maximum_normalized_error": 0.012681169528468466
+    },
+    {
+      "index": 153,
+      "formula": "CEu",
+      "maximum_normalized_error": 0.036587464214846606
+    },
+    {
+      "index": 154,
+      "formula": "CGd",
+      "maximum_normalized_error": 0.05743010842617488
+    },
+    {
+      "index": 155,
+      "formula": "CTb",
+      "maximum_normalized_error": 0.08608869634755668
+    },
+    {
+      "index": 156,
+      "formula": "CDy",
+      "maximum_normalized_error": 0.1105585205166886
+    },
+    {
+      "index": 157,
+      "formula": "CHo",
+      "maximum_normalized_error": 0.14665884746873672
+    },
+    {
+      "index": 158,
+      "formula": "CEr",
+      "maximum_normalized_error": 0.18008173374516565
+    },
+    {
+      "index": 159,
+      "formula": "CTm",
+      "maximum_normalized_error": 0.1347055207421966
+    },
+    {
+      "index": 160,
+      "formula": "CYb",
+      "maximum_normalized_error": 0.024600095920694013
+    },
+    {
+      "index": 161,
+      "formula": "CLu",
+      "maximum_normalized_error": 0.12435977435779894
+    },
+    {
+      "index": 162,
+      "formula": "CHf",
+      "maximum_normalized_error": 0.09634941694150338
+    },
+    {
+      "index": 163,
+      "formula": "CTa",
+      "maximum_normalized_error": 0.1379906340908323
+    },
+    {
+      "index": 164,
+      "formula": "CW",
+      "maximum_normalized_error": 0.08790933549921179
+    },
+    {
+      "index": 165,
+      "formula": "CRe",
+      "maximum_normalized_error": 0.08053859121908127
+    },
+    {
+      "index": 166,
+      "formula": "COs",
+      "maximum_normalized_error": 0.10267858076652496
+    },
+    {
+      "index": 167,
+      "formula": "CIr",
+      "maximum_normalized_error": 0.08222640660896131
+    },
+    {
+      "index": 168,
+      "formula": "CPt",
+      "maximum_normalized_error": 0.010535969263487106
+    },
+    {
+      "index": 169,
+      "formula": "CAu",
+      "maximum_normalized_error": 0.05062022731281064
+    },
+    {
+      "index": 170,
+      "formula": "CHg",
+      "maximum_normalized_error": 0.11432122049700828
+    },
+    {
+      "index": 171,
+      "formula": "CTl",
+      "maximum_normalized_error": 0.08195159982812314
+    },
+    {
+      "index": 172,
+      "formula": "CPb",
+      "maximum_normalized_error": 0.06285114010884517
+    },
+    {
+      "index": 173,
+      "formula": "CBi",
+      "maximum_normalized_error": 0.06765008467253722
+    },
+    {
+      "index": 174,
+      "formula": "CPo",
+      "maximum_normalized_error": 0.0971615560955485
+    },
+    {
+      "index": 175,
+      "formula": "CAt",
+      "maximum_normalized_error": 0.09716324307755193
+    },
+    {
+      "index": 176,
+      "formula": "CRn",
+      "maximum_normalized_error": 0.08006516124217473
+    },
+    {
+      "index": 177,
+      "formula": "CFr",
+      "maximum_normalized_error": 0.08853123767808532
+    },
+    {
+      "index": 178,
+      "formula": "CRa",
+      "maximum_normalized_error": 0.09275794847076715
+    },
+    {
+      "index": 179,
+      "formula": "CAc",
+      "maximum_normalized_error": 0.10169440308872052
+    },
+    {
+      "index": 180,
+      "formula": "CTh",
+      "maximum_normalized_error": 0.07515865771588948
+    },
+    {
+      "index": 181,
+      "formula": "CPa",
+      "maximum_normalized_error": 0.11163268948164831
+    },
+    {
+      "index": 182,
+      "formula": "CU",
+      "maximum_normalized_error": 0.14243891762332764
+    }
+  ],
+  "paired_timings": [
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "2-butyne",
+      "seconds": {
+        "candidate": 0.011198916006833315,
+        "baseline": 0.01638516699313186
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "AlF3",
+      "seconds": {
+        "baseline": 0.009723959024995565,
+        "candidate": 0.00824204200762324
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "BCl3",
+      "seconds": {
+        "candidate": 0.00838091701734811,
+        "baseline": 0.008955166005762294
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "BF3",
+      "seconds": {
+        "baseline": 0.008015957981115207,
+        "candidate": 0.007681209011934698
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C2F4",
+      "seconds": {
+        "candidate": 0.0087047090055421,
+        "baseline": 0.010187291976762936
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C2H2",
+      "seconds": {
+        "baseline": 0.008254291984485462,
+        "candidate": 0.008275957981823012
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C2H6",
+      "seconds": {
+        "candidate": 0.009610916982637718,
+        "baseline": 0.009947832993930206
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "baseline": 0.01423470801091753,
+        "candidate": 0.014675875019747764
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C2H6NH",
+      "seconds": {
+        "candidate": 0.011759291985072196,
+        "baseline": 0.011572832998353988
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C2H6SO",
+      "seconds": {
+        "baseline": 0.012087542010704055,
+        "candidate": 0.011296291020698845
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "candidate": 0.008967792004114017,
+        "baseline": 0.010142124985577539
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "baseline": 0.008925583999371156,
+        "candidate": 0.008792083011940122
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "candidate": 0.009030082990648225,
+        "baseline": 0.009789709001779556
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "baseline": 0.012299958005314693,
+        "candidate": 0.012961333006387576
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "candidate": 0.01084470801288262,
+        "baseline": 0.011422333016525954
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C3H7Cl",
+      "seconds": {
+        "baseline": 0.013529875024687499,
+        "candidate": 0.012285707984119654
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C3H8",
+      "seconds": {
+        "candidate": 0.011795083002652973,
+        "baseline": 0.01302083401242271
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C4H4NH",
+      "seconds": {
+        "baseline": 0.011291750008240342,
+        "candidate": 0.010706542001571506
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C4H4O",
+      "seconds": {
+        "candidate": 0.01120920799439773,
+        "baseline": 0.01083049998851493
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 0,
+      "name": "C5H5N",
+      "seconds": {
+        "baseline": 0.012376749975373968,
+        "candidate": 0.012985584005946293
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "2-butyne",
+      "seconds": {
+        "baseline": 0.011914375005289912,
+        "candidate": 0.011205499991774559
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "AlF3",
+      "seconds": {
+        "candidate": 0.0077132910082582384,
+        "baseline": 0.008098916994640604
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "BCl3",
+      "seconds": {
+        "baseline": 0.007821583974873647,
+        "candidate": 0.007385499979136512
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "BF3",
+      "seconds": {
+        "candidate": 0.007680625014472753,
+        "baseline": 0.008087624999461696
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C2F4",
+      "seconds": {
+        "baseline": 0.008325415983563289,
+        "candidate": 0.007984333002241328
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C2H2",
+      "seconds": {
+        "candidate": 0.009613166999770328,
+        "baseline": 0.014349959004903212
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C2H6",
+      "seconds": {
+        "baseline": 0.012008958001388237,
+        "candidate": 0.009976333996746689
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "candidate": 0.014453874988248572,
+        "baseline": 0.014740707993041724
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C2H6NH",
+      "seconds": {
+        "baseline": 0.011761083005694672,
+        "candidate": 0.01164320801035501
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C2H6SO",
+      "seconds": {
+        "candidate": 0.011522332992171869,
+        "baseline": 0.012075292004738003
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "baseline": 0.009387209021952003,
+        "candidate": 0.00942283301264979
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "candidate": 0.008492291992297396,
+        "baseline": 0.009910333988955244
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "baseline": 0.009334041009424254,
+        "candidate": 0.008707707980647683
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "candidate": 0.011186917021404952,
+        "baseline": 0.011165708012413234
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "baseline": 0.011763083981350064,
+        "candidate": 0.010719792015152052
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C3H7Cl",
+      "seconds": {
+        "candidate": 0.013059125019935891,
+        "baseline": 0.012758958007907495
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C3H8",
+      "seconds": {
+        "baseline": 0.014002292009536177,
+        "candidate": 0.013452875020448118
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C4H4NH",
+      "seconds": {
+        "candidate": 0.011651167005766183,
+        "baseline": 0.012400958017678931
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C4H4O",
+      "seconds": {
+        "baseline": 0.011525000008987263,
+        "candidate": 0.010819707997143269
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 1,
+      "name": "C5H5N",
+      "seconds": {
+        "candidate": 0.012104416993679479,
+        "baseline": 0.013102666998747736
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "2-butyne",
+      "seconds": {
+        "candidate": 0.011950834013987333,
+        "baseline": 0.012057749991072342
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "AlF3",
+      "seconds": {
+        "baseline": 0.008174499991582707,
+        "candidate": 0.00730687499162741
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "BCl3",
+      "seconds": {
+        "candidate": 0.0074762500007636845,
+        "baseline": 0.008691541996086016
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "BF3",
+      "seconds": {
+        "baseline": 0.008166291023371741,
+        "candidate": 0.007358374976320192
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C2F4",
+      "seconds": {
+        "candidate": 0.008657667000079527,
+        "baseline": 0.010283291980158538
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C2H2",
+      "seconds": {
+        "baseline": 0.008760167023865506,
+        "candidate": 0.007735458988463506
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C2H6",
+      "seconds": {
+        "candidate": 0.009277250006562099,
+        "baseline": 0.010395584016805515
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "baseline": 0.013806500006467104,
+        "candidate": 0.013911957998061553
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C2H6NH",
+      "seconds": {
+        "candidate": 0.012467416992876679,
+        "baseline": 0.01273395901080221
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C2H6SO",
+      "seconds": {
+        "baseline": 0.012478249991545454,
+        "candidate": 0.011225583992199972
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "candidate": 0.009045540995430201,
+        "baseline": 0.010187209001742303
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "baseline": 0.009524666995275766,
+        "candidate": 0.008567583019612357
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "candidate": 0.008763167017605156,
+        "baseline": 0.009863291983492672
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "baseline": 0.010762124991742894,
+        "candidate": 0.010489665990462527
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "candidate": 0.010865457996260375,
+        "baseline": 0.010981541010551155
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C3H7Cl",
+      "seconds": {
+        "baseline": 0.01269541701185517,
+        "candidate": 0.013270208990434185
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C3H8",
+      "seconds": {
+        "candidate": 0.013610457972390577,
+        "baseline": 0.014725832996191457
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C4H4NH",
+      "seconds": {
+        "baseline": 0.012414249998982996,
+        "candidate": 0.010912083002040163
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C4H4O",
+      "seconds": {
+        "candidate": 0.01129704198683612,
+        "baseline": 0.011901250021765009
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 2,
+      "name": "C5H5N",
+      "seconds": {
+        "baseline": 0.016657790984027088,
+        "candidate": 0.012164791987743229
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "2-butyne",
+      "seconds": {
+        "baseline": 0.011552917014341801,
+        "candidate": 0.011654499976430088
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "AlF3",
+      "seconds": {
+        "candidate": 0.007664959004614502,
+        "baseline": 0.00798616700922139
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "BCl3",
+      "seconds": {
+        "baseline": 0.008562332979636267,
+        "candidate": 0.008788209001068026
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "BF3",
+      "seconds": {
+        "candidate": 0.0077147499832790345,
+        "baseline": 0.008789749990683049
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C2F4",
+      "seconds": {
+        "baseline": 0.008906499977456406,
+        "candidate": 0.009020875004353002
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C2H2",
+      "seconds": {
+        "candidate": 0.007413874991470948,
+        "baseline": 0.007667917001526803
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C2H6",
+      "seconds": {
+        "baseline": 0.009405125019839033,
+        "candidate": 0.009895082999719307
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "candidate": 0.013190917001338676,
+        "baseline": 0.015051207999931648
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C2H6NH",
+      "seconds": {
+        "baseline": 0.011697957990691066,
+        "candidate": 0.011705250013619661
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C2H6SO",
+      "seconds": {
+        "candidate": 0.012152459006756544,
+        "baseline": 0.011766332987463102
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "baseline": 0.009485749993473291,
+        "candidate": 0.008944959001382813
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "candidate": 0.011596708005527034,
+        "baseline": 0.010626125003909692
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "baseline": 0.0093499590002466,
+        "candidate": 0.009748499986017123
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "candidate": 0.010997875011526048,
+        "baseline": 0.011136749992147088
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "baseline": 0.01133687500259839,
+        "candidate": 0.010928708012215793
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C3H7Cl",
+      "seconds": {
+        "candidate": 0.012987958994926885,
+        "baseline": 0.012786125007551163
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C3H8",
+      "seconds": {
+        "baseline": 0.012879791000159457,
+        "candidate": 0.012658583000302315
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C4H4NH",
+      "seconds": {
+        "candidate": 0.01099350000731647,
+        "baseline": 0.011477583000669256
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C4H4O",
+      "seconds": {
+        "baseline": 0.011500250024255365,
+        "candidate": 0.010921458015218377
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 3,
+      "name": "C5H5N",
+      "seconds": {
+        "candidate": 0.012030291982227936,
+        "baseline": 0.013215499988291413
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "2-butyne",
+      "seconds": {
+        "candidate": 0.011217457999009639,
+        "baseline": 0.013008458015974611
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "AlF3",
+      "seconds": {
+        "baseline": 0.008164375001797453,
+        "candidate": 0.00747716601472348
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "BCl3",
+      "seconds": {
+        "candidate": 0.007659875001991168,
+        "baseline": 0.01057312500779517
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "BF3",
+      "seconds": {
+        "baseline": 0.013039500016020611,
+        "candidate": 0.008747707994189113
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C2F4",
+      "seconds": {
+        "candidate": 0.008694207994267344,
+        "baseline": 0.00928129197563976
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C2H2",
+      "seconds": {
+        "baseline": 0.009298917022533715,
+        "candidate": 0.008826791978208348
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C2H6",
+      "seconds": {
+        "candidate": 0.01102904201252386,
+        "baseline": 0.010488166997674853
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "baseline": 0.014296500012278557,
+        "candidate": 0.015062582999235019
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C2H6NH",
+      "seconds": {
+        "candidate": 0.011246708978433162,
+        "baseline": 0.011281291983323172
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C2H6SO",
+      "seconds": {
+        "baseline": 0.011687666003126651,
+        "candidate": 0.011209792020963505
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "candidate": 0.009111791994655505,
+        "baseline": 0.009453916980419308
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "baseline": 0.009026584011735395,
+        "candidate": 0.00869233297999017
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "candidate": 0.00923441699706018,
+        "baseline": 0.008935249992646277
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "baseline": 0.011745583993615583,
+        "candidate": 0.011654958012513816
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "candidate": 0.01114974997472018,
+        "baseline": 0.016899665992241353
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C3H7Cl",
+      "seconds": {
+        "baseline": 0.013677457987796515,
+        "candidate": 0.01244754102663137
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C3H8",
+      "seconds": {
+        "candidate": 0.013009415997657925,
+        "baseline": 0.012736583012156188
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C4H4NH",
+      "seconds": {
+        "baseline": 0.01177166699199006,
+        "candidate": 0.012780249991919845
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C4H4O",
+      "seconds": {
+        "candidate": 0.010808124992763624,
+        "baseline": 0.011097167007392272
+      }
+    },
+    {
+      "subset": "changing_composition",
+      "repeat": 4,
+      "name": "C5H5N",
+      "seconds": {
+        "baseline": 0.013502125017112121,
+        "candidate": 0.012327875010669231
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "2-butyne",
+      "seconds": {
+        "candidate": 0.010786874976474792,
+        "baseline": 0.011460041016107425
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "2-butyne",
+      "seconds": {
+        "baseline": 0.011666542006423697,
+        "candidate": 0.010424541018437594
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "2-butyne",
+      "seconds": {
+        "candidate": 0.011239790997933596,
+        "baseline": 0.011668874998576939
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "2-butyne",
+      "seconds": {
+        "baseline": 0.011836209014290944,
+        "candidate": 0.010506708989851177
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "2-butyne",
+      "seconds": {
+        "candidate": 0.01096495901583694,
+        "baseline": 0.013248165982076898
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "AlF3",
+      "seconds": {
+        "baseline": 0.011624709004536271,
+        "candidate": 0.007861749996664003
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "AlF3",
+      "seconds": {
+        "candidate": 0.007252332987263799,
+        "baseline": 0.008391582989133894
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "AlF3",
+      "seconds": {
+        "baseline": 0.007881583005655557,
+        "candidate": 0.00720558300963603
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "AlF3",
+      "seconds": {
+        "candidate": 0.007192749995738268,
+        "baseline": 0.008932083001127467
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "AlF3",
+      "seconds": {
+        "baseline": 0.007969041995238513,
+        "candidate": 0.007948542013764381
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "BCl3",
+      "seconds": {
+        "candidate": 0.0076804170093964785,
+        "baseline": 0.008467874984489754
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "BCl3",
+      "seconds": {
+        "baseline": 0.007465916016371921,
+        "candidate": 0.0070349999878089875
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "BCl3",
+      "seconds": {
+        "candidate": 0.007331333006732166,
+        "baseline": 0.007636916008777916
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "BCl3",
+      "seconds": {
+        "baseline": 0.008051584009081125,
+        "candidate": 0.007082541997078806
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "BCl3",
+      "seconds": {
+        "candidate": 0.006930917006684467,
+        "baseline": 0.007914124988019466
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "BF3",
+      "seconds": {
+        "baseline": 0.008495624992065132,
+        "candidate": 0.0073922500014305115
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "BF3",
+      "seconds": {
+        "candidate": 0.007008832995779812,
+        "baseline": 0.007771082979161292
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "BF3",
+      "seconds": {
+        "baseline": 0.007817709003575146,
+        "candidate": 0.00807866599643603
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "BF3",
+      "seconds": {
+        "candidate": 0.007310334010981023,
+        "baseline": 0.008083958004135638
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "BF3",
+      "seconds": {
+        "baseline": 0.00797325000166893,
+        "candidate": 0.00741995801217854
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C2F4",
+      "seconds": {
+        "candidate": 0.010981000028550625,
+        "baseline": 0.015351208014180884
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C2F4",
+      "seconds": {
+        "baseline": 0.008745583996642381,
+        "candidate": 0.00788145899423398
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C2F4",
+      "seconds": {
+        "candidate": 0.008152583992341533,
+        "baseline": 0.008768708008574322
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C2F4",
+      "seconds": {
+        "baseline": 0.008928750001359731,
+        "candidate": 0.00820112499059178
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C2F4",
+      "seconds": {
+        "candidate": 0.008916374994441867,
+        "baseline": 0.009679707989562303
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C2H2",
+      "seconds": {
+        "baseline": 0.008792790991719812,
+        "candidate": 0.008153041999321431
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C2H2",
+      "seconds": {
+        "candidate": 0.00840133399469778,
+        "baseline": 0.009278250014176592
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C2H2",
+      "seconds": {
+        "baseline": 0.009144833020400256,
+        "candidate": 0.008697375014889985
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C2H2",
+      "seconds": {
+        "candidate": 0.008508500002790242,
+        "baseline": 0.01100941700860858
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C2H2",
+      "seconds": {
+        "baseline": 0.010081040993100032,
+        "candidate": 0.010959042003378272
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C2H6",
+      "seconds": {
+        "candidate": 0.012385375011945143,
+        "baseline": 0.011887208005646244
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C2H6",
+      "seconds": {
+        "baseline": 0.009978834015782923,
+        "candidate": 0.010840999981155619
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C2H6",
+      "seconds": {
+        "candidate": 0.009104624972678721,
+        "baseline": 0.009512374992482364
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C2H6",
+      "seconds": {
+        "baseline": 0.01152175001334399,
+        "candidate": 0.013112707994878292
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C2H6",
+      "seconds": {
+        "candidate": 0.010863167000934482,
+        "baseline": 0.011571584007469937
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "baseline": 0.01615775001118891,
+        "candidate": 0.014882415998727083
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "candidate": 0.013502540998160839,
+        "baseline": 0.014382708992343396
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "baseline": 0.013454666011966765,
+        "candidate": 0.013133958011167124
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "candidate": 0.013859374972525984,
+        "baseline": 0.013877624995075166
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "baseline": 0.015008125017629936,
+        "candidate": 0.01370441698236391
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C2H6NH",
+      "seconds": {
+        "candidate": 0.011408499995013699,
+        "baseline": 0.012188459018943831
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C2H6NH",
+      "seconds": {
+        "baseline": 0.011107875005109236,
+        "candidate": 0.010598499997286126
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C2H6NH",
+      "seconds": {
+        "candidate": 0.011176208994584158,
+        "baseline": 0.011905749997822568
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C2H6NH",
+      "seconds": {
+        "baseline": 0.013304458989296108,
+        "candidate": 0.011996125016594306
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C2H6NH",
+      "seconds": {
+        "candidate": 0.011585750005906448,
+        "baseline": 0.01219708300777711
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C2H6SO",
+      "seconds": {
+        "baseline": 0.011664874997222796,
+        "candidate": 0.011413584026740864
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C2H6SO",
+      "seconds": {
+        "candidate": 0.01139349999721162,
+        "baseline": 0.011746250005671754
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C2H6SO",
+      "seconds": {
+        "baseline": 0.011571207985980436,
+        "candidate": 0.011425457982113585
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C2H6SO",
+      "seconds": {
+        "candidate": 0.01053404199774377,
+        "baseline": 0.011245125002460554
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C2H6SO",
+      "seconds": {
+        "baseline": 0.012167375010903925,
+        "candidate": 0.011208165989955887
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "candidate": 0.009073374996660277,
+        "baseline": 0.010145000007469207
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "baseline": 0.008916916005546227,
+        "candidate": 0.00831287499750033
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "candidate": 0.008456166979158297,
+        "baseline": 0.009546374989440665
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "baseline": 0.00876058399444446,
+        "candidate": 0.008396250021178275
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "candidate": 0.008473583002341911,
+        "baseline": 0.01046470899018459
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "baseline": 0.014197708980645984,
+        "candidate": 0.00864862502203323
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "candidate": 0.009137291985098273,
+        "baseline": 0.009507084003416821
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "baseline": 0.009480667009484023,
+        "candidate": 0.0095348340109922
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "candidate": 0.00863887500599958,
+        "baseline": 0.010101249994477257
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "baseline": 0.009560874983435497,
+        "candidate": 0.009163667011307552
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "candidate": 0.008547584002371877,
+        "baseline": 0.009671000007074326
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "baseline": 0.009646082995459437,
+        "candidate": 0.008570791018428281
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "candidate": 0.008549165999284014,
+        "baseline": 0.008936917001847178
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "baseline": 0.0095310419856105,
+        "candidate": 0.008568833000026643
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "candidate": 0.008884624985512346,
+        "baseline": 0.009393957996508107
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "baseline": 0.012122082989662886,
+        "candidate": 0.012380542000755668
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "candidate": 0.01154737500473857,
+        "baseline": 0.011261125007877126
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "baseline": 0.01852437501656823,
+        "candidate": 0.013025083026150241
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "candidate": 0.010546625009737909,
+        "baseline": 0.012688749993685633
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "baseline": 0.011335084011079744,
+        "candidate": 0.011834625009214506
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "candidate": 0.01202829199610278,
+        "baseline": 0.012488833017414436
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "baseline": 0.01147349999519065,
+        "candidate": 0.011389249993953854
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "candidate": 0.010038500011432916,
+        "baseline": 0.011608875007368624
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "baseline": 0.012254917004611343,
+        "candidate": 0.011239665996981785
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "candidate": 0.010872291983105242,
+        "baseline": 0.011985374992946163
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C3H7Cl",
+      "seconds": {
+        "baseline": 0.012550291983643547,
+        "candidate": 0.014941582980100065
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C3H7Cl",
+      "seconds": {
+        "candidate": 0.012490958004491404,
+        "baseline": 0.013565875007770956
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C3H7Cl",
+      "seconds": {
+        "baseline": 0.01390125000034459,
+        "candidate": 0.013118375005433336
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C3H7Cl",
+      "seconds": {
+        "candidate": 0.012966290989425033,
+        "baseline": 0.013171083002816886
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C3H7Cl",
+      "seconds": {
+        "baseline": 0.012902541988296434,
+        "candidate": 0.012873708008555695
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C3H8",
+      "seconds": {
+        "candidate": 0.013395708985626698,
+        "baseline": 0.013541082997107878
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C3H8",
+      "seconds": {
+        "baseline": 0.01244175000465475,
+        "candidate": 0.011832375021185726
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C3H8",
+      "seconds": {
+        "candidate": 0.012131041992688552,
+        "baseline": 0.012604624993400648
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C3H8",
+      "seconds": {
+        "baseline": 0.012544833996798843,
+        "candidate": 0.013151541992556304
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C3H8",
+      "seconds": {
+        "candidate": 0.012239582982147112,
+        "baseline": 0.013249667012132704
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C4H4NH",
+      "seconds": {
+        "baseline": 0.011367999977665022,
+        "candidate": 0.011001791019225493
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C4H4NH",
+      "seconds": {
+        "candidate": 0.010984207998262718,
+        "baseline": 0.011155207990668714
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C4H4NH",
+      "seconds": {
+        "baseline": 0.011919875018065795,
+        "candidate": 0.014105584006756544
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C4H4NH",
+      "seconds": {
+        "candidate": 0.011808582989033312,
+        "baseline": 0.01146979199256748
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C4H4NH",
+      "seconds": {
+        "baseline": 0.012191124988021329,
+        "candidate": 0.010949125018669292
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C4H4O",
+      "seconds": {
+        "candidate": 0.011012667004251853,
+        "baseline": 0.011350875021889806
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C4H4O",
+      "seconds": {
+        "baseline": 0.011520624975673854,
+        "candidate": 0.010436040989588946
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C4H4O",
+      "seconds": {
+        "candidate": 0.010977707977872342,
+        "baseline": 0.010792334011057392
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C4H4O",
+      "seconds": {
+        "baseline": 0.010901125002419576,
+        "candidate": 0.010809458995936438
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C4H4O",
+      "seconds": {
+        "candidate": 0.010308375000022352,
+        "baseline": 0.010776459006592631
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 0,
+      "name": "C5H5N",
+      "seconds": {
+        "baseline": 0.013297249999595806,
+        "candidate": 0.01206283300416544
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 1,
+      "name": "C5H5N",
+      "seconds": {
+        "candidate": 0.011676916008582339,
+        "baseline": 0.012636750005185604
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 2,
+      "name": "C5H5N",
+      "seconds": {
+        "baseline": 0.01332924998132512,
+        "candidate": 0.012842209020163864
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 3,
+      "name": "C5H5N",
+      "seconds": {
+        "candidate": 0.016672208992531523,
+        "baseline": 0.014017000008607283
+      }
+    },
+    {
+      "subset": "training_perturbation_sequence",
+      "repeat": 4,
+      "name": "C5H5N",
+      "seconds": {
+        "baseline": 0.012428167014149949,
+        "candidate": 0.011980040988419205
+      }
+    }
+  ]
+}

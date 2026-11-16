@@ -1,0 +1,48 @@
+{
+  "version": "0.1.3",
+  "source_commit": "7f80d510bfe454ef5f7a744880ca447cda690437",
+  "upstream_sha": "6d587c184cdb4a4865dc0b15b04a5e6d77ed464f",
+  "cds": 0.8274968474280066,
+  "rank": 4,
+  "total": 48,
+  "upper_half": true,
+  "goal_met": false,
+  "website_rank_claim": false,
+  "raw_sha256": "54f81eafdcbe0ed9074796c3665b2c806bfc116da2fa234caa9f66845eb38b87",
+  "metrics": {
+    "pred_file": {
+      "name": "models/orb/orb-g2-groupcv-v1/runtime-v013-isolated/2026-11-16-diatomics.json.gz"
+    },
+    "cost": {
+      "source": "runner",
+      "hardware": "Apple M1 (Metal)",
+      "device": "mps",
+      "dtype": "float32",
+      "acceleration": [],
+      "n_shards": 1,
+      "n_processes": 1,
+      "run_time_sec": 106.5,
+      "load_time_sec": 16.81,
+      "max_rss_gb": 0.927,
+      "max_gpu_mem_gb": 0.098
+    },
+    "pbe_wall_dist_mae": 0.1149,
+    "pbe_energy_mae": 0.5809,
+    "pbe_bond_length_error": 0.2271,
+    "pbe_well_depth_error": 0.4042,
+    "pbe_vib_freq_error": 35.42,
+    "tortuosity": 1.001,
+    "energy_diff_flips": 1.31,
+    "energy_jump": 0.1145,
+    "force_flips": 1.368,
+    "force_total_variation": 210.3,
+    "force_jump": 25.46,
+    "pbe_force_mae": 1.292,
+    "pbe_vib_freq_coverage": {
+      "n_valid": 81,
+      "n_eligible": 81,
+      "failed_elements": [],
+      "missing_elements": []
+    }
+  }
+}
