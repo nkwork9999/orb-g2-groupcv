@@ -210,14 +210,14 @@
   "runtime": {
     "torch_threads": 4,
     "neighbor_enumeration": "exact-small-system-fast-path",
-    "deployment_version": "0.1.2",
+    "deployment_version": "0.1.3",
     "training_artifact_sha256": "f2fb34215322f1cef9ea93cef72c0a3baa65b0b40315c82bb6d7642e9d514da1",
     "training_source_commit": "0e192c18d5d59301db37a66d81b4ed586dbd418a",
     "backend": "mlx",
     "mlx_version": "0.32.4",
-    "geometry_backend": "torch-cpu-float32-highest",
+    "geometry_backend": "mlx-native-float32",
     "dense_backend": "mlx-metal-float32",
     "compiler": "mlx.core.compile(value_and_grad)",
-    "parent_deployment_sha256": "a09ead01011e33ceeec12140cae060caeeb6157f52e140b954fb5eefc4a52fab"
+    "parent_deployment_sha256": "0610ee9769bbc9583bf53efb76c3ea132cfb2d732b51e54e21ae7e2acc1dc5ee"
   }
 }

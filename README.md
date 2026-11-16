@@ -4,6 +4,14 @@ A frozen ORB-v3 conservative MPA backbone with a 36-coefficient smooth, conserva
 
 The model was trained on **83 multi-atom G2 molecules from 68 formula groups**. A metadata-only split fixed before target export reserves **19 molecules from 18 disjoint formula groups**. Isomers remain together. All one/two-atom systems were excluded from this fine-tuning dataset. Official Matbench Discovery reference labels were not used as fitting targets or hyperparameter objectives.
 
+## Runtime deployment 0.1.3
+
+The trained head, model weights, training IDs and selection remain unchanged from v0.1.0. Original ORB spherical harmonics, Bessel features, cutoff and ZBL equations now run alongside the dense network on MLX. A single vector-energy derivative supplies conservative forces and symmetric virial stress. CPU topology construction and original atomic-index conventions are preserved. A single-composition cache stores only fixed input features/reference energy, never coordinates, predictions or labels; custom input features bypass it.
+
+All 83 training and 100 unlabelled synthetic structures passed E/F/stress agreement at atol1e-4 + rtol1e-5 (maximum normalized error 0.36144, threshold 1). The prospective five-repeat paired training-geometry study reduced median latency from 43.35ms to 30.29ms (30.1%). This is a local deployment diagnostic, not a cross-model timing claim. Full source tests: 70 passed; dependency deprecation warnings remain. The factory selects the declared native backend and CPU reproduction stays available. e3nn MIT notices accompany the translated spherical-harmonic equations.
+
+The previous v0.1.2 official sweep completed in 432.31s plus 44.4s load, with all 92 curves finite. Default CDS was 0.79369431, conservative local rank 6/48 against upstream 6d587c1. The prospective native port plan predates those final results. Native v0.1.3 full official evaluation is pending; no top-three or acceptance claim is made. Historical test exposure remains disclosed.
+
 ## Runtime deployment 0.1.2
 
 The trained state is identical to v0.1.0 (83 training molecules, 36 coefficients). MLX0.32.4 performs the dense encoder, attention blocks and energy MLP on the Apple GPU. The original Torch CPU graph, geometric features, reference-energy normalization and pair repulsion remain. MLX feature/cutoff vector-Jacobian products pass through the original Torch geometry to give conservative forces/stress. This is a general graph calculator, with no benchmark-curve table or dimer-only restriction.
@@ -14,7 +22,7 @@ Negative outcomes remain: v0.1.0's local CDS comparison was6/48; v0.1.1 was7/48 
 
 The `metal` extra is optional; CPU inference/reproduction remains available. Official Python3.14 macOS14-compatible wheels are pinned by URL because the larger macOS26 extraction exhausted local disk. uv automatically removed failed extraction. Only this task's rejected Torch compiler cache was removed; scientific artifacts, models, data and existing environments were preserved.
 
-Prospective plans, raw paired timings, numerical cases and failed studies are retained. Final official MLX evaluation is pending; no top-three, website-rank or acceptance claim is made. The official sweep/scoring code remains unchanged; the shared CLI device choices and cost-provenance instrumentation add Metal/MLX support. A separate fixed-thread study retained4threads because1/2did not clear its prospective20% improvement gate. The ORB architecture adaptation retains Apache-2.0 attribution/notices alongside BSD-3-Clause calibration code.
+Prospective plans, raw paired timings, numerical cases and failed studies are retained. The v0.1.2 full evaluation is complete with the result reported above; no top-three, website-rank or acceptance claim is made. The official sweep/scoring code remains unchanged; the shared CLI device choices and cost-provenance instrumentation add Metal/MLX support. A separate fixed-thread study retained4threads because1/2did not clear its prospective20% improvement gate. The ORB architecture adaptation retains Apache-2.0 attribution/notices alongside BSD-3-Clause calibration code.
 
 ## Runtime deployment 0.1.1
 
@@ -34,7 +42,7 @@ Runtime selection used only training geometries and no reference labels. The hea
 
 Targets are **experimental atomization energies extrapolated with zero-point/thermal corrections**, from ASE 3.29.0's merged G2 database. They are **not PBE energy/force labels**. Geometries and reference conventions are preserved; no force or stress targets were fitted.
 
-Official Diatomics predictions will be generated with the unmodified Python3.14 shared runner after freezing this source/candidate. No official leaderboard rank or acceptance is currently claimed.
+Official Diatomics predictions use the unchanged Python3.14 sweep/scoring code after freezing each source/candidate. Shared CLI and provenance support are extended for MLX/MPS. No official leaderboard rank or acceptance is currently claimed.
 
 ## Selection protocol and historical exposure
 

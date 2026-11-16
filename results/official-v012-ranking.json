@@ -1,0 +1,45 @@
+{
+  "version": "0.1.2",
+  "cds": 0.7936943099958274,
+  "rank": 6,
+  "total": 48,
+  "upper_half": true,
+  "goal_met": false,
+  "website_rank_claim": false,
+  "metrics": {
+    "pred_file": {
+      "name": "models/orb/orb-g2-groupcv-v1/runtime-v012-isolated/2026-11-16-diatomics.json.gz"
+    },
+    "cost": {
+      "source": "runner",
+      "hardware": "Apple M1 (Metal)",
+      "device": "mps",
+      "dtype": "float32",
+      "acceleration": [],
+      "n_shards": 1,
+      "n_processes": 1,
+      "run_time_sec": 432.31,
+      "load_time_sec": 44.4,
+      "max_rss_gb": 1.015,
+      "max_gpu_mem_gb": 0.098
+    },
+    "pbe_wall_dist_mae": 0.1149,
+    "pbe_energy_mae": 0.5809,
+    "pbe_bond_length_error": 0.2271,
+    "pbe_well_depth_error": 0.4042,
+    "pbe_vib_freq_error": 35.42,
+    "tortuosity": 1.001,
+    "energy_diff_flips": 1.31,
+    "energy_jump": 0.1145,
+    "force_flips": 1.368,
+    "force_total_variation": 210.3,
+    "force_jump": 25.46,
+    "pbe_force_mae": 1.292,
+    "pbe_vib_freq_coverage": {
+      "n_valid": 81,
+      "n_eligible": 81,
+      "failed_elements": [],
+      "missing_elements": []
+    }
+  }
+}

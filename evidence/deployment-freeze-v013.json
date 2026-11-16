@@ -1,0 +1,29 @@
+{
+  "timestamp_utc": "2026-11-16T17:01:36.850465+00:00",
+  "decision": "Native MLX geometry and vector-energy gradients; CPU topology, four Torch threads, float32 unchanged",
+  "before_full_official_native_evaluation": true,
+  "learned_head_and_selection_unchanged": true,
+  "historical_test_exposure_retained": true,
+  "selection_data": "83 training geometries and100 unlabelled synthetic cases; no held-out targets or official reference scores",
+  "numerical_gate_cases": 183,
+  "maximum_normalized_error": 0.36143985065631595,
+  "timing_speedup": 1.4310046512079388,
+  "source_tests": "70 passed;395 dependency warnings",
+  "independent_read_only_review": "No blocking discrepancy identified in geometry, ZBL convention, forces/stress, or cache scope",
+  "sha256": {
+    "artifacts/orb-g2-groupcv-v1.json": "adaf1ab47f6be105e0aad6789ffafe1467db0a103c91a9bcf822599c7441fec7",
+    "orb_g2_cv/ase.py": "0f0cce1fb17e24f02474967fa93f05dbdcc32a87449d8312daecf5a05b5cc68d",
+    "orb_g2_cv/mlx_native.py": "d5ff8e7c2f7fb076c15442e172b80956ef8208c906864a154a248cdfa0d4e050",
+    "orb_g2_cv/mlx_geometry.py": "32512f33db454893fd5c3cf1156a95945a7ea63c024e8d3a74720e28d59bd241",
+    "orb_g2_cv/edge_derivatives.py": "f50ce516a29e3ab93df88dca0f6ad5a1ad8f9c9faa6c41f019af80913ea8817a",
+    "orb_g2_cv/mlx_dense.py": "5e55e88409cbc14c85feb154d693dce717050518d724c3e150d40053b9a876fc",
+    "deployment-native-geometry-plan.json": "c71368792cabeb06c46bd8dee67da0ac70454c8b76fa8cef5ab5c471a372f33c",
+    "results/native-geometry-profile.json": "ce1fd52819ab4acd7b211442f267637b8c8195c0199b29e41d9e18f290273b74"
+  },
+  "logs_sha256": {
+    "native-factory-red.log": "b2470c1760797b658fb381addc25e18e0bc1a99ed81d8d41349f6a2eecde78fd",
+    "native-factory-route-red.log": "d96c4471bcd33f36e968da70d1ae69d7f3bb5053d5ca838468a048d6f7b60821",
+    "native-v013-final-tests.log": "a6fe696efe654698243fb63418f4c7663b4765feed42f323bf6ba6030f5084af",
+    "native-v013-reproduction.log": "fa5db44f20a61ac562d8d4f34e42425ceb2112a8e5c4fa774c3d003984313eb5"
+  }
+}

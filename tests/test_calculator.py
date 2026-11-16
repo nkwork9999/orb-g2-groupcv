@@ -113,3 +113,20 @@ def test_unknown_runtime_backend_is_rejected_before_weight_io(tmp_path, backend)
     p.write_text(json.dumps(artifact))
     with pytest.raises(ValueError, match="backend"):
         load_calculator(p, base_checkpoint=tmp_path / "missing.ckpt")
+
+
+@pytest.mark.parametrize("geometry", ["cuda-native", "unknown", 1, False])
+def test_unknown_geometry_backend_is_rejected_before_weight_io(tmp_path, geometry):
+    import json
+
+    artifact = json.loads(
+        (
+            __import__("pathlib").Path(__file__).parents[1]
+            / "artifacts/orb-g2-groupcv-v1.json"
+        ).read_text()
+    )
+    artifact["runtime"]["geometry_backend"] = geometry
+    p = tmp_path / "bad-geometry.json"
+    p.write_text(json.dumps(artifact))
+    with pytest.raises(ValueError, match="geometry"):
+        load_calculator(p, base_checkpoint=tmp_path / "missing.ckpt")

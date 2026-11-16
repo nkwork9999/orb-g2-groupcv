@@ -6,8 +6,11 @@ import os
 import tempfile
 import urllib.request
 from pathlib import Path
+from typing import ClassVar
+
 import numpy as np
 from ase.calculators.calculator import Calculator, all_changes
+
 from .potential import RadialHead
 
 
@@ -21,7 +24,7 @@ def verify_file(path, expected):
 
 
 class CalibratedCalculator(Calculator):
-    implemented_properties = ["energy", "forces", "stress"]
+    implemented_properties: ClassVar[list[str]] = ["energy", "forces", "stress"]
 
     def __init__(self, base, head):
         super().__init__()
@@ -74,6 +77,11 @@ def load_calculator(
     backend = artifact.get("runtime", {}).get("backend", "torch")
     if backend not in ("torch", "mlx"):
         raise ValueError("unsupported deployment backend")
+    geometry = artifact.get("runtime", {}).get(
+        "geometry_backend", "torch-cpu-float32-highest"
+    )
+    if geometry not in ("torch-cpu-float32-highest", "mlx-native-float32"):
+        raise ValueError("unsupported geometry backend")
     if device == "mps" and backend != "mlx":
         raise ValueError("MPS requires the MLX deployment backend")
     threads = artifact.get("runtime", {}).get("torch_threads", 1)
@@ -121,9 +129,14 @@ def load_calculator(
         compile=compiled,
     )
     if device == "mps":
-        from .mlx_calculator import MLXCalculator
+        if geometry == "mlx-native-float32":
+            from .mlx_native import NativeCalculator
 
-        base = MLXCalculator(model)
+            base = NativeCalculator(model)
+        else:
+            from .mlx_calculator import MLXCalculator
+
+            base = MLXCalculator(model)
     else:
         base = ORBCalculator(model, device="cpu")
     if compiled or device == "mps":

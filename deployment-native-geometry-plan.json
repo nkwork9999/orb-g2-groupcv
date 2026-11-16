@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-11-16T15:26:24.575682+00:00",
+  "parent_source": "ff62e4f8e1fd9bce521daaef4301ccbd512c5b12",
+  "phase": "prospective exact geometry/gradient backend port; v0.1.2 full official evaluation still running and results will be retained",
+  "scientific_state": "No training or coefficient/base-weight/feature-definition changes; same83-molecule training-only GroupCV state",
+  "motivation": "Training-geometry profile shows CPU geometric-feature autograd and mixed-backend boundary overhead in addition to dense GPU work. Reduce general scalar ASE inference overhead without benchmark-specific tables, curves or fitting.",
+  "design": "Port original lmax3 component-normalized spherical harmonics,8-term Bessel basis,6A polynomial envelope and ZBL(p6) to MLX; differentiate the whole raw-energy function with respect to general directed periodic edge vectors in a single compiled value_and_grad. Assemble atomic forces and symmetric virial stress from these vector gradients. Preserve original ZBL atomic-index convention exactly, even where surprising. Original CPU graph construction remains.",
+  "composition_cache": "At most one frozen atomic-number sequence may cache its node embedding/reference energy; never cache geometry, curves, energies, forces, stress or targets. This is applicable to any MD/relaxation sequence. Initial work is charged to load/sweep as performed.",
+  "test_first": "Failing unit tests compare features/geometric VJPs/ZBL to actual frozen ORB code and edge-gradient assembly to original Torch strain/position differentiation, including periodic self images and empty edges. Then compare full E/F/stress on all83 training plus100 synthetic cases.",
+  "numerical_gate": "atol1e-4+rtol1e-5 on all183 cases; fail closed on unsupported configs/nonfinite values. Do not loosen after results.",
+  "timing_gate": "Fixed first20 training structures,5 paired alternating repeats, synchronized GPU,CPUthreads4 fixed; native geometry must reduce median scalar E/F/stress latency at least20% vs frozen v0.1.2 hybrid. No own heavy jobs during timed official sweeps.",
+  "selection": "Only label-free equivalence/timing gates; no official reference score or holdout targets. Historical score-informed redesign remains disclosed with test_set_informed:[diatomics].",
+  "official_eval": "If gates pass, freeze source/artifact before a new complete shared-runner evaluation. Never overwrite v0.1.0/v0.1.1/v0.1.2 results or report a below-target model as top3."
+}
