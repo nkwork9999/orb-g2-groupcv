@@ -1,0 +1,11 @@
+# Numerical versions used for the recorded CPU experiment.
+ase==3.29.0
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+torch==2.14.1
+orb-models==0.5.4
+# Use pyproject.toml with uv: these compatibility overrides are intentional.
+dm-tree==0.1.10
+filelock==4.2.10
+cached-path==1.8.0

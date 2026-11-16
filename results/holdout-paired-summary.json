@@ -1,0 +1,13 @@
+{
+  "n_formula_groups": 18,
+  "n_improved_groups": 15,
+  "n_worsened_groups": 3,
+  "mean_paired_delta_ev": -0.2757553454664429,
+  "descriptive_paired_group_bootstrap_95_percent_delta_ev": [
+    -0.38713693601123406,
+    -0.16987874377611
+  ],
+  "resampling_seed": 20261116,
+  "bootstrap_replicates": 10000,
+  "scope": "Small fixed molecular holdout; independent of this fine-tune selection, not proof of absent upstream pretraining overlap or general bulk/force improvement"
+}

@@ -1,0 +1,18 @@
+{
+  "n_all": 102,
+  "n_formula_groups": 86,
+  "n_train": 83,
+  "n_holdout": 19,
+  "train_groups": 68,
+  "holdout_groups": 18,
+  "split_sha256": "b27bf9eb50089c460e498fac7c0741b7cedade31cb3c7e063ed0a2d57bcbab99",
+  "train_reference_sha256": "eda10fc1c45733cb8321dab30fbb04134e8e989a6be577dcabbbba6554ec82dc",
+  "holdout_labels_exported": false,
+  "target_conversion_ev_per_kcal_mol": 0.04336410390059322,
+  "source_hashes": {
+    "g2.py": "2e3dd074627ade83d499803f5b8815c8506ec62351527cd9d81716749cd5e5ee",
+    "g2_1.py": "02e84ba66a4f47888a012b084a9ccc49a835edb205bf1a52112f2552fc792045",
+    "g2_2.py": "8478de37de8e1e738bf238f5ee06eb4198059f78ef4c141ba5278565e2642841"
+  },
+  "target_lookup_note": "ASE g2_1.get_atomization_energy uses the g1-only global lookup even when imported through merged g2; use the identical documented formula on g2.data so extended entries are retained without filtering."
+}

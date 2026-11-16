@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-11-16T13:24:06.640108+00:00",
+  "stage": "before first holdout target export and before official shared-runner evaluation",
+  "sha256": {
+    "plan.json": "06651383ed6b460b78ca9ffe849b191babe49f3069ce65351b1655ad2f2fd103",
+    "data/split.json": "b27bf9eb50089c460e498fac7c0741b7cedade31cb3c7e063ed0a2d57bcbab99",
+    "data/train-cache.jsonl": "999b0ccd0c0327e8cf1152150c505f62e7bd71b394910c9a800cfd4a730de14f",
+    "artifacts/orb-g2-groupcv-v1.json": "f2fb34215322f1cef9ea93cef72c0a3baa65b0b40315c82bb6d7642e9d514da1",
+    "orb_g2_cv/potential.py": "bb2bf1ef0cef085a79005e463f16579f209a29ce4bd3a5f35e94e3a56afdd887",
+    "orb_g2_cv/training.py": "6378ff16d425eb05a16f3cae5ea6de947ca6bc222760893cc177acf3dc5f1aa2",
+    "orb_g2_cv/data.py": "a46e2a2c54284f53a1325ff4cc690fca33bc3b0d8166d31592602aafa3ddd58d",
+    "orb_g2_cv/search.py": "603bf8cf26615700d06c41cc157bcc1165d08a13f7262b61de437aa1fc8d329f",
+    "orb_g2_cv/ase.py": "5acda9821c72f2cf74410ed02da95338776415a8f5505363d728d360ffd65b86",
+    "orb_g2_cv/model.json": "f2fb34215322f1cef9ea93cef72c0a3baa65b0b40315c82bb6d7642e9d514da1"
+  },
+  "holdout_labels_exported": false,
+  "benchmark_historically_exposed": true
+}

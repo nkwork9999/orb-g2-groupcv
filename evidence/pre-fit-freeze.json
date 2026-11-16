@@ -1,0 +1,15 @@
+{
+  "stage": "before training and before any holdout labels were exported",
+  "at_utc": "2026-11-16T13:20:29.179060+00:00",
+  "sha256": {
+    "plan.json": "06651383ed6b460b78ca9ffe849b191babe49f3069ce65351b1655ad2f2fd103",
+    "data/split.json": "b27bf9eb50089c460e498fac7c0741b7cedade31cb3c7e063ed0a2d57bcbab99",
+    "data/train-reference.jsonl": "eda10fc1c45733cb8321dab30fbb04134e8e989a6be577dcabbbba6554ec82dc",
+    "data/train-cache.jsonl": "999b0ccd0c0327e8cf1152150c505f62e7bd71b394910c9a800cfd4a730de14f",
+    "orb_g2_cv/potential.py": "bb2bf1ef0cef085a79005e463f16579f209a29ce4bd3a5f35e94e3a56afdd887",
+    "orb_g2_cv/training.py": "6378ff16d425eb05a16f3cae5ea6de947ca6bc222760893cc177acf3dc5f1aa2",
+    "orb_g2_cv/search.py": "603bf8cf26615700d06c41cc157bcc1165d08a13f7262b61de437aa1fc8d329f",
+    "orb_g2_cv/data.py": "a46e2a2c54284f53a1325ff4cc690fca33bc3b0d8166d31592602aafa3ddd58d"
+  },
+  "prior_benchmark_exposure_retained": true
+}

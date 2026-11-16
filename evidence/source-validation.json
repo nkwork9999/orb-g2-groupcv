@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-11-16T13:33:42.078418+00:00",
+  "package_tests": {
+    "passed": 22,
+    "dependency_warnings": 46
+  },
+  "backbone_cache_recomputed": 83,
+  "candidate_reproduced_without_outer_labels": true,
+  "source_unchanged_since_evaluation_freeze": true,
+  "candidate_sha256": "f2fb34215322f1cef9ea93cef72c0a3baa65b0b40315c82bb6d7642e9d514da1",
+  "logs": {
+    "evidence/package-tests.log": "13468638e18974db3d9d1a101a6b0ef9e8292ddccc76712477816264f6641b46",
+    "evidence/reproduction.log": "9b3ebdd975dfb2bf72562ec6ec8a08700cc1e542278a8dafffbfb0e212f51f48",
+    "evidence/training-run.log": "264e795a52963ae45d0bbf38485dbadb1aa564920dc0525c2820b0e587fca27c",
+    "evidence/holdout-evaluation.log": "42e460c6ace528c6c162a264dbbe692e712433e55d69cb0ad62aca27c5b6938e",
+    "evidence/sobol-control.log": "6500eb94d60973f767dc503a820cf6f159aef88d86dfb1d68d0760c9513fae21"
+  }
+}

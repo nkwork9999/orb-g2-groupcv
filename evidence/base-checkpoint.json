@@ -1,0 +1,7 @@
+{
+  "url": "https://orbitalmaterials-public-models.s3.us-west-1.amazonaws.com/forcefields/orb-v3/orb-v3-conservative-inf-mpa-20250404.ckpt",
+  "bytes": 102097517,
+  "sha256": "bd1840d1488f3cd01d213970d9618a63f971590ad45e5e83bf5404d4b95d216a",
+  "path": "checkpoints/orb-v3-conservative-inf-mpa-ranged.ckpt",
+  "retrieval": "8 bounded HTTP range streams; each status, range and size verified"
+}

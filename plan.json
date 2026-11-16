@@ -1,0 +1,18 @@
+{
+  "version": 3,
+  "model_name": "ORB-G2 GroupCV",
+  "authorized_scope": "Train a corrected selection-protocol version and submit a new PR; previous PR remains closed.",
+  "base": {"kind":"orb-v3-conservative-inf-mpa","orb_models":"0.5.4","checkpoint_sha256":"bd1840d1488f3cd01d213970d9618a63f971590ad45e5e83bf5404d4b95d216a","dtype":"float32-highest","compile":false},
+  "training_source": {"name":"ASE G2 molecular database","ase_version":"3.29.0","target":"experimental atomization energies extrapolated from heats of formation using ZPE and thermal corrections, converted kcal/mol to eV with ASE units","not_pbe_labels":true},
+  "metadata_eligibility": {"min_atoms":3,"max_atoms":14,"max_atomic_number":17,"sum_absolute_initial_magnetic_moments":0,"exclude_all_single_atoms_and_diatomics":true,"no_target_or_model_error_filtering":true},
+  "outer_split": {"group":"complete molecular chemical formula; all isomers and spin variants together","seed":20261116,"algorithm":"sort unique formulas by SHA256(str(seed)+':' + formula); first ceil(0.2*n_groups) held out, remainder training","target_values_not_used_for_assignment":true,"no_resplit":true},
+  "inner_selection": {"folds":5,"group_disjoint":true,"all_fitted_transforms_train_only":true,"search":"16-trial GP expected improvement; 8 initial seeded Sobol proposals; seed42","parameters":{"log10_ridge":[-4,4],"width_angstrom":[0.25,1.5]},"shrinkage_grid":[0,0.01,0.03,0.1,0.3,1],"objective":"formula-macro atomization-energy MAE of out-of-fold training predictions; 2% minimum gain before nonzero correction is eligible","tie_break":"prefer smaller correction"},
+  "fixed_representation":{"chemistry":["1","(Zi+Zj)/20","abs(Zi-Zj)/10","Zi*Zj/100"],"radial_centers_angstrom":[0.6,1.075,1.55,2.025,2.5,2.975,3.45,3.925,4.4],"cutoff_angstrom":5,"envelope":"(1-r/c)^4*(1+4*r/c) within cutoff, zero outside","coefficients":36,"readout":"sum over unordered periodic neighbor pairs; conservative analytic force and stress; no atom-count specialist restriction"},
+  "comparison_controls":["unchanged ORB","equal-budget Sobol search, never used to reselect BO candidate"],
+  "heldout_evaluation":"Freeze candidate and code before exporting/reading holdout labels. Evaluate once and report all groups. Do not retrain/reselect using holdout or official score feedback.",
+  "benchmark_exposure":{"test_set_informed":["diatomics"],"reason":"Earlier PET and ORB diatomics scores and public task ranking informed the backbone and redesign. Historical exposure remains even with training-only selection."},
+  "official_evaluation":"Use the unmodified official Python3.14 shared runner, scorer and default grid. No training on official homonuclear labels, no candidate-specific exclusions, no rank-based checkpoint choice.",
+  "publication_policy":"Report all improvements and regressions including the unchanged-backbone control. Do not claim superiority if baseline is better, or unpublished official website ranks. Submission acceptance is for maintainers to assess.",
+  "purpose":"A general multi-atom conservative energy calibration with a held-out molecular evaluation; not a diatomics-only fine-tune, not a demonstrated universal bulk/MD improvement.",
+  "compute":"Local CPU, one torch thread, no paid services; original environments and artifacts preserved. Use a documented uv project override for dm-tree0.1.10, required for Python3.14 wheels."
+}

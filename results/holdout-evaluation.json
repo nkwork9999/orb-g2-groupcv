@@ -1,0 +1,14 @@
+{
+  "baseline_formula_macro_mae_ev": 0.49329621160709425,
+  "baseline_sample_mae_ev": 0.49128127837299634,
+  "corrected_formula_macro_mae_ev": 0.21754086614065138,
+  "corrected_sample_mae_ev": 0.21803297156588697,
+  "n_rows": 19,
+  "n_formula_groups": 18,
+  "seconds": 0.7597608330252115,
+  "first_evaluation_only": true,
+  "candidate_sha256": "f2fb34215322f1cef9ea93cef72c0a3baa65b0b40315c82bb6d7642e9d514da1",
+  "candidate_reselected_after_holdout": false,
+  "upstream_pretraining_overlap_not_proven_absent": true,
+  "target_scope": "experimental atomization energies extrapolated with ZPE/thermal corrections; not PBE force labels"
+}
