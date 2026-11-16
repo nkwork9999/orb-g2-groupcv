@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-11-16T17:18:47.300018+00:00",
+  "parent": "7f80d510bfe454ef5f7a744880ca447cda690437",
+  "purpose": "Reduce general Metal command-buffer dispatch overhead using documented MLX scheduling options, without changing mathematical graph or learned weights",
+  "candidates": [
+    40,
+    128,
+    256
+  ],
+  "fixed": "MLX_MAX_MB_PER_BUFFER unchanged/default; MLX_METAL_FAST_SYNCH absent;4Torchthreads;float32;exactnativev0.1.3 implementation; no rejectedadapter/CPUbackend code",
+  "protocol": "Fresh isolated child process peropssetting so environment is read before import. Fixed first20sorted training structures;5alternating/rotated candidate-order blocks. Eachchildload/warmup outsidetimedsection; synchronized first20E/F/stress timings. Select fastestmedian onlyif>=20%reductionrelative40; predeclaredties lowerops. Exactnumericalgate all83train+100unlabelledsynthetic iftimingpasses, atol1e-4+rtol1e-5. No officiallabels/holdouttargets.",
+  "results": "Retain allfailedcandidates/rawtimings. Environmentandactualhardwaremustberecorded;ifpassfreeze thenonefullsharedofficialsweep. Historical Diatomics informed status remains."
+}
