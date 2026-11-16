@@ -1023,6 +1023,40 @@ wheels = [
 ]
 
 [[package]]
+name = "mlx"
+version = "0.32.4"
+source = { url = "https://files.pythonhosted.org/packages/99/2f/ed874a2de4ad30b47f27960373880aa24b53d8963ea81125e12e460340c2/mlx-0.32.4-cp314-cp314-macosx_14_0_arm64.whl" }
+dependencies = [
+    { name = "mlx-metal" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/99/2f/ed874a2de4ad30b47f27960373880aa24b53d8963ea81125e12e460340c2/mlx-0.32.4-cp314-cp314-macosx_14_0_arm64.whl", hash = "sha256:f1e6ef441e1e2ce54159022a8fa5597f8ea4f7acf278752049c4f774bbd0501d" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "ml-dtypes", marker = "extra == 'dev'" },
+    { name = "mlx-cpu", marker = "sys_platform == 'linux' and extra == 'cpu'", specifier = "==0.32.4" },
+    { name = "mlx-cuda-12", marker = "sys_platform == 'linux' and extra == 'cuda'", specifier = "==0.32.4" },
+    { name = "mlx-cuda-12", marker = "sys_platform == 'linux' and extra == 'cuda12'", specifier = "==0.32.4" },
+    { name = "mlx-cuda-13", marker = "sys_platform == 'linux' and extra == 'cuda13'", specifier = "==0.32.4" },
+    { name = "mlx-metal", marker = "sys_platform == 'darwin'", specifier = "==0.32.4" },
+    { name = "numpy", marker = "extra == 'dev'", specifier = ">=2" },
+    { name = "pre-commit", marker = "extra == 'dev'" },
+    { name = "torch", marker = "extra == 'dev'", specifier = ">=2.9" },
+    { name = "typing-extensions", marker = "extra == 'dev'" },
+]
+provides-extras = ["dev", "cuda", "cuda12", "cuda13", "cpu"]
+
+[[package]]
+name = "mlx-metal"
+version = "0.32.4"
+source = { url = "https://files.pythonhosted.org/packages/77/24/7e5b7ed5d28abacab4577c7a8dd1fca6e9058504f5f95ae4333c09420e2e/mlx_metal-0.32.4-py3-none-macosx_14_0_arm64.whl" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/77/24/7e5b7ed5d28abacab4577c7a8dd1fca6e9058504f5f95ae4333c09420e2e/mlx_metal-0.32.4-py3-none-macosx_14_0_arm64.whl", hash = "sha256:8019b2db622599267d66cc168b2f0dbf5af929790a6c3b3913e00eabc42a7947" },
+]
+
+[[package]]
 name = "mpmath"
 version = "1.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1266,7 +1300,7 @@ wheels = [
 
 [[package]]
 name = "orb-g2-cv"
-version = "0.1.1"
+version = "0.1.2"
 source = { editable = "." }
 dependencies = [
     { name = "ase" },
@@ -1274,6 +1308,10 @@ dependencies = [
 ]
 
 [package.optional-dependencies]
+metal = [
+    { name = "mlx", marker = "platform_machine == 'arm64' and sys_platform == 'darwin'" },
+    { name = "mlx-metal", marker = "platform_machine == 'arm64' and sys_platform == 'darwin'" },
+]
 runtime = [
     { name = "cached-path" },
     { name = "orb-models" },
@@ -1288,13 +1326,15 @@ train = [
 requires-dist = [
     { name = "ase", specifier = "==3.29.0" },
     { name = "cached-path", marker = "extra == 'runtime'", specifier = "==1.8.0" },
+    { name = "mlx", marker = "platform_machine == 'arm64' and sys_platform == 'darwin' and extra == 'metal'", url = "https://files.pythonhosted.org/packages/99/2f/ed874a2de4ad30b47f27960373880aa24b53d8963ea81125e12e460340c2/mlx-0.32.4-cp314-cp314-macosx_14_0_arm64.whl" },
+    { name = "mlx-metal", marker = "platform_machine == 'arm64' and sys_platform == 'darwin' and extra == 'metal'", url = "https://files.pythonhosted.org/packages/77/24/7e5b7ed5d28abacab4577c7a8dd1fca6e9058504f5f95ae4333c09420e2e/mlx_metal-0.32.4-py3-none-macosx_14_0_arm64.whl" },
     { name = "numpy", specifier = "==2.5.4" },
     { name = "orb-models", marker = "extra == 'runtime'", specifier = "==0.5.4" },
     { name = "scikit-learn", marker = "extra == 'train'", specifier = "==1.9.1" },
     { name = "scipy", marker = "extra == 'train'", specifier = "==1.18.1" },
     { name = "torch", marker = "extra == 'runtime'", specifier = "==2.14.1" },
 ]
-provides-extras = ["train", "runtime"]
+provides-extras = ["train", "runtime", "metal"]
 
 [[package]]
 name = "orb-models"

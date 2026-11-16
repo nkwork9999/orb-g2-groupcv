@@ -1,0 +1,31 @@
+{
+  "timestamp_utc": "2026-11-16T15:08:09.530011+00:00",
+  "decision": "MLX float32 dense core, original Torch CPU geometry,4CPUthreads",
+  "before_full_official_mlx_evaluation": true,
+  "learned_head_and_selection_unchanged": true,
+  "historical_test_exposure_retained": true,
+  "selection_data": "training geometries and unlabelled synthetic cases only; no holdout or official reference scores",
+  "numerical_gate_cases": 183,
+  "numerical_maximum_normalized_error": 0.3813443242547734,
+  "latency_speedup_vs_paired_cpu": 5.822786818742184,
+  "thread_study": "Neither1 nor2threads improved hybrid4 by the prespecified20%; retain4. All raw timings retained.",
+  "source_tests": "49 passed",
+  "runtime_provenance_tests": "63 passed including8newMLXtests; additionalMPSCLI3cases testedred/green",
+  "sha256": {
+    "artifacts/orb-g2-groupcv-v1.json": "0610ee9769bbc9583bf53efb76c3ea132cfb2d732b51e54e21ae7e2acc1dc5ee",
+    "orb_g2_cv/ase.py": "00d3e93fbb28a78fe3c5f80058cc8f64c899f36d808a58df3c806bc551a6c409",
+    "orb_g2_cv/mlx_dense.py": "5e55e88409cbc14c85feb154d693dce717050518d724c3e150d40053b9a876fc",
+    "orb_g2_cv/mlx_calculator.py": "2348aedabd2ddb97d75bae304fff545aec50fe71addce28a621aa8598b1f2840",
+    "deployment-mlx-plan.json": "b33e1869d66977fe823b5be1a142ea8cf9d209108709d098a22903b90187132e",
+    "deployment-mlx-thread-plan.json": "4f48bc348c6882469aa561d85edf16a99f1ba06c8d189d8c248dbfb4892e7b39",
+    "results/mlx-profile.json": "997a0af3068d8b59669a59e138a785b64e5e6292dd96186d8d3dfcec0fbf2c62",
+    "results/mlx-thread-profile.json": "fa4c03ee97c4568852694e99de84db325dffbb29cb5a8b1aab8cd06e90b2f736"
+  },
+  "validation_logs_sha256": {
+    "mlx-all-source-green.log": "4f456a77e1f33c4fe2c9d36fe4ddb28fb4baf3fa07aa005bd580e3595e309eda",
+    "mlx-runtime-green.log": "7237c849826ee50e4b1c42fcd9176a3b8336f51931a347e222cdce6e0bf8f0ae",
+    "mlx-cli-green.log": "17df259fd122b19e917fcbd4ef04d1815981914e2e4b771fcbd078f0fa42d8a7",
+    "mlx-v012-reproduction.log": "fa5db44f20a61ac562d8d4f34e42425ceb2112a8e5c4fa774c3d003984313eb5",
+    "official-mlx-dry-run-fixed.log": "4a71544cef6b68024ff74148c3589152e6d50e505b4405ee6746b20f7e4c42e9"
+  }
+}

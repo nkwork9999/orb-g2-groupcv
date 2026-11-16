@@ -1,0 +1,38 @@
+         55617 function calls (55017 primitive calls) in 0.908 seconds
+
+   Ordered by: cumulative time
+   List reduced from 316 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       20    0.000    0.000    0.908    0.045 /Users/nk/Desktop/orb-g2-groupcv-runtime-top3-20261116/scripts/profile_mlx_threads.py:26(predict)
+   120/60    0.006    0.000    0.907    0.015 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/ase/calculators/calculator.py:494(get_property)
+    40/20    0.000    0.000    0.881    0.044 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/ase/calculators/abc.py:20(get_potential_energy)
+       20    0.002    0.000    0.879    0.044 /Users/nk/Desktop/orb-g2-groupcv-runtime-top3-20261116/orb_g2_cv/ase.py:31(calculate)
+       20    0.012    0.001    0.756    0.038 /Users/nk/Desktop/orb-g2-groupcv-runtime-top3-20261116/orb_g2_cv/mlx_calculator.py:20(calculate)
+       20    0.361    0.018    0.361    0.018 /Users/nk/Desktop/orb-g2-groupcv-runtime-top3-20261116/orb_g2_cv/mlx_dense.py:134(evaluate)
+       20    0.002    0.000    0.134    0.007 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/forcefield_utils.py:426(compute_gradient_forces_and_stress)
+       20    0.001    0.000    0.122    0.006 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/autograd/__init__.py:434(grad)
+       20    0.001    0.000    0.119    0.006 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/autograd/graph.py:1059(_engine_run_backward)
+       20    0.118    0.006    0.118    0.006 {method 'run_backward' of 'torch._C._EngineBase' objects}
+      120    0.001    0.000    0.091    0.001 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/ase/calculators/calculator.py:824(check_state)
+      120    0.004    0.000    0.090    0.001 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/ase/calculators/calculator.py:86(compare_atoms)
+  240/160    0.007    0.000    0.087    0.001 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/nn/modules/module.py:1779(_wrapped_call_impl)
+      400    0.005    0.000    0.085    0.000 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/ase/calculators/calculator.py:220(equal)
+       20    0.012    0.001    0.084    0.004 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/atomic_system.py:88(ase_atoms_to_atom_graphs)
+  240/160    0.003    0.000    0.080    0.001 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/nn/modules/module.py:1787(_call_impl)
+      374    0.003    0.000    0.076    0.000 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/numpy/_core/numeric.py:2226(allclose)
+      374    0.024    0.000    0.069    0.000 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/numpy/_core/numeric.py:2320(isclose)
+       40    0.000    0.000    0.057    0.001 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/ase/calculators/abc.py:30(get_forces)
+       20    0.003    0.000    0.036    0.002 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/base.py:122(compute_differentiable_edge_vectors)
+       20    0.002    0.000    0.034    0.002 /Users/nk/Desktop/orb-g2-groupcv-runtime-top3-20261116/orb_g2_cv/potential.py:54(evaluate)
+       20    0.023    0.001    0.031    0.002 /Users/nk/Desktop/orb-g2-groupcv-runtime-top3-20261116/orb_g2_cv/potential.py:10(edge_design)
+       20    0.002    0.000    0.031    0.002 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/featurization_utilities.py:460(compute_pbc_radius_graph)
+       20    0.002    0.000    0.030    0.001 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/gns.py:487(featurize_edges)
+       20    0.006    0.000    0.029    0.001 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/pair_repulsion.py:60(forward)
+       40    0.002    0.000    0.028    0.001 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/forcefield_heads.py:176(denormalize)
+       60    0.001    0.000    0.025    0.000 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/forcefield_heads.py:36(forward)
+       40    0.000    0.000    0.024    0.001 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/ase/calculators/abc.py:33(get_stress)
+       80    0.001    0.000    0.024    0.000 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/segment_ops.py:8(aggregate_nodes)
+       20    0.009    0.000    0.023    0.001 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/featurization_utilities.py:598(compute_supercell_neighbors)
+
+

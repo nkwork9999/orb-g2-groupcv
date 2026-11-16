@@ -1,0 +1,6 @@
+{
+  "timestamp_utc": "2026-11-16T14:33:26.911276+00:00",
+  "reason": "Upstream ORB architecture constructor unconditionally calls model.cuda(device) for every non-CPU device, before loading weights. It rejects mps before inference.",
+  "change": "Construct/load original checkpoint on CPU, then transfer model.to(mps). No checkpoint, architecture, precision, graph or prediction changes. No unsupported-op CPU fallback.",
+  "gate": "Same frozen accelerator-profile gate and training-only inputs; keep original failure and raw timings. No official scores for equivalence or latency selection."
+}

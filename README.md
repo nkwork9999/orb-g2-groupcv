@@ -4,6 +4,18 @@ A frozen ORB-v3 conservative MPA backbone with a 36-coefficient smooth, conserva
 
 The model was trained on **83 multi-atom G2 molecules from 68 formula groups**. A metadata-only split fixed before target export reserves **19 molecules from 18 disjoint formula groups**. Isomers remain together. All one/two-atom systems were excluded from this fine-tuning dataset. Official Matbench Discovery reference labels were not used as fitting targets or hyperparameter objectives.
 
+## Runtime deployment 0.1.2
+
+The trained state is identical to v0.1.0 (83 training molecules, 36 coefficients). MLX0.32.4 performs the dense encoder, attention blocks and energy MLP on the Apple GPU. The original Torch CPU graph, geometric features, reference-energy normalization and pair repulsion remain. MLX feature/cutoff vector-Jacobian products pass through the original Torch geometry to give conservative forces/stress. This is a general graph calculator, with no benchmark-curve table or dimer-only restriction.
+
+All183 training/synthetic geometries passed E/F/stress agreement at atol1e-4 + rtol1e-5; maximum normalized difference0.3825 (threshold1). On the fixed first20 training structures, five alternating paired repetitions gave median CPU0.2564s and MLX0.04403s (5.82x). Other workloads varied on this shared interactive Mac; this is not a controlled cross-model speed claim. It passed the prospective20% reduction gate. No official reference errors enter fitting or backend numerical/timing selection. Earlier score feedback motivated runtime work, so the Diatomics dagger/disclosure remains mandatory.
+
+Negative outcomes remain: v0.1.0's local CDS comparison was6/48; v0.1.1 was7/48 (CDS0.786291, measured587.56s sweep plus2.58s load; other workloads active). Neither met the top-three target and no benchmark PR was submitted for either. Native PyTorch-MPS loading and float64 preprocessing failed; host-graph PyTorch-MPS passed numerical checks but failed the timing gate. MLX initially crashed on empty-edge scatter gradients; tests caught it. Exact isolated-node evaluation and empty zero geometric VJPs fix it without changing learned weights.
+
+The `metal` extra is optional; CPU inference/reproduction remains available. Official Python3.14 macOS14-compatible wheels are pinned by URL because the larger macOS26 extraction exhausted local disk. uv automatically removed failed extraction. Only this task's rejected Torch compiler cache was removed; scientific artifacts, models, data and existing environments were preserved.
+
+Prospective plans, raw paired timings, numerical cases and failed studies are retained. Final official MLX evaluation is pending; no top-three, website-rank or acceptance claim is made. The official sweep/scoring code remains unchanged; the shared CLI device choices and cost-provenance instrumentation add Metal/MLX support. A separate fixed-thread study retained4threads because1/2did not clear its prospective20% improvement gate. The ORB architecture adaptation retains Apache-2.0 attribution/notices alongside BSD-3-Clause calibration code.
+
 ## Runtime deployment 0.1.1
 
 The trained state is unchanged from source commit `0e192c1` / release v0.1.0. Deployment v0.1.1 uses four CPU threads and exact fast neighbor enumeration for small nonperiodic or provably image-free systems, falling back to the original periodic neighbor list otherwise. Energy/force/stress agreement on 139 training/synthetic geometries is within 2.3e-15 (head only). Training features retain the original implementation.

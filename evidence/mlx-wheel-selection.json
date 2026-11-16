@@ -1,0 +1,7 @@
+{
+  "version": "0.32.4",
+  "original_failure": "macOS26 wheel extraction exhausted disk space; its temporary extraction was automatically removed by uv",
+  "replacement": "Official PyPI macosx_14_0_arm64 wheels, compatible with current macOS, same MLX version. Metal wheel expanded size174.2 MB. No existing models/data/environments removed.",
+  "selection_reason": "Compatibility and disk footprint only; no model scores or numerical outcomes used",
+  "dependency_isolation": "runtime-mlx target directory, original environments untouched"
+}

@@ -1,0 +1,1814 @@
+{
+  "median_seconds": {
+    "1": 0.044832604500697926,
+    "2": 0.029900708512286656,
+    "4": 0.03200331248808652
+  },
+  "selected_threads": 4,
+  "maximum_normalized_error": 0.3813443242547734,
+  "n_equivalence_cases": 183,
+  "training_geometries_only": true,
+  "all_learned_weights_unchanged": true,
+  "paired_timings": [
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "2-butyne",
+      "seconds": 0.03315412497613579
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "AlF3",
+      "seconds": 0.02351466700201854
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "BCl3",
+      "seconds": 0.025602208013879135
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "BF3",
+      "seconds": 0.024456167011521757
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C2F4",
+      "seconds": 0.17537454099510796
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C2H2",
+      "seconds": 0.07661120899138041
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C2H6",
+      "seconds": 0.040853749989764765
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C2H6CHOH",
+      "seconds": 0.05353229201864451
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C2H6NH",
+      "seconds": 0.0419979160069488
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C2H6SO",
+      "seconds": 0.03864745900500566
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C3H4_C2v",
+      "seconds": 0.034513834019890055
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C3H4_C3v",
+      "seconds": 0.07617804201436229
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C3H4_D2d",
+      "seconds": 0.038056833000155166
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C3H6_Cs",
+      "seconds": 0.03411862498614937
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C3H6_D3h",
+      "seconds": 0.03233533300226554
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C3H7Cl",
+      "seconds": 0.0313541250070557
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C3H8",
+      "seconds": 0.03440070801298134
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C4H4NH",
+      "seconds": 0.036102832993492484
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C4H4O",
+      "seconds": 0.03634529100963846
+    },
+    {
+      "threads": 1,
+      "repeat": 0,
+      "name": "C5H5N",
+      "seconds": 0.05243095802143216
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "2-butyne",
+      "seconds": 0.04411595800775103
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "AlF3",
+      "seconds": 0.03421958300168626
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "BCl3",
+      "seconds": 0.05025900001055561
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "BF3",
+      "seconds": 0.03308904098230414
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C2F4",
+      "seconds": 0.02749191698967479
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C2H2",
+      "seconds": 0.03573654100182466
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C2H6",
+      "seconds": 0.05094141702284105
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C2H6CHOH",
+      "seconds": 0.10848429199540988
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C2H6NH",
+      "seconds": 0.040558582986705005
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C2H6SO",
+      "seconds": 0.0451128339918796
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C3H4_C2v",
+      "seconds": 0.032453417021315545
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C3H4_C3v",
+      "seconds": 0.03431950000231154
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C3H4_D2d",
+      "seconds": 0.030446415999904275
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C3H6_Cs",
+      "seconds": 0.03536150002037175
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C3H6_D3h",
+      "seconds": 0.037782708008307964
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C3H7Cl",
+      "seconds": 0.18743974997778423
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C3H8",
+      "seconds": 0.042628124996554106
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C4H4NH",
+      "seconds": 0.05503699998371303
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C4H4O",
+      "seconds": 0.04384441699949093
+    },
+    {
+      "threads": 1,
+      "repeat": 1,
+      "name": "C5H5N",
+      "seconds": 0.03788191598141566
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "2-butyne",
+      "seconds": 0.03871608301415108
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "AlF3",
+      "seconds": 0.0465242080099415
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "BCl3",
+      "seconds": 0.06348616699688137
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "BF3",
+      "seconds": 0.04323958299937658
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C2F4",
+      "seconds": 0.04137895899475552
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C2H2",
+      "seconds": 0.03446100000292063
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C2H6",
+      "seconds": 0.06454116600798443
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C2H6CHOH",
+      "seconds": 0.049029291985789314
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C2H6NH",
+      "seconds": 0.06584558298345655
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C2H6SO",
+      "seconds": 0.15276200001244433
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C3H4_C2v",
+      "seconds": 0.0663793749990873
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C3H4_C3v",
+      "seconds": 0.08011154099949636
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C3H4_D2d",
+      "seconds": 0.1817389999923762
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C3H6_Cs",
+      "seconds": 0.0569059579866007
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C3H6_D3h",
+      "seconds": 0.05473016601172276
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C3H7Cl",
+      "seconds": 0.07532758297747932
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C3H8",
+      "seconds": 0.05394554199301638
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C4H4NH",
+      "seconds": 0.0903788750001695
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C4H4O",
+      "seconds": 0.04030412499560043
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "name": "C5H5N",
+      "seconds": 0.03725862500141375
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "2-butyne",
+      "seconds": 0.03467654198175296
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "AlF3",
+      "seconds": 0.029755249997833744
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "BCl3",
+      "seconds": 0.02694454198353924
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "BF3",
+      "seconds": 0.026837000012164935
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C2F4",
+      "seconds": 0.03202095799497329
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C2H2",
+      "seconds": 0.029144083993742242
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C2H6",
+      "seconds": 0.044552375009516254
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C2H6CHOH",
+      "seconds": 0.06492504198104143
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C2H6NH",
+      "seconds": 0.04747187500470318
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C2H6SO",
+      "seconds": 0.06106020798324607
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C3H4_C2v",
+      "seconds": 0.04198979199281894
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C3H4_C3v",
+      "seconds": 0.04724637497565709
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C3H4_D2d",
+      "seconds": 0.03789212502306327
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C3H6_Cs",
+      "seconds": 0.11002762499265373
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C3H6_D3h",
+      "seconds": 0.07294770897715352
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C3H7Cl",
+      "seconds": 0.05781137500889599
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C3H8",
+      "seconds": 0.044038666994310915
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C4H4NH",
+      "seconds": 0.2579703750088811
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C4H4O",
+      "seconds": 0.08163779097958468
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "name": "C5H5N",
+      "seconds": 0.15581141598522663
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "2-butyne",
+      "seconds": 0.31056270899716765
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "AlF3",
+      "seconds": 0.046972707990789786
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "BCl3",
+      "seconds": 0.1852880000078585
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "BF3",
+      "seconds": 0.09428154199849814
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C2F4",
+      "seconds": 0.1659078340162523
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C2H2",
+      "seconds": 0.08769462499185465
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C2H6",
+      "seconds": 0.051430041989078745
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C2H6CHOH",
+      "seconds": 0.0688324999937322
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C2H6NH",
+      "seconds": 0.10367941699223593
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C2H6SO",
+      "seconds": 0.3887962499866262
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C3H4_C2v",
+      "seconds": 0.3316719159774948
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C3H4_C3v",
+      "seconds": 0.121489917015424
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C3H4_D2d",
+      "seconds": 0.0702385000186041
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C3H6_Cs",
+      "seconds": 0.0628230000147596
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C3H6_D3h",
+      "seconds": 0.03983704201527871
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C3H7Cl",
+      "seconds": 0.041334542009280995
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C3H8",
+      "seconds": 0.03850333401351236
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C4H4NH",
+      "seconds": 0.07145062499330379
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C4H4O",
+      "seconds": 0.04106162500102073
+    },
+    {
+      "threads": 1,
+      "repeat": 4,
+      "name": "C5H5N",
+      "seconds": 0.032985583995468915
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "2-butyne",
+      "seconds": 0.03752241699839942
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "AlF3",
+      "seconds": 0.024215334007749334
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "BCl3",
+      "seconds": 0.026356874994235113
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "BF3",
+      "seconds": 0.023492999986046925
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C2F4",
+      "seconds": 0.027206250000745058
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C2H2",
+      "seconds": 0.026663457974791527
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C2H6",
+      "seconds": 0.030046583007788286
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C2H6CHOH",
+      "seconds": 0.03012416700948961
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C2H6NH",
+      "seconds": 0.02831879199948162
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C2H6SO",
+      "seconds": 0.025761625001905486
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C3H4_C2v",
+      "seconds": 0.03154570801416412
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C3H4_C3v",
+      "seconds": 0.025779750023502856
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C3H4_D2d",
+      "seconds": 0.0313252089836169
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C3H6_Cs",
+      "seconds": 0.03329141699941829
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C3H6_D3h",
+      "seconds": 0.035428375005722046
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C3H7Cl",
+      "seconds": 0.037084125011460856
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C3H8",
+      "seconds": 0.03297745800227858
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C4H4NH",
+      "seconds": 0.03265029098838568
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C4H4O",
+      "seconds": 0.028465290990425274
+    },
+    {
+      "threads": 2,
+      "repeat": 0,
+      "name": "C5H5N",
+      "seconds": 0.03647166700102389
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "2-butyne",
+      "seconds": 0.03025058301864192
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "AlF3",
+      "seconds": 0.02357262501027435
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "BCl3",
+      "seconds": 0.02790145800099708
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "BF3",
+      "seconds": 0.028427834011381492
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C2F4",
+      "seconds": 0.03794562499388121
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C2H2",
+      "seconds": 0.025261333998059854
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C2H6",
+      "seconds": 0.030103707977104932
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C2H6CHOH",
+      "seconds": 0.03395641699898988
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C2H6NH",
+      "seconds": 0.03703633401892148
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C2H6SO",
+      "seconds": 0.029754834016785026
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C3H4_C2v",
+      "seconds": 0.026100791001226753
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C3H4_C3v",
+      "seconds": 0.023358917009318247
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C3H4_D2d",
+      "seconds": 0.024128457996994257
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C3H6_Cs",
+      "seconds": 0.03818199998931959
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C3H6_D3h",
+      "seconds": 0.035780209000222385
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C3H7Cl",
+      "seconds": 0.03906800001277588
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C3H8",
+      "seconds": 0.03809708298649639
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C4H4NH",
+      "seconds": 0.05228041700320318
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C4H4O",
+      "seconds": 0.04224716700264253
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "name": "C5H5N",
+      "seconds": 0.03499408398056403
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "2-butyne",
+      "seconds": 0.02649408398428932
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "AlF3",
+      "seconds": 0.026277209020918235
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "BCl3",
+      "seconds": 0.02226329199038446
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "BF3",
+      "seconds": 0.021638167003402486
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C2F4",
+      "seconds": 0.029146832996048033
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C2H2",
+      "seconds": 0.028979416994843632
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C2H6",
+      "seconds": 0.036233834020094946
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C2H6CHOH",
+      "seconds": 0.03225975000532344
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C2H6NH",
+      "seconds": 0.025693666015286
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C2H6SO",
+      "seconds": 0.02862004202324897
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C3H4_C2v",
+      "seconds": 0.023955499986186624
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C3H4_C3v",
+      "seconds": 0.023143750004237518
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C3H4_D2d",
+      "seconds": 0.03425987501395866
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C3H6_Cs",
+      "seconds": 0.03032162500312552
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C3H6_D3h",
+      "seconds": 0.0326480410003569
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C3H7Cl",
+      "seconds": 0.03610491700237617
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C3H8",
+      "seconds": 0.03737320899381302
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C4H4NH",
+      "seconds": 0.027551332983421162
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C4H4O",
+      "seconds": 0.0233324580185581
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "name": "C5H5N",
+      "seconds": 0.02739875001134351
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "2-butyne",
+      "seconds": 0.02841970798908733
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "AlF3",
+      "seconds": 0.023491374973673373
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "BCl3",
+      "seconds": 0.21677579198149033
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "BF3",
+      "seconds": 0.05277599999681115
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C2F4",
+      "seconds": 0.02723579201847315
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C2H2",
+      "seconds": 0.02027166698826477
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C2H6",
+      "seconds": 0.025507166981697083
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C2H6CHOH",
+      "seconds": 0.03437529201619327
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C2H6NH",
+      "seconds": 0.0250599579885602
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C2H6SO",
+      "seconds": 0.028125333017669618
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C3H4_C2v",
+      "seconds": 0.030137416993966326
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C3H4_C3v",
+      "seconds": 0.02239004199509509
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C3H4_D2d",
+      "seconds": 0.027921250002691522
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C3H6_Cs",
+      "seconds": 0.050591457984410226
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C3H6_D3h",
+      "seconds": 0.03657083402504213
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C3H7Cl",
+      "seconds": 0.03217758299433626
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C3H8",
+      "seconds": 0.027298041997710243
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C4H4NH",
+      "seconds": 0.024411374994087964
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C4H4O",
+      "seconds": 0.024558499979320914
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "name": "C5H5N",
+      "seconds": 0.039193375007016584
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "2-butyne",
+      "seconds": 0.030482292000669986
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "AlF3",
+      "seconds": 0.025737624993780628
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "BCl3",
+      "seconds": 0.021813999977894127
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "BF3",
+      "seconds": 0.0365401660092175
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C2F4",
+      "seconds": 0.02776679099770263
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C2H2",
+      "seconds": 0.023638624988961965
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C2H6",
+      "seconds": 0.025526124984025955
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C2H6CHOH",
+      "seconds": 0.03133304201764986
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C2H6NH",
+      "seconds": 0.03737266699317843
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C2H6SO",
+      "seconds": 0.02836550000938587
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C3H4_C2v",
+      "seconds": 0.025802666001254693
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C3H4_C3v",
+      "seconds": 0.030866999994032085
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C3H4_D2d",
+      "seconds": 0.03264241700526327
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C3H6_Cs",
+      "seconds": 0.03278037501149811
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C3H6_D3h",
+      "seconds": 0.03080341700115241
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C3H7Cl",
+      "seconds": 0.032799583015730605
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C3H8",
+      "seconds": 0.04481254200800322
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C4H4NH",
+      "seconds": 0.030674792011268437
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C4H4O",
+      "seconds": 0.02781033402425237
+    },
+    {
+      "threads": 2,
+      "repeat": 4,
+      "name": "C5H5N",
+      "seconds": 0.032651833986165
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "2-butyne",
+      "seconds": 0.03552254199166782
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "AlF3",
+      "seconds": 0.024818167003104463
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "BCl3",
+      "seconds": 0.021027208014857024
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "BF3",
+      "seconds": 0.02609329199185595
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C2F4",
+      "seconds": 0.026527457986958325
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C2H2",
+      "seconds": 0.029370584001298994
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C2H6",
+      "seconds": 0.030694457993377
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C2H6CHOH",
+      "seconds": 0.029669459006981924
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C2H6NH",
+      "seconds": 0.02749891599523835
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C2H6SO",
+      "seconds": 0.035825291997753084
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C3H4_C2v",
+      "seconds": 0.027379375009331852
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C3H4_C3v",
+      "seconds": 0.030330083973240107
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C3H4_D2d",
+      "seconds": 0.026524666987825185
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C3H6_Cs",
+      "seconds": 0.031058291002409533
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C3H6_D3h",
+      "seconds": 0.03525979202822782
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C3H7Cl",
+      "seconds": 0.031619374989531934
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C3H8",
+      "seconds": 0.03394720901269466
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C4H4NH",
+      "seconds": 0.03317254199646413
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C4H4O",
+      "seconds": 0.03214337499230169
+    },
+    {
+      "threads": 4,
+      "repeat": 0,
+      "name": "C5H5N",
+      "seconds": 0.029954917001305148
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "2-butyne",
+      "seconds": 0.032355999981518835
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "AlF3",
+      "seconds": 0.024978333996841684
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "BCl3",
+      "seconds": 0.028260583989322186
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "BF3",
+      "seconds": 0.03720179197262041
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C2F4",
+      "seconds": 0.03424920799443498
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C2H2",
+      "seconds": 0.024122999981045723
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C2H6",
+      "seconds": 0.02996545800124295
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C2H6CHOH",
+      "seconds": 0.04314079199684784
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C2H6NH",
+      "seconds": 0.033953583013499156
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C2H6SO",
+      "seconds": 0.03215404201182537
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C3H4_C2v",
+      "seconds": 0.025457790994551033
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C3H4_C3v",
+      "seconds": 0.025488999992376193
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C3H4_D2d",
+      "seconds": 0.03599816601490602
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C3H6_Cs",
+      "seconds": 0.034675249975407496
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C3H6_D3h",
+      "seconds": 0.026846416003536433
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C3H7Cl",
+      "seconds": 0.02986879099626094
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C3H8",
+      "seconds": 0.034474332991521806
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C4H4NH",
+      "seconds": 0.0283307500067167
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C4H4O",
+      "seconds": 0.027727417007554322
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "name": "C5H5N",
+      "seconds": 0.029745791980531067
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "2-butyne",
+      "seconds": 0.02638770898920484
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "AlF3",
+      "seconds": 0.03230445898952894
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "BCl3",
+      "seconds": 0.027226624981267378
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "BF3",
+      "seconds": 0.026245916000334546
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C2F4",
+      "seconds": 0.027381000021705404
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C2H2",
+      "seconds": 0.02661345899105072
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C2H6",
+      "seconds": 0.02864008300821297
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C2H6CHOH",
+      "seconds": 0.03870145799010061
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C2H6NH",
+      "seconds": 0.02799979198607616
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C2H6SO",
+      "seconds": 0.02971516700927168
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C3H4_C2v",
+      "seconds": 0.032026250002672896
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C3H4_C3v",
+      "seconds": 0.032811125012813136
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C3H4_D2d",
+      "seconds": 0.062211542011937127
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C3H6_Cs",
+      "seconds": 0.07152762499754317
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C3H6_D3h",
+      "seconds": 0.22643608300131746
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C3H7Cl",
+      "seconds": 0.05437466598232277
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C3H8",
+      "seconds": 0.03288995899492875
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C4H4NH",
+      "seconds": 0.03133683299529366
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C4H4O",
+      "seconds": 0.03574183300952427
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "name": "C5H5N",
+      "seconds": 0.035759791993768886
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "2-butyne",
+      "seconds": 0.03349441700265743
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "AlF3",
+      "seconds": 0.02726220802287571
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "BCl3",
+      "seconds": 0.03419879201101139
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "BF3",
+      "seconds": 0.02591645799111575
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C2F4",
+      "seconds": 0.02576724998652935
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C2H2",
+      "seconds": 0.027507916995091364
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C2H6",
+      "seconds": 0.034093249996658415
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C2H6CHOH",
+      "seconds": 0.03939716599415988
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C2H6NH",
+      "seconds": 0.03188991700881161
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C2H6SO",
+      "seconds": 0.03390141698764637
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C3H4_C2v",
+      "seconds": 0.029360917018493637
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C3H4_C3v",
+      "seconds": 0.03202591699664481
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C3H4_D2d",
+      "seconds": 0.0335576250217855
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C3H6_Cs",
+      "seconds": 0.03730329201789573
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C3H6_D3h",
+      "seconds": 0.03575229100533761
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C3H7Cl",
+      "seconds": 0.042945749999489635
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C3H8",
+      "seconds": 0.03393145900918171
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C4H4NH",
+      "seconds": 0.031579958013026044
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C4H4O",
+      "seconds": 0.03198070797952823
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "name": "C5H5N",
+      "seconds": 0.045533333002822474
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "2-butyne",
+      "seconds": 0.03856149999774061
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "AlF3",
+      "seconds": 0.04687108300277032
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "BCl3",
+      "seconds": 0.06903458401211537
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "BF3",
+      "seconds": 0.035413665988016874
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C2F4",
+      "seconds": 0.032470750011270866
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C2H2",
+      "seconds": 0.03280904199345969
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C2H6",
+      "seconds": 0.03047366699320264
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C2H6CHOH",
+      "seconds": 0.03239929099800065
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C2H6NH",
+      "seconds": 0.02467983402311802
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C2H6SO",
+      "seconds": 0.027782209013821557
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C3H4_C2v",
+      "seconds": 0.02426541698514484
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C3H4_C3v",
+      "seconds": 0.029406457993900403
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C3H4_D2d",
+      "seconds": 0.024994625011458993
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C3H6_Cs",
+      "seconds": 0.03404020800371654
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C3H6_D3h",
+      "seconds": 0.036751417006598786
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C3H7Cl",
+      "seconds": 0.04204337499686517
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C3H8",
+      "seconds": 0.03583520802203566
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C4H4NH",
+      "seconds": 0.02993291598977521
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C4H4O",
+      "seconds": 0.031236665992764756
+    },
+    {
+      "threads": 4,
+      "repeat": 4,
+      "name": "C5H5N",
+      "seconds": 0.03828804200747982
+    }
+  ]
+}

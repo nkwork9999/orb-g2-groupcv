@@ -1,0 +1,7 @@
+{
+  "timestamp_utc": "2026-11-16T15:04:22.505823+00:00",
+  "before_full_official_mlx_evaluation": true,
+  "observation": "MLX passes numerical and relative-latency gates, and the official unscored3-element dry run works. Inspect hybrid CPU preprocessing thread overhead before freezing final deployment.",
+  "scope": "Fixed learned state and MLX dense equations; profile first20 training geometries only. Fixed CPU-thread blocks1,2,4, never switch pools inside timed calls; five repeats. Warmups outside steady timing and all warmup charged to load in official runner.",
+  "gate": "Choose minimum median, prefer fewer threads within5%; use1/2 only if at least20% lower latency than hybrid4. No official scores or reference errors as selection inputs. Final183-case E/F/stress equivalence required for selected thread count."
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2026-11-16T14:39:32.165184+00:00",
+  "scientific_state": "Unchanged v0.1.1 base/head weights; no quantization, retraining, target access or checkpoint selection.",
+  "motivation": "CPU and PyTorch-MPS timing studies did not meet the top3 deployment goal; retain all negative outcomes and test_set_informed disclosure.",
+  "implementation": "MLX float32 port of the dense encoder, attention interaction stacks and energy-head MLP. Keep the original Torch graph construction, geometric features, cutoff and normalization; use exact vector-Jacobian chain rule to transfer MLX feature/cutoff gradients back through Torch geometry for conservative forces/stress. General ASE interface, any supported molecule or periodic graph; no official sweep caching/batching.",
+  "test_first": "Tests against actual frozen Torch network on training geometries compare latent nodes, energy-head output, feature/cutoff VJPs and final E/F/stress; tests fail before implementation.",
+  "equivalence_gate": "All83 training geometries plus label-free one-atom/heteronuclear/periodic synthetic cases: E/F/stress atol1e-4+rtol1e-5. No DFT/holdout labels used. Fail closed on unsupported modules/configurations or nonfinite outputs.",
+  "latency_gate": "At least20% lower synchronized median scalar E/F/stress latency on fixed first20 sorted training geometries,5 paired alternating repeats. Warm-up/compile fully charged to load. No official score used to select the port or precision.",
+  "official_eval": "Freeze source/artifact after gates, then fresh unchanged official runner and truthful mixed CPU/GPU cost provenance. No website rank guarantee."
+}

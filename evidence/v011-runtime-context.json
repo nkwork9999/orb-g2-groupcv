@@ -1,0 +1,5 @@
+{
+  "timestamp_utc": "2026-11-16T14:30:08.911912+00:00",
+  "observation": "The official full sweep ran on a shared interactive Mac. Other applications (Chrome, Xcode compiler, automation support) consumed CPU during the sweep; no other processes were stopped or priorities changed. Raw runner timing remains authoritative for this artifact. It is not a hardware-controlled cross-model speed comparison.",
+  "action": "Retain all predictions and raw timing; do not replace cost with extrapolated timing or select the fastest official rerun."
+}

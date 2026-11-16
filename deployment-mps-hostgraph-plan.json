@@ -1,0 +1,6 @@
+{
+  "timestamp_utc": "2026-11-16T14:34:39.510639+00:00",
+  "reason": "Original graph preprocessing tries float64 tensors on MPS; Metal supports only float32 here.",
+  "change": "Build the unchanged ORB graph on CPU in float32, transfer the graph and unchanged model weights to MPS, evaluate energy and autograd forces/stress entirely on MPS. CPU graph construction is charged in each inference timing. No unsupported-operator fallback.",
+  "gate": "Same original training/synthetic equivalence and synchronized latency gates; no official labels or scores as objectives. Preserve all failed native/transfer studies."
+}

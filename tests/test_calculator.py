@@ -9,43 +9,107 @@ from orb_g2_cv.potential import RadialHead
 
 
 def test_multiatom_energy_forces_and_stress_are_sum_of_real_components():
-    a=bulk('H','fcc',a=4.2,cubic=True)
-    h=RadialHead(np.ones(36)*.001,width=.8)
-    expected=a.copy();expected.calc=LennardJones(rc=5)
-    correction=h.evaluate(a)
-    a.calc=CalibratedCalculator(LennardJones(rc=5),h)
-    assert a.get_potential_energy()==pytest.approx(expected.get_potential_energy()+correction[0])
-    np.testing.assert_allclose(a.get_forces(),expected.get_forces()+correction[1],atol=1e-10)
-    np.testing.assert_allclose(a.get_stress(),expected.get_stress()+correction[2],atol=1e-10)
+    a = bulk("H", "fcc", a=4.2, cubic=True)
+    h = RadialHead(np.ones(36) * 0.001, width=0.8)
+    expected = a.copy()
+    expected.calc = LennardJones(rc=5)
+    correction = h.evaluate(a)
+    a.calc = CalibratedCalculator(LennardJones(rc=5), h)
+    assert a.get_potential_energy() == pytest.approx(
+        expected.get_potential_energy() + correction[0]
+    )
+    np.testing.assert_allclose(
+        a.get_forces(), expected.get_forces() + correction[1], atol=1e-10
+    )
+    np.testing.assert_allclose(
+        a.get_stress(), expected.get_stress() + correction[2], atol=1e-10
+    )
 
 
 def test_nonperiodic_molecule_without_cell_is_supported_without_input_mutation():
-    a=molecule('CH4');before=a.cell.array.copy()
-    a.calc=CalibratedCalculator(LennardJones(rc=5),RadialHead(np.zeros(36),width=.8))
+    a = molecule("CH4")
+    before = a.cell.array.copy()
+    a.calc = CalibratedCalculator(
+        LennardJones(rc=5), RadialHead(np.zeros(36), width=0.8)
+    )
     assert np.isfinite(a.get_potential_energy())
     assert np.isfinite(a.get_forces()).all()
-    np.testing.assert_array_equal(a.cell.array,before)
+    np.testing.assert_array_equal(a.cell.array, before)
 
 
 def test_checkpoint_integrity_and_precision_guards_precede_model_import(tmp_path):
-    p=tmp_path/'weights';p.write_bytes(b'weights')
-    assert verify_file(p,hashlib.sha256(b'weights').hexdigest())==p
-    with pytest.raises(ValueError):verify_file(p,'0'*64)
-    with pytest.raises(ValueError):load_calculator(tmp_path/'absent.json',dtype='float64')
-    with pytest.raises(ValueError):load_calculator(tmp_path/'absent.json',device='cuda')
+    p = tmp_path / "weights"
+    p.write_bytes(b"weights")
+    assert verify_file(p, hashlib.sha256(b"weights").hexdigest()) == p
+    with pytest.raises(ValueError):
+        verify_file(p, "0" * 64)
+    with pytest.raises(ValueError):
+        load_calculator(tmp_path / "absent.json", dtype="float64")
+    with pytest.raises(ValueError):
+        load_calculator(tmp_path / "absent.json", device="cuda")
 
 
-@pytest.mark.parametrize('threads',[0,-1,1.5,'2',True,8])
-def test_invalid_deployment_thread_count_is_rejected_before_checkpoint_io(tmp_path,threads):
+@pytest.mark.parametrize("threads", [0, -1, 1.5, "2", True, 8])
+def test_invalid_deployment_thread_count_is_rejected_before_checkpoint_io(
+    tmp_path, threads
+):
     import json
-    artifact={'schema_version':1,'base':{'kind':'orb-v3-conservative-inf-mpa','compile':False},'head':{'coefficients':[0.]*36,'width':.8},'runtime':{'torch_threads':threads}}
-    p=tmp_path/'bad.json';p.write_text(json.dumps(artifact))
-    with pytest.raises(ValueError):load_calculator(p)
+
+    artifact = {
+        "schema_version": 1,
+        "base": {"kind": "orb-v3-conservative-inf-mpa", "compile": False},
+        "head": {"coefficients": [0.0] * 36, "width": 0.8},
+        "runtime": {"torch_threads": threads},
+    }
+    p = tmp_path / "bad.json"
+    p.write_text(json.dumps(artifact))
+    with pytest.raises(ValueError):
+        load_calculator(p)
 
 
-@pytest.mark.parametrize('compiled',['true',1,None])
-def test_invalid_compile_flag_is_rejected_before_checkpoint_io(tmp_path,compiled):
+@pytest.mark.parametrize("compiled", ["true", 1, None])
+def test_invalid_compile_flag_is_rejected_before_checkpoint_io(tmp_path, compiled):
     import json
-    artifact={'schema_version':1,'base':{'kind':'orb-v3-conservative-inf-mpa','compile':compiled},'head':{'coefficients':[0.]*36,'width':.8}}
-    p=tmp_path/'bad.json';p.write_text(json.dumps(artifact))
-    with pytest.raises(ValueError):load_calculator(p)
+
+    artifact = {
+        "schema_version": 1,
+        "base": {"kind": "orb-v3-conservative-inf-mpa", "compile": compiled},
+        "head": {"coefficients": [0.0] * 36, "width": 0.8},
+    }
+    p = tmp_path / "bad.json"
+    p.write_text(json.dumps(artifact))
+    with pytest.raises(ValueError):
+        load_calculator(p)
+
+
+def test_mlx_mps_artifact_passes_device_guard_then_verifies_weights(tmp_path):
+    import json
+
+    artifact = json.loads(
+        (
+            __import__("pathlib").Path(__file__).parents[1]
+            / "artifacts/orb-g2-groupcv-v1.json"
+        ).read_text()
+    )
+    artifact["runtime"]["backend"] = "mlx"
+    p = tmp_path / "metal.json"
+    p.write_text(json.dumps(artifact))
+    with pytest.raises(FileNotFoundError):
+        load_calculator(p, device="mps", base_checkpoint=tmp_path / "missing.ckpt")
+
+
+@pytest.mark.parametrize("backend", ["cuda", "jax", None, 1])
+def test_unknown_runtime_backend_is_rejected_before_weight_io(tmp_path, backend):
+    import json
+
+    artifact = json.loads(
+        (
+            __import__("pathlib").Path(__file__).parents[1]
+            / "artifacts/orb-g2-groupcv-v1.json"
+        ).read_text()
+    )
+    artifact["runtime"]["backend"] = backend
+    p = tmp_path / "bad-backend.json"
+    p.write_text(json.dumps(artifact))
+    with pytest.raises(ValueError, match="backend"):
+        load_calculator(p, base_checkpoint=tmp_path / "missing.ckpt")

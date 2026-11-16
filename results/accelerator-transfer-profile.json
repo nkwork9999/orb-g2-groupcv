@@ -1,0 +1,1218 @@
+{
+  "median_seconds": {
+    "cpu-highest": 0.03287043700402137,
+    "cpu-high": 0.032712020503822714
+  },
+  "selected": "cpu-highest",
+  "errors": {
+    "mps-highest": "TypeError(\"Cannot convert a MPS Tensor to float64 dtype as the MPS framework doesn't support float64. Please use float32 instead.\")"
+  },
+  "maximum_normalized_errors": {
+    "cpu-highest": 0.0,
+    "cpu-high": 0.00904150865972042,
+    "mps-highest": 0.0
+  },
+  "training_geometries_only": true,
+  "timings": [
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "2-butyne",
+      "seconds": 0.03908483299892396
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "2-butyne",
+      "seconds": 0.03668191601173021
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "AlF3",
+      "seconds": 0.025947167014237493
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "AlF3",
+      "seconds": 0.026239083003019914
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "BCl3",
+      "seconds": 0.0294954169949051
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "BCl3",
+      "seconds": 0.028179624991025776
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "BF3",
+      "seconds": 0.027047000010497868
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "BF3",
+      "seconds": 0.026876957999775186
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C2F4",
+      "seconds": 0.028851167007815093
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C2F4",
+      "seconds": 0.03051020801649429
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C2H2",
+      "seconds": 0.026178375002928078
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C2H2",
+      "seconds": 0.026201540982583538
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C2H6",
+      "seconds": 0.03085358298267238
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C2H6",
+      "seconds": 0.031066666007973254
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C2H6CHOH",
+      "seconds": 0.04249104199698195
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C2H6CHOH",
+      "seconds": 0.04293941700598225
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C2H6NH",
+      "seconds": 0.036796500004129484
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C2H6NH",
+      "seconds": 0.034591417002957314
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C2H6SO",
+      "seconds": 0.03452670798287727
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C2H6SO",
+      "seconds": 0.03499433398246765
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C3H4_C2v",
+      "seconds": 0.029675458994461223
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C3H4_C2v",
+      "seconds": 0.02978141698986292
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C3H4_C3v",
+      "seconds": 0.030108042003121227
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C3H4_C3v",
+      "seconds": 0.030117708985926583
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C3H4_D2d",
+      "seconds": 0.029880042013246566
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C3H4_D2d",
+      "seconds": 0.03042962501058355
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C3H6_Cs",
+      "seconds": 0.03285895800217986
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C3H6_Cs",
+      "seconds": 0.032584000000497326
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C3H6_D3h",
+      "seconds": 0.032881417020689696
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C3H6_D3h",
+      "seconds": 0.03289908400620334
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C3H7Cl",
+      "seconds": 0.03645754200988449
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C3H7Cl",
+      "seconds": 0.03946054200059734
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C3H8",
+      "seconds": 0.03911658300785348
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C3H8",
+      "seconds": 0.03841204199125059
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C4H4NH",
+      "seconds": 0.036174916982417926
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C4H4NH",
+      "seconds": 0.036371041991515085
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C4H4O",
+      "seconds": 0.03306733400677331
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C4H4O",
+      "seconds": 0.03347220900468528
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 0,
+      "name": "C5H5N",
+      "seconds": 0.036877915990771726
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 0,
+      "name": "C5H5N",
+      "seconds": 0.03817795802024193
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "2-butyne",
+      "seconds": 0.03432445801445283
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "2-butyne",
+      "seconds": 0.03467762499349192
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "AlF3",
+      "seconds": 0.025616333005018532
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "AlF3",
+      "seconds": 0.02612349999253638
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "BCl3",
+      "seconds": 0.025152792019071057
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "BCl3",
+      "seconds": 0.025644707988249138
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "BF3",
+      "seconds": 0.02541170798940584
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "BF3",
+      "seconds": 0.02658674999838695
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C2F4",
+      "seconds": 0.029778625001199543
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C2F4",
+      "seconds": 0.029532750020734966
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C2H2",
+      "seconds": 0.02751970902318135
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C2H2",
+      "seconds": 0.027899625012651086
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C2H6",
+      "seconds": 0.033136999991256744
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C2H6",
+      "seconds": 0.032995999994454905
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C2H6CHOH",
+      "seconds": 0.0427371249825228
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C2H6CHOH",
+      "seconds": 0.045581000013044104
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C2H6NH",
+      "seconds": 0.03663087499444373
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C2H6NH",
+      "seconds": 0.03593154199188575
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C2H6SO",
+      "seconds": 0.03604987499420531
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C2H6SO",
+      "seconds": 0.035761832987191156
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C3H4_C2v",
+      "seconds": 0.029817082977388054
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C3H4_C2v",
+      "seconds": 0.0301635839859955
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C3H4_C3v",
+      "seconds": 0.02982200001133606
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C3H4_C3v",
+      "seconds": 0.030887249973602593
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C3H4_D2d",
+      "seconds": 0.0300084579794202
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C3H4_D2d",
+      "seconds": 0.029555499990237877
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C3H6_Cs",
+      "seconds": 0.03322470901184715
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C3H6_Cs",
+      "seconds": 0.03290408299653791
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C3H6_D3h",
+      "seconds": 0.032786166993901134
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C3H6_D3h",
+      "seconds": 0.03283416698104702
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C3H7Cl",
+      "seconds": 0.03743862500414252
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C3H7Cl",
+      "seconds": 0.03720433299895376
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C3H8",
+      "seconds": 0.03701500000897795
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C3H8",
+      "seconds": 0.03627804201096296
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C4H4NH",
+      "seconds": 0.03419999999459833
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C4H4NH",
+      "seconds": 0.0343559579923749
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C4H4O",
+      "seconds": 0.032670000015059486
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C4H4O",
+      "seconds": 0.03205595799954608
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 1,
+      "name": "C5H5N",
+      "seconds": 0.03695537499152124
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 1,
+      "name": "C5H5N",
+      "seconds": 0.03921066698967479
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "2-butyne",
+      "seconds": 0.03708612499758601
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "2-butyne",
+      "seconds": 0.03570787498028949
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "AlF3",
+      "seconds": 0.026389290986116976
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "AlF3",
+      "seconds": 0.026498582999920473
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "BCl3",
+      "seconds": 0.026479499996639788
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "BCl3",
+      "seconds": 0.025816625013248995
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "BF3",
+      "seconds": 0.025420541991479695
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "BF3",
+      "seconds": 0.02569404200767167
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C2F4",
+      "seconds": 0.028381999989505857
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C2F4",
+      "seconds": 0.028066999977454543
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C2H2",
+      "seconds": 0.024699000001419336
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C2H2",
+      "seconds": 0.0252992500027176
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C2H6",
+      "seconds": 0.031158083002083004
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C2H6",
+      "seconds": 0.03136479199747555
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C2H6CHOH",
+      "seconds": 0.04181408300064504
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C2H6CHOH",
+      "seconds": 0.043794917000923306
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C2H6NH",
+      "seconds": 0.03617258300073445
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C2H6NH",
+      "seconds": 0.06702229200163856
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C2H6SO",
+      "seconds": 0.03437508299248293
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C2H6SO",
+      "seconds": 0.036145249992841855
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C3H4_C2v",
+      "seconds": 0.03214929098612629
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C3H4_C2v",
+      "seconds": 0.03183770799660124
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C3H4_C3v",
+      "seconds": 0.03133829199941829
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C3H4_C3v",
+      "seconds": 0.030996916990261525
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C3H4_D2d",
+      "seconds": 0.031155708013102412
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C3H4_D2d",
+      "seconds": 0.0294826669851318
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C3H6_Cs",
+      "seconds": 0.03282116699847393
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C3H6_Cs",
+      "seconds": 0.032834499987075105
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C3H6_D3h",
+      "seconds": 0.03261049999855459
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C3H6_D3h",
+      "seconds": 0.034059957979479805
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C3H7Cl",
+      "seconds": 0.035815499984892085
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C3H7Cl",
+      "seconds": 0.036335332988528535
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C3H8",
+      "seconds": 0.03628825000487268
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C3H8",
+      "seconds": 0.03590062499279156
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C4H4NH",
+      "seconds": 0.03392545800306834
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C4H4NH",
+      "seconds": 0.034830041986424476
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C4H4O",
+      "seconds": 0.03281354100909084
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C4H4O",
+      "seconds": 0.03265454198117368
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 2,
+      "name": "C5H5N",
+      "seconds": 0.036124291975283995
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 2,
+      "name": "C5H5N",
+      "seconds": 0.036507500015432015
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "2-butyne",
+      "seconds": 0.033964417001698166
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "2-butyne",
+      "seconds": 0.03382658399641514
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "AlF3",
+      "seconds": 0.02495600000838749
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "AlF3",
+      "seconds": 0.025099625025177374
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "BCl3",
+      "seconds": 0.025858042004983872
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "BCl3",
+      "seconds": 0.02626670800964348
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "BF3",
+      "seconds": 0.026307416992494836
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "BF3",
+      "seconds": 0.027606832998571917
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C2F4",
+      "seconds": 0.02994141698582098
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C2F4",
+      "seconds": 0.028736209002090618
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C2H2",
+      "seconds": 0.026185916998656467
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C2H2",
+      "seconds": 0.02828175001195632
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C2H6",
+      "seconds": 0.03237920900573954
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C2H6",
+      "seconds": 0.03083191701443866
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C2H6CHOH",
+      "seconds": 0.043045957980211824
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C2H6CHOH",
+      "seconds": 0.0426474169944413
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C2H6NH",
+      "seconds": 0.03415570899960585
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C2H6NH",
+      "seconds": 0.03406895897933282
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C2H6SO",
+      "seconds": 0.03410962500493042
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C2H6SO",
+      "seconds": 0.03388212498975918
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C3H4_C2v",
+      "seconds": 0.030043917009606957
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C3H4_C2v",
+      "seconds": 0.029848042002413422
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C3H4_C3v",
+      "seconds": 0.029343375004827976
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C3H4_C3v",
+      "seconds": 0.02936733397655189
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C3H4_D2d",
+      "seconds": 0.02984508397639729
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C3H4_D2d",
+      "seconds": 0.029530416009947658
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C3H6_Cs",
+      "seconds": 0.032465958007378504
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C3H6_Cs",
+      "seconds": 0.034509000019170344
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C3H6_D3h",
+      "seconds": 0.033015624998370185
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C3H6_D3h",
+      "seconds": 0.0325663749827072
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C3H7Cl",
+      "seconds": 0.03621491702506319
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C3H7Cl",
+      "seconds": 0.036790332989767194
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C3H8",
+      "seconds": 0.036216707987478
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C3H8",
+      "seconds": 0.037620749993948266
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C4H4NH",
+      "seconds": 0.03555487500852905
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C4H4NH",
+      "seconds": 0.035896790999686345
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C4H4O",
+      "seconds": 0.03541758400388062
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C4H4O",
+      "seconds": 0.03499479198944755
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 3,
+      "name": "C5H5N",
+      "seconds": 0.03669566701864824
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 3,
+      "name": "C5H5N",
+      "seconds": 0.03644612501375377
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "2-butyne",
+      "seconds": 0.03469754199613817
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "2-butyne",
+      "seconds": 0.03468612500000745
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "AlF3",
+      "seconds": 0.026023375015938655
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "AlF3",
+      "seconds": 0.025274750019889325
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "BCl3",
+      "seconds": 0.02512199999182485
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "BCl3",
+      "seconds": 0.025642249995144084
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "BF3",
+      "seconds": 0.02593608299503103
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "BF3",
+      "seconds": 0.02523770899279043
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C2F4",
+      "seconds": 0.027253416017629206
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C2F4",
+      "seconds": 0.02749158299411647
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C2H2",
+      "seconds": 0.025798957998631522
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C2H2",
+      "seconds": 0.02530449998448603
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C2H6",
+      "seconds": 0.031961583998054266
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C2H6",
+      "seconds": 0.033107667026342824
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C2H6CHOH",
+      "seconds": 0.04457341699162498
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C2H6CHOH",
+      "seconds": 0.04408187497756444
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C2H6NH",
+      "seconds": 0.039029750012559816
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C2H6NH",
+      "seconds": 0.037027458020020276
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C2H6SO",
+      "seconds": 0.03685870801564306
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C2H6SO",
+      "seconds": 0.03559083299478516
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C3H4_C2v",
+      "seconds": 0.03132787501090206
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C3H4_C2v",
+      "seconds": 0.030267832975368947
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C3H4_C3v",
+      "seconds": 0.030738707981072366
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C3H4_C3v",
+      "seconds": 0.030500332999508828
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C3H4_D2d",
+      "seconds": 0.029520333016989753
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C3H4_D2d",
+      "seconds": 0.030135125009110197
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C3H6_Cs",
+      "seconds": 0.03288191600586288
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C3H6_Cs",
+      "seconds": 0.03258916700724512
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C3H6_D3h",
+      "seconds": 0.034785958006978035
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C3H6_D3h",
+      "seconds": 0.03282650001347065
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C3H7Cl",
+      "seconds": 0.035856125003192574
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C3H7Cl",
+      "seconds": 0.03615783399436623
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C3H8",
+      "seconds": 0.03741979200276546
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C3H8",
+      "seconds": 0.03637574997264892
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C4H4NH",
+      "seconds": 0.034408166975481436
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C4H4NH",
+      "seconds": 0.034344666986726224
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C4H4O",
+      "seconds": 0.03298408302362077
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C4H4O",
+      "seconds": 0.03285812502144836
+    },
+    {
+      "key": "cpu-highest",
+      "repeat": 4,
+      "name": "C5H5N",
+      "seconds": 0.03625195799395442
+    },
+    {
+      "key": "cpu-high",
+      "repeat": 4,
+      "name": "C5H5N",
+      "seconds": 0.03799524999340065
+    }
+  ]
+}

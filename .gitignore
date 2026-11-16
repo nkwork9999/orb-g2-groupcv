@@ -8,3 +8,5 @@ dist/
 *.egg-info/
 
 .torch-cache/
+runtime-mlx/
+results/*.pstats

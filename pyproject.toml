@@ -4,10 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "orb-g2-cv"
-version = "0.1.1"
+version = "0.1.2"
 requires-python = ">=3.14"
 description = "Frozen ORB with training-only group-CV molecular energy calibration"
 dependencies = ["numpy==2.5.4", "ase==3.29.0"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "licenses/ORB-APACHE-2.0.txt", "licenses/ORB-NOTICE.txt"]
 
 [tool.setuptools.packages.find]
 include = ["orb_g2_cv*"]
@@ -22,6 +25,11 @@ orb_g2_cv = ["model.json"]
 [project.optional-dependencies]
 train = ["scikit-learn==1.9.1", "scipy==1.18.1"]
 runtime = ["orb-models==0.5.4", "torch==2.14.1", "cached-path==1.8.0"]
+
+metal = [
+  "mlx @ https://files.pythonhosted.org/packages/99/2f/ed874a2de4ad30b47f27960373880aa24b53d8963ea81125e12e460340c2/mlx-0.32.4-cp314-cp314-macosx_14_0_arm64.whl ; sys_platform == 'darwin' and platform_machine == 'arm64'",
+  "mlx-metal @ https://files.pythonhosted.org/packages/77/24/7e5b7ed5d28abacab4577c7a8dd1fca6e9058504f5f95ae4333c09420e2e/mlx_metal-0.32.4-py3-none-macosx_14_0_arm64.whl ; sys_platform == 'darwin' and platform_machine == 'arm64'",
+]
 
 [tool.uv]
 override-dependencies = ["dm-tree==0.1.10", "filelock==4.2.10"]

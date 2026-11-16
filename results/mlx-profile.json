@@ -1,0 +1,1735 @@
+{
+  "adopt": true,
+  "median_seconds": {
+    "cpu": 0.2564008335029939,
+    "mlx": 0.04403404099866748
+  },
+  "speedup": 5.822786818742184,
+  "maximum_normalized_error": 0.3824964219111322,
+  "atol": 0.0001,
+  "rtol": 1e-05,
+  "load_before_warmup_seconds": 0.9669269169971813,
+  "n_training_geometries": 83,
+  "n_synthetic_geometries": 100,
+  "all_learned_weights_unchanged": true,
+  "official_labels_used": false,
+  "equivalence": [
+    {
+      "index": 0,
+      "formula": "C4H6",
+      "maximum_normalized_error": 0.2658842891293593
+    },
+    {
+      "index": 1,
+      "formula": "AlF3",
+      "maximum_normalized_error": 0.06099973341058827
+    },
+    {
+      "index": 2,
+      "formula": "BCl3",
+      "maximum_normalized_error": 0.03228834321125725
+    },
+    {
+      "index": 3,
+      "formula": "BF3",
+      "maximum_normalized_error": 0.05670029950070802
+    },
+    {
+      "index": 4,
+      "formula": "C2F4",
+      "maximum_normalized_error": 0.3347578704411123
+    },
+    {
+      "index": 5,
+      "formula": "C2H2",
+      "maximum_normalized_error": 0.3824964219111322
+    },
+    {
+      "index": 6,
+      "formula": "C2H6",
+      "maximum_normalized_error": 0.06993066838350398
+    },
+    {
+      "index": 7,
+      "formula": "C3H8O",
+      "maximum_normalized_error": 0.09301575552306711
+    },
+    {
+      "index": 8,
+      "formula": "C2H7N",
+      "maximum_normalized_error": 0.11282703850413126
+    },
+    {
+      "index": 9,
+      "formula": "C2H6OS",
+      "maximum_normalized_error": 0.058007164867259924
+    },
+    {
+      "index": 10,
+      "formula": "C3H4",
+      "maximum_normalized_error": 0.1583217730099563
+    },
+    {
+      "index": 11,
+      "formula": "C3H4",
+      "maximum_normalized_error": 0.2612669735511278
+    },
+    {
+      "index": 12,
+      "formula": "C3H4",
+      "maximum_normalized_error": 0.1684808898193248
+    },
+    {
+      "index": 13,
+      "formula": "C3H6",
+      "maximum_normalized_error": 0.11858064975905443
+    },
+    {
+      "index": 14,
+      "formula": "C3H6",
+      "maximum_normalized_error": 0.12133071300650382
+    },
+    {
+      "index": 15,
+      "formula": "C3H7Cl",
+      "maximum_normalized_error": 0.09347108366361344
+    },
+    {
+      "index": 16,
+      "formula": "C3H8",
+      "maximum_normalized_error": 0.07865418911391837
+    },
+    {
+      "index": 17,
+      "formula": "C4H5N",
+      "maximum_normalized_error": 0.2035766839677277
+    },
+    {
+      "index": 18,
+      "formula": "C4H4O",
+      "maximum_normalized_error": 0.17337758984008456
+    },
+    {
+      "index": 19,
+      "formula": "C5H5N",
+      "maximum_normalized_error": 0.1424597150676168
+    },
+    {
+      "index": 20,
+      "formula": "C5H8",
+      "maximum_normalized_error": 0.11747599738195719
+    },
+    {
+      "index": 21,
+      "formula": "C6H6",
+      "maximum_normalized_error": 0.11640360271030188
+    },
+    {
+      "index": 22,
+      "formula": "CCl4",
+      "maximum_normalized_error": 0.06810584127623116
+    },
+    {
+      "index": 23,
+      "formula": "C2F3N",
+      "maximum_normalized_error": 0.23932514337023886
+    },
+    {
+      "index": 24,
+      "formula": "CF4",
+      "maximum_normalized_error": 0.09855075247262865
+    },
+    {
+      "index": 25,
+      "formula": "C2H5N",
+      "maximum_normalized_error": 0.11388837943380847
+    },
+    {
+      "index": 26,
+      "formula": "CH2",
+      "maximum_normalized_error": 0.061392052853672205
+    },
+    {
+      "index": 27,
+      "formula": "C2H5Cl",
+      "maximum_normalized_error": 0.06125278180550796
+    },
+    {
+      "index": 28,
+      "formula": "C2H7N",
+      "maximum_normalized_error": 0.09240162837469572
+    },
+    {
+      "index": 29,
+      "formula": "C3H8O",
+      "maximum_normalized_error": 0.10029176692872677
+    },
+    {
+      "index": 30,
+      "formula": "C2H6O",
+      "maximum_normalized_error": 0.06440825483009201
+    },
+    {
+      "index": 31,
+      "formula": "C2H6S",
+      "maximum_normalized_error": 0.05704277481138486
+    },
+    {
+      "index": 32,
+      "formula": "C3H6O",
+      "maximum_normalized_error": 0.23290349906425126
+    },
+    {
+      "index": 33,
+      "formula": "C2H3ClO",
+      "maximum_normalized_error": 0.18718159399357412
+    },
+    {
+      "index": 34,
+      "formula": "C2H3FO",
+      "maximum_normalized_error": 0.19709745685659058
+    },
+    {
+      "index": 35,
+      "formula": "C2H5NO",
+      "maximum_normalized_error": 0.1522020911424738
+    },
+    {
+      "index": 36,
+      "formula": "C2H4O2",
+      "maximum_normalized_error": 0.15867954401218984
+    },
+    {
+      "index": 37,
+      "formula": "CH3Cl",
+      "maximum_normalized_error": 0.04911980907390893
+    },
+    {
+      "index": 38,
+      "formula": "CH3NO2",
+      "maximum_normalized_error": 0.08542438859762853
+    },
+    {
+      "index": 39,
+      "formula": "C2H6O",
+      "maximum_normalized_error": 0.06461403581298973
+    },
+    {
+      "index": 40,
+      "formula": "CH3NO2",
+      "maximum_normalized_error": 0.09331986498761172
+    },
+    {
+      "index": 41,
+      "formula": "C2H6S",
+      "maximum_normalized_error": 0.06249091292643052
+    },
+    {
+      "index": 42,
+      "formula": "CH4S",
+      "maximum_normalized_error": 0.07099291717281926
+    },
+    {
+      "index": 43,
+      "formula": "CH6Si",
+      "maximum_normalized_error": 0.060663966368029794
+    },
+    {
+      "index": 44,
+      "formula": "CH4",
+      "maximum_normalized_error": 0.09223210141269704
+    },
+    {
+      "index": 45,
+      "formula": "CF2O",
+      "maximum_normalized_error": 0.2771324559510069
+    },
+    {
+      "index": 46,
+      "formula": "CS2",
+      "maximum_normalized_error": 0.02560575100880183
+    },
+    {
+      "index": 47,
+      "formula": "ClF3",
+      "maximum_normalized_error": 0.0504910411131553
+    },
+    {
+      "index": 48,
+      "formula": "ClNO",
+      "maximum_normalized_error": 0.1392081340278027
+    },
+    {
+      "index": 49,
+      "formula": "F2O",
+      "maximum_normalized_error": 0.04059364515868562
+    },
+    {
+      "index": 50,
+      "formula": "C3H3N",
+      "maximum_normalized_error": 0.2912163502347217
+    },
+    {
+      "index": 51,
+      "formula": "C2H3F",
+      "maximum_normalized_error": 0.23119785331339218
+    },
+    {
+      "index": 52,
+      "formula": "C2H2O",
+      "maximum_normalized_error": 0.24956386929622218
+    },
+    {
+      "index": 53,
+      "formula": "CH2Cl2",
+      "maximum_normalized_error": 0.06879276618588263
+    },
+    {
+      "index": 54,
+      "formula": "CH2F2",
+      "maximum_normalized_error": 0.12250040051815715
+    },
+    {
+      "index": 55,
+      "formula": "CH2O",
+      "maximum_normalized_error": 0.2526154335043795
+    },
+    {
+      "index": 56,
+      "formula": "CH5N",
+      "maximum_normalized_error": 0.10476357817361753
+    },
+    {
+      "index": 57,
+      "formula": "CHF3",
+      "maximum_normalized_error": 0.0870079667384412
+    },
+    {
+      "index": 58,
+      "formula": "C2H4O2",
+      "maximum_normalized_error": 0.18249667118063406
+    },
+    {
+      "index": 59,
+      "formula": "CH2O2",
+      "maximum_normalized_error": 0.2056146225018089
+    },
+    {
+      "index": 60,
+      "formula": "H4N2",
+      "maximum_normalized_error": 0.06302171709602901
+    },
+    {
+      "index": 61,
+      "formula": "N2O",
+      "maximum_normalized_error": 0.19139406540458423
+    },
+    {
+      "index": 62,
+      "formula": "C2N2",
+      "maximum_normalized_error": 0.37007739933213435
+    },
+    {
+      "index": 63,
+      "formula": "F3N",
+      "maximum_normalized_error": 0.0793302208661278
+    },
+    {
+      "index": 64,
+      "formula": "H3N",
+      "maximum_normalized_error": 0.045979279611933856
+    },
+    {
+      "index": 65,
+      "formula": "O3",
+      "maximum_normalized_error": 0.06069750835196788
+    },
+    {
+      "index": 66,
+      "formula": "C2H2O2",
+      "maximum_normalized_error": 0.1105799861385595
+    },
+    {
+      "index": 67,
+      "formula": "COS",
+      "maximum_normalized_error": 0.13335304128021036
+    },
+    {
+      "index": 68,
+      "formula": "F3P",
+      "maximum_normalized_error": 0.04506037649475511
+    },
+    {
+      "index": 69,
+      "formula": "H3P",
+      "maximum_normalized_error": 0.051898169396366066
+    },
+    {
+      "index": 70,
+      "formula": "H2S",
+      "maximum_normalized_error": 0.025492705053771703
+    },
+    {
+      "index": 71,
+      "formula": "H6Si2",
+      "maximum_normalized_error": 0.056059380755734814
+    },
+    {
+      "index": 72,
+      "formula": "Cl4Si",
+      "maximum_normalized_error": 0.07341492064862787
+    },
+    {
+      "index": 73,
+      "formula": "F4Si",
+      "maximum_normalized_error": 0.11731601141296949
+    },
+    {
+      "index": 74,
+      "formula": "H4Si",
+      "maximum_normalized_error": 0.03087650547318072
+    },
+    {
+      "index": 75,
+      "formula": "C4H6",
+      "maximum_normalized_error": 0.07543456067244661
+    },
+    {
+      "index": 76,
+      "formula": "C4H6",
+      "maximum_normalized_error": 0.18560112993273525
+    },
+    {
+      "index": 77,
+      "formula": "C4H8",
+      "maximum_normalized_error": 0.10603889867848466
+    },
+    {
+      "index": 78,
+      "formula": "C4H6",
+      "maximum_normalized_error": 0.11047866960861298
+    },
+    {
+      "index": 79,
+      "formula": "C4H10",
+      "maximum_normalized_error": 0.0617409248234963
+    },
+    {
+      "index": 80,
+      "formula": "C4H8",
+      "maximum_normalized_error": 0.13066586107324002
+    },
+    {
+      "index": 81,
+      "formula": "C4H6",
+      "maximum_normalized_error": 0.16564781680921836
+    },
+    {
+      "index": 82,
+      "formula": "C4H10",
+      "maximum_normalized_error": 0.07146127980829478
+    },
+    {
+      "index": 83,
+      "formula": "H",
+      "maximum_normalized_error": 0.0
+    },
+    {
+      "index": 84,
+      "formula": "Si",
+      "maximum_normalized_error": 0.0008103061993945862
+    },
+    {
+      "index": 85,
+      "formula": "Fe2",
+      "maximum_normalized_error": 0.015059368882991149
+    },
+    {
+      "index": 86,
+      "formula": "CH",
+      "maximum_normalized_error": 0.09907049504887211
+    },
+    {
+      "index": 87,
+      "formula": "CH",
+      "maximum_normalized_error": 0.011175596903421642
+    },
+    {
+      "index": 88,
+      "formula": "CH",
+      "maximum_normalized_error": 0.025033938813218665
+    },
+    {
+      "index": 89,
+      "formula": "CH",
+      "maximum_normalized_error": 0.0
+    },
+    {
+      "index": 90,
+      "formula": "CH",
+      "maximum_normalized_error": 0.0
+    },
+    {
+      "index": 91,
+      "formula": "CH",
+      "maximum_normalized_error": 0.008918671442708321
+    },
+    {
+      "index": 92,
+      "formula": "CHe",
+      "maximum_normalized_error": 0.033938481358979145
+    },
+    {
+      "index": 93,
+      "formula": "CLi",
+      "maximum_normalized_error": 0.006887993057278963
+    },
+    {
+      "index": 94,
+      "formula": "CBe",
+      "maximum_normalized_error": 0.02635568497264562
+    },
+    {
+      "index": 95,
+      "formula": "CB",
+      "maximum_normalized_error": 0.005853880759217394
+    },
+    {
+      "index": 96,
+      "formula": "C2",
+      "maximum_normalized_error": 0.02706040837771336
+    },
+    {
+      "index": 97,
+      "formula": "CN",
+      "maximum_normalized_error": 0.015653897991293016
+    },
+    {
+      "index": 98,
+      "formula": "CO",
+      "maximum_normalized_error": 0.015093230370923253
+    },
+    {
+      "index": 99,
+      "formula": "CF",
+      "maximum_normalized_error": 0.019852597376337575
+    },
+    {
+      "index": 100,
+      "formula": "CNe",
+      "maximum_normalized_error": 0.07895134865930856
+    },
+    {
+      "index": 101,
+      "formula": "CNa",
+      "maximum_normalized_error": 0.032090750548804045
+    },
+    {
+      "index": 102,
+      "formula": "CMg",
+      "maximum_normalized_error": 0.03228358234038885
+    },
+    {
+      "index": 103,
+      "formula": "CAl",
+      "maximum_normalized_error": 0.028730096222107072
+    },
+    {
+      "index": 104,
+      "formula": "CSi",
+      "maximum_normalized_error": 0.07065259624968691
+    },
+    {
+      "index": 105,
+      "formula": "CP",
+      "maximum_normalized_error": 0.048100168424775866
+    },
+    {
+      "index": 106,
+      "formula": "CS",
+      "maximum_normalized_error": 0.004842356977788402
+    },
+    {
+      "index": 107,
+      "formula": "CCl",
+      "maximum_normalized_error": 0.014437769919242898
+    },
+    {
+      "index": 108,
+      "formula": "CAr",
+      "maximum_normalized_error": 0.06527082269076015
+    },
+    {
+      "index": 109,
+      "formula": "CK",
+      "maximum_normalized_error": 0.01821151785625667
+    },
+    {
+      "index": 110,
+      "formula": "CCa",
+      "maximum_normalized_error": 0.06246500007964287
+    },
+    {
+      "index": 111,
+      "formula": "CSc",
+      "maximum_normalized_error": 0.108075094686185
+    },
+    {
+      "index": 112,
+      "formula": "CTi",
+      "maximum_normalized_error": 0.11882665751828152
+    },
+    {
+      "index": 113,
+      "formula": "CV",
+      "maximum_normalized_error": 0.02181638301490279
+    },
+    {
+      "index": 114,
+      "formula": "CCr",
+      "maximum_normalized_error": 0.03715700139778446
+    },
+    {
+      "index": 115,
+      "formula": "CMn",
+      "maximum_normalized_error": 0.02220326332664591
+    },
+    {
+      "index": 116,
+      "formula": "CFe",
+      "maximum_normalized_error": 0.01836101770861403
+    },
+    {
+      "index": 117,
+      "formula": "CCo",
+      "maximum_normalized_error": 0.005224906901302606
+    },
+    {
+      "index": 118,
+      "formula": "CNi",
+      "maximum_normalized_error": 0.0270628461144712
+    },
+    {
+      "index": 119,
+      "formula": "CCu",
+      "maximum_normalized_error": 0.033924087391163045
+    },
+    {
+      "index": 120,
+      "formula": "CZn",
+      "maximum_normalized_error": 0.03022345307048287
+    },
+    {
+      "index": 121,
+      "formula": "CGa",
+      "maximum_normalized_error": 0.11215619425795911
+    },
+    {
+      "index": 122,
+      "formula": "CGe",
+      "maximum_normalized_error": 0.052983717498084636
+    },
+    {
+      "index": 123,
+      "formula": "CAs",
+      "maximum_normalized_error": 0.0712944671928735
+    },
+    {
+      "index": 124,
+      "formula": "CSe",
+      "maximum_normalized_error": 0.08885397309489255
+    },
+    {
+      "index": 125,
+      "formula": "CBr",
+      "maximum_normalized_error": 0.17214130498967048
+    },
+    {
+      "index": 126,
+      "formula": "CKr",
+      "maximum_normalized_error": 0.044100880941557334
+    },
+    {
+      "index": 127,
+      "formula": "CRb",
+      "maximum_normalized_error": 0.05591810681420845
+    },
+    {
+      "index": 128,
+      "formula": "CSr",
+      "maximum_normalized_error": 0.033837749850542886
+    },
+    {
+      "index": 129,
+      "formula": "CY",
+      "maximum_normalized_error": 0.10079907137529191
+    },
+    {
+      "index": 130,
+      "formula": "CZr",
+      "maximum_normalized_error": 0.11291247841628159
+    },
+    {
+      "index": 131,
+      "formula": "CNb",
+      "maximum_normalized_error": 0.11039526353853013
+    },
+    {
+      "index": 132,
+      "formula": "CMo",
+      "maximum_normalized_error": 0.0528990775788387
+    },
+    {
+      "index": 133,
+      "formula": "CTc",
+      "maximum_normalized_error": 0.13291245479877453
+    },
+    {
+      "index": 134,
+      "formula": "CRu",
+      "maximum_normalized_error": 0.09203555026521577
+    },
+    {
+      "index": 135,
+      "formula": "CRh",
+      "maximum_normalized_error": 0.04995818115943254
+    },
+    {
+      "index": 136,
+      "formula": "CPd",
+      "maximum_normalized_error": 0.05276681775311622
+    },
+    {
+      "index": 137,
+      "formula": "CAg",
+      "maximum_normalized_error": 0.016540849613021307
+    },
+    {
+      "index": 138,
+      "formula": "CCd",
+      "maximum_normalized_error": 0.027996377642018157
+    },
+    {
+      "index": 139,
+      "formula": "CIn",
+      "maximum_normalized_error": 0.17674979271435495
+    },
+    {
+      "index": 140,
+      "formula": "CSn",
+      "maximum_normalized_error": 0.052241008669395385
+    },
+    {
+      "index": 141,
+      "formula": "CSb",
+      "maximum_normalized_error": 0.16900697057178193
+    },
+    {
+      "index": 142,
+      "formula": "CTe",
+      "maximum_normalized_error": 0.28797654060821193
+    },
+    {
+      "index": 143,
+      "formula": "CI",
+      "maximum_normalized_error": 0.0984505804838846
+    },
+    {
+      "index": 144,
+      "formula": "CXe",
+      "maximum_normalized_error": 0.15414213909071972
+    },
+    {
+      "index": 145,
+      "formula": "CCs",
+      "maximum_normalized_error": 0.20082279329778474
+    },
+    {
+      "index": 146,
+      "formula": "CBa",
+      "maximum_normalized_error": 0.283191697117537
+    },
+    {
+      "index": 147,
+      "formula": "CLa",
+      "maximum_normalized_error": 0.03742509567592048
+    },
+    {
+      "index": 148,
+      "formula": "CCe",
+      "maximum_normalized_error": 0.009359597612179455
+    },
+    {
+      "index": 149,
+      "formula": "CPr",
+      "maximum_normalized_error": 0.07552155407365484
+    },
+    {
+      "index": 150,
+      "formula": "CNd",
+      "maximum_normalized_error": 0.04122041181664629
+    },
+    {
+      "index": 151,
+      "formula": "CPm",
+      "maximum_normalized_error": 0.018911611242328798
+    },
+    {
+      "index": 152,
+      "formula": "CSm",
+      "maximum_normalized_error": 0.019041450524384884
+    },
+    {
+      "index": 153,
+      "formula": "CEu",
+      "maximum_normalized_error": 0.04181424481696755
+    },
+    {
+      "index": 154,
+      "formula": "CGd",
+      "maximum_normalized_error": 0.04808102100796037
+    },
+    {
+      "index": 155,
+      "formula": "CTb",
+      "maximum_normalized_error": 0.10822578969407126
+    },
+    {
+      "index": 156,
+      "formula": "CDy",
+      "maximum_normalized_error": 0.11301537652817058
+    },
+    {
+      "index": 157,
+      "formula": "CHo",
+      "maximum_normalized_error": 0.13688159097082095
+    },
+    {
+      "index": 158,
+      "formula": "CEr",
+      "maximum_normalized_error": 0.17521465986016116
+    },
+    {
+      "index": 159,
+      "formula": "CTm",
+      "maximum_normalized_error": 0.1347055207421966
+    },
+    {
+      "index": 160,
+      "formula": "CYb",
+      "maximum_normalized_error": 0.016099853869676353
+    },
+    {
+      "index": 161,
+      "formula": "CLu",
+      "maximum_normalized_error": 0.12435977435779894
+    },
+    {
+      "index": 162,
+      "formula": "CHf",
+      "maximum_normalized_error": 0.09013332552592251
+    },
+    {
+      "index": 163,
+      "formula": "CTa",
+      "maximum_normalized_error": 0.14544958728493135
+    },
+    {
+      "index": 164,
+      "formula": "CW",
+      "maximum_normalized_error": 0.11088525114619024
+    },
+    {
+      "index": 165,
+      "formula": "CRe",
+      "maximum_normalized_error": 0.08380768532760487
+    },
+    {
+      "index": 166,
+      "formula": "COs",
+      "maximum_normalized_error": 0.10458507961364877
+    },
+    {
+      "index": 167,
+      "formula": "CIr",
+      "maximum_normalized_error": 0.08436215742997329
+    },
+    {
+      "index": 168,
+      "formula": "CPt",
+      "maximum_normalized_error": 0.02224260177847278
+    },
+    {
+      "index": 169,
+      "formula": "CAu",
+      "maximum_normalized_error": 0.0565755481731413
+    },
+    {
+      "index": 170,
+      "formula": "CHg",
+      "maximum_normalized_error": 0.1280397669566493
+    },
+    {
+      "index": 171,
+      "formula": "CTl",
+      "maximum_normalized_error": 0.09302614034543707
+    },
+    {
+      "index": 172,
+      "formula": "CPb",
+      "maximum_normalized_error": 0.05634929802861981
+    },
+    {
+      "index": 173,
+      "formula": "CBi",
+      "maximum_normalized_error": 0.042281302920335766
+    },
+    {
+      "index": 174,
+      "formula": "CPo",
+      "maximum_normalized_error": 0.09293714061313334
+    },
+    {
+      "index": 175,
+      "formula": "CAt",
+      "maximum_normalized_error": 0.08871426541863438
+    },
+    {
+      "index": 176,
+      "formula": "CRn",
+      "maximum_normalized_error": 0.08849307295187733
+    },
+    {
+      "index": 177,
+      "formula": "CFr",
+      "maximum_normalized_error": 0.1053943305691492
+    },
+    {
+      "index": 178,
+      "formula": "CRa",
+      "maximum_normalized_error": 0.09275794847076715
+    },
+    {
+      "index": 179,
+      "formula": "CAc",
+      "maximum_normalized_error": 0.10169440308872052
+    },
+    {
+      "index": 180,
+      "formula": "CTh",
+      "maximum_normalized_error": 0.09726414527938639
+    },
+    {
+      "index": 181,
+      "formula": "CPa",
+      "maximum_normalized_error": 0.12685532895641854
+    },
+    {
+      "index": 182,
+      "formula": "CU",
+      "maximum_normalized_error": 0.13437633738049776
+    }
+  ],
+  "paired_timings": [
+    {
+      "repeat": 0,
+      "name": "2-butyne",
+      "seconds": {
+        "mlx": 0.200624916004017,
+        "cpu": 0.25648995899246074
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "AlF3",
+      "seconds": {
+        "cpu": 0.20698308298597112,
+        "mlx": 0.038127707986859605
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "BCl3",
+      "seconds": {
+        "mlx": 0.03140549999079667,
+        "cpu": 0.2489893750171177
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "BF3",
+      "seconds": {
+        "cpu": 0.22986024999408983,
+        "mlx": 0.04096054201363586
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C2F4",
+      "seconds": {
+        "mlx": 0.09209720898070373,
+        "cpu": 0.208670499996515
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C2H2",
+      "seconds": {
+        "cpu": 0.2579388750018552,
+        "mlx": 0.04166620800970122
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C2H6",
+      "seconds": {
+        "mlx": 0.13312245899578556,
+        "cpu": 0.23837429197737947
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "cpu": 0.3671077500039246,
+        "mlx": 0.04894858298939653
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C2H6NH",
+      "seconds": {
+        "mlx": 0.050229082989972085,
+        "cpu": 0.4395940420217812
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C2H6SO",
+      "seconds": {
+        "cpu": 0.5481895419943612,
+        "mlx": 0.03640012501273304
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "mlx": 0.029424832988297567,
+        "cpu": 0.2717601670010481
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "cpu": 0.1988953750114888,
+        "mlx": 0.03058358299313113
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "mlx": 0.06335491698700935,
+        "cpu": 0.158092832978582
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "cpu": 0.46661041700281203,
+        "mlx": 0.04094770798110403
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "mlx": 0.14391212500049733,
+        "cpu": 0.27951725001912564
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C3H7Cl",
+      "seconds": {
+        "cpu": 0.3715321669878904,
+        "mlx": 0.11092979201930575
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C3H8",
+      "seconds": {
+        "mlx": 0.04412391601363197,
+        "cpu": 0.4276299999910407
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C4H4NH",
+      "seconds": {
+        "cpu": 0.31110487499972805,
+        "mlx": 0.0727232500212267
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C4H4O",
+      "seconds": {
+        "mlx": 0.05985529100871645,
+        "cpu": 0.378408541000681
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "C5H5N",
+      "seconds": {
+        "cpu": 0.27201066599809565,
+        "mlx": 0.039848332991823554
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "2-butyne",
+      "seconds": {
+        "cpu": 0.26169979097903706,
+        "mlx": 0.1001134580001235
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "AlF3",
+      "seconds": {
+        "mlx": 0.07963245900464244,
+        "cpu": 0.19012612500227988
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "BCl3",
+      "seconds": {
+        "cpu": 0.2024239170132205,
+        "mlx": 0.11379066700465046
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "BF3",
+      "seconds": {
+        "mlx": 0.052116083999862894,
+        "cpu": 0.2784382500103675
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C2F4",
+      "seconds": {
+        "cpu": 0.192912124999566,
+        "mlx": 0.04355804200167768
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C2H2",
+      "seconds": {
+        "mlx": 0.15667366699199192,
+        "cpu": 0.27280116599285975
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C2H6",
+      "seconds": {
+        "cpu": 0.2917453749978449,
+        "mlx": 0.08284783398266882
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "mlx": 0.04389633299433626,
+        "cpu": 0.45053495798492804
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C2H6NH",
+      "seconds": {
+        "cpu": 0.45330675001605414,
+        "mlx": 0.041605291015002877
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C2H6SO",
+      "seconds": {
+        "mlx": 0.028203666995977983,
+        "cpu": 0.4720024169946555
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "cpu": 0.2956112079846207,
+        "mlx": 0.04359520800062455
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "mlx": 0.04754629099625163,
+        "cpu": 0.365893459005747
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "cpu": 0.33548708402668126,
+        "mlx": 0.14302270900225267
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "mlx": 0.2832924999820534,
+        "cpu": 0.370358624990331
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "cpu": 0.26481216700631194,
+        "mlx": 0.03532604197971523
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C3H7Cl",
+      "seconds": {
+        "mlx": 0.20297437498811632,
+        "cpu": 0.38785037500201724
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C3H8",
+      "seconds": {
+        "cpu": 0.8371516249899287,
+        "mlx": 0.14309862497611903
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C4H4NH",
+      "seconds": {
+        "mlx": 0.08519750001141801,
+        "cpu": 0.2711575000139419
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C4H4O",
+      "seconds": {
+        "cpu": 0.21815733300172724,
+        "mlx": 0.03995916701387614
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "C5H5N",
+      "seconds": {
+        "mlx": 0.03823833301430568,
+        "cpu": 0.21030895799049176
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "2-butyne",
+      "seconds": {
+        "mlx": 0.09731762498267926,
+        "cpu": 0.5758239580027293
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "AlF3",
+      "seconds": {
+        "cpu": 0.14892695800517686,
+        "mlx": 0.04241879199980758
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "BCl3",
+      "seconds": {
+        "mlx": 0.10571566701401025,
+        "cpu": 0.2440399999904912
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "BF3",
+      "seconds": {
+        "cpu": 0.14444412500597537,
+        "mlx": 0.03588920901529491
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C2F4",
+      "seconds": {
+        "mlx": 0.1069848750194069,
+        "cpu": 0.14959370798896998
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C2H2",
+      "seconds": {
+        "cpu": 0.1014758340024855,
+        "mlx": 0.052081833011470735
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C2H6",
+      "seconds": {
+        "mlx": 0.04334270799881779,
+        "cpu": 0.2307157500181347
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "cpu": 0.3859543330036104,
+        "mlx": 0.07434849999845028
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C2H6NH",
+      "seconds": {
+        "mlx": 0.0661656669981312,
+        "cpu": 0.2563117080135271
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C2H6SO",
+      "seconds": {
+        "cpu": 0.1363136250001844,
+        "mlx": 0.054767082998296246
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "mlx": 0.04418674999033101,
+        "cpu": 0.14188529198872857
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "cpu": 0.13117350000538863,
+        "mlx": 0.03319112499593757
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "mlx": 0.04280679201474413,
+        "cpu": 0.18361670902231708
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "cpu": 0.16642204200616106,
+        "mlx": 0.03844554198440164
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "mlx": 0.04113575001247227,
+        "cpu": 0.2001854169939179
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C3H7Cl",
+      "seconds": {
+        "cpu": 0.16915854200487956,
+        "mlx": 0.038783750002039596
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C3H8",
+      "seconds": {
+        "mlx": 0.04644108298816718,
+        "cpu": 0.4426915420044679
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C4H4NH",
+      "seconds": {
+        "cpu": 0.2779964579967782,
+        "mlx": 0.049141625000629574
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C4H4O",
+      "seconds": {
+        "mlx": 0.03238020901335403,
+        "cpu": 0.2951890410040505
+      }
+    },
+    {
+      "repeat": 2,
+      "name": "C5H5N",
+      "seconds": {
+        "cpu": 0.24325466598384082,
+        "mlx": 0.04394416598370299
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "2-butyne",
+      "seconds": {
+        "cpu": 0.26575200000661425,
+        "mlx": 0.03559033299097791
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "AlF3",
+      "seconds": {
+        "mlx": 0.027492833003634587,
+        "cpu": 0.20133783298661
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "BCl3",
+      "seconds": {
+        "cpu": 0.20940120800514705,
+        "mlx": 0.03754324998590164
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "BF3",
+      "seconds": {
+        "mlx": 0.03093604199239053,
+        "cpu": 0.22025095898425207
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C2F4",
+      "seconds": {
+        "cpu": 0.19630733301164582,
+        "mlx": 0.030767832999117672
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C2H2",
+      "seconds": {
+        "mlx": 0.027022333000786602,
+        "cpu": 0.2513247080205474
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C2H6",
+      "seconds": {
+        "cpu": 0.42444237499148585,
+        "mlx": 0.06599420800921507
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "mlx": 0.06364483397919685,
+        "cpu": 0.3526320419914555
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C2H6NH",
+      "seconds": {
+        "cpu": 0.41821541599347256,
+        "mlx": 0.06740537501173094
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C2H6SO",
+      "seconds": {
+        "mlx": 0.18199958399054594,
+        "cpu": 0.4194010420178529
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "cpu": 0.15854020800907165,
+        "mlx": 0.09446854199632071
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "mlx": 0.05290849998709746,
+        "cpu": 0.2158494160103146
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "cpu": 0.17790516599779949,
+        "mlx": 0.03610712502268143
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "mlx": 0.032290999981341884,
+        "cpu": 0.29446083298535086
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "cpu": 0.14600800001062453,
+        "mlx": 0.04597762500634417
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C3H7Cl",
+      "seconds": {
+        "mlx": 0.08446412501507439,
+        "cpu": 0.24135504101286642
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C3H8",
+      "seconds": {
+        "cpu": 0.13186220798525028,
+        "mlx": 0.038969833025475964
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C4H4NH",
+      "seconds": {
+        "mlx": 0.029743916005827487,
+        "cpu": 0.211452375020599
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C4H4O",
+      "seconds": {
+        "cpu": 0.7117521250038408,
+        "mlx": 0.05219499999657273
+      }
+    },
+    {
+      "repeat": 3,
+      "name": "C5H5N",
+      "seconds": {
+        "mlx": 0.11425812501693144,
+        "cpu": 0.5044270840007812
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "2-butyne",
+      "seconds": {
+        "mlx": 0.038550375000340864,
+        "cpu": 0.5083386659971438
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "AlF3",
+      "seconds": {
+        "cpu": 0.2845492080086842,
+        "mlx": 0.12303758400958031
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "BCl3",
+      "seconds": {
+        "mlx": 0.03394291701260954,
+        "cpu": 0.29816612499416806
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "BF3",
+      "seconds": {
+        "cpu": 0.2329336249968037,
+        "mlx": 0.043087625002954155
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C2F4",
+      "seconds": {
+        "mlx": 0.04207833399414085,
+        "cpu": 0.22686137500568293
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C2H2",
+      "seconds": {
+        "cpu": 0.29888041701633483,
+        "mlx": 0.10865229202318005
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C2H6",
+      "seconds": {
+        "mlx": 0.11552970801130868,
+        "cpu": 0.2488495830039028
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C2H6CHOH",
+      "seconds": {
+        "cpu": 0.3155625830113422,
+        "mlx": 0.0442796669958625
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C2H6NH",
+      "seconds": {
+        "mlx": 0.03299008301110007,
+        "cpu": 0.31697079198784195
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C2H6SO",
+      "seconds": {
+        "cpu": 0.13697362499078736,
+        "mlx": 0.03453429200453684
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C3H4_C2v",
+      "seconds": {
+        "mlx": 0.034531582990894094,
+        "cpu": 0.21726141599356197
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C3H4_C3v",
+      "seconds": {
+        "cpu": 0.1519903339794837,
+        "mlx": 0.041202374995918944
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C3H4_D2d",
+      "seconds": {
+        "mlx": 0.03440779200172983,
+        "cpu": 0.1327912910201121
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C3H6_Cs",
+      "seconds": {
+        "cpu": 0.1491216670256108,
+        "mlx": 0.08389858400914818
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C3H6_D3h",
+      "seconds": {
+        "mlx": 0.043226332985796034,
+        "cpu": 0.32782858301652595
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C3H7Cl",
+      "seconds": {
+        "cpu": 0.2585388330044225,
+        "mlx": 0.04050025000469759
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C3H8",
+      "seconds": {
+        "mlx": 0.07672525002271868,
+        "cpu": 0.30855066698859446
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C4H4NH",
+      "seconds": {
+        "cpu": 0.14576249997480772,
+        "mlx": 0.04973791600787081
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C4H4O",
+      "seconds": {
+        "mlx": 0.027727500011678785,
+        "cpu": 0.1953403750085272
+      }
+    },
+    {
+      "repeat": 4,
+      "name": "C5H5N",
+      "seconds": {
+        "cpu": 0.16583924999576993,
+        "mlx": 0.04293904098449275
+      }
+    }
+  ]
+}

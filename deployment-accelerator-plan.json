@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-11-16T14:24:56.255433+00:00",
+  "status": "prospective follow-up after v0.1.0 local rank6; v0.1.1 evaluation still in progress",
+  "disclosure": "Historical official scores informed the need for further runtime work; test_set_informed remains mandatory. No official reference errors enter fitting or implementation selection.",
+  "frozen_scientific_state": "v0.1.1 head and all base weights, no new fit, holdout reuse or learned state changes",
+  "candidates": [
+    "CPU eager float32-highest, 4 threads (reference)",
+    "CPU eager float32-high, 4 threads",
+    "MPS eager float32-highest, 4 CPU threads"
+  ],
+  "inputs": "first20 sorted training geometries, all83 training structures for equivalence; no reference labels; ASE scalar calculator interface only, no benchmark-specific batching/caching",
+  "gates": "E/F/stress atol1e-4+rtol1e-5 vs CPU highest on all83 training structures, plus isolated-atom and heteronuclear near/far synthetic geometries; median latency at least20% lower; synchronize MPS before/after each timed call, five alternating-order repeats; reject unsupported hardware/operators without CPU fallback",
+  "selection": "fastest eligible backend/precision, CPU reference if none. Charge warm-up to load time. Preserve all raw results. Freeze deployment before fresh official evaluation."
+}

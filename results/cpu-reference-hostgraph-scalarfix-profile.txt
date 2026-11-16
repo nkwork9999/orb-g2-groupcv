@@ -1,0 +1,43 @@
+         66221 function calls (59321 primitive calls) in 1.021 seconds
+
+   Ordered by: cumulative time
+   List reduced from 308 to 35 due to restriction <35>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       20    0.000    0.000    1.021    0.051 /Users/nk/Desktop/orb-g2-groupcv-runtime-top3-20261116/scripts/profile_accelerator_mps_hostgraph_scalarfix.py:34(predict)
+       60    0.003    0.000    1.021    0.017 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/ase/calculators/calculator.py:494(get_property)
+       20    0.000    0.000    1.007    0.050 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/ase/calculators/abc.py:20(get_potential_energy)
+       20    0.001    0.000    1.005    0.050 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/calculator.py:79(calculate)
+       20    0.000    0.000    0.968    0.048 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/conservative_regressor.py:164(predict)
+  3180/40    0.006    0.000    0.966    0.024 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/nn/modules/module.py:1779(_wrapped_call_impl)
+  3180/40    0.011    0.000    0.966    0.024 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/nn/modules/module.py:1787(_call_impl)
+       20    0.001    0.000    0.956    0.048 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/conservative_regressor.py:124(forward)
+       20    0.002    0.000    0.527    0.026 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/gns.py:421(forward)
+      100    0.023    0.000    0.434    0.004 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/gns.py:155(forward)
+  560/300    0.005    0.000    0.403    0.001 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/nn/modules/container.py:254(forward)
+       20    0.001    0.000    0.371    0.019 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/forcefield_utils.py:426(compute_gradient_forces_and_stress)
+       20    0.000    0.000    0.366    0.018 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/autograd/__init__.py:434(grad)
+       20    0.000    0.000    0.364    0.018 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/autograd/graph.py:1059(_engine_run_backward)
+       20    0.363    0.018    0.363    0.018 {method 'run_backward' of 'torch._C._EngineBase' objects}
+     1120    0.002    0.000    0.321    0.000 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/nn/modules/linear.py:130(forward)
+     1120    0.318    0.000    0.318    0.000 {built-in method torch._C._nn.linear}
+      360    0.003    0.000    0.090    0.000 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/segment_ops.py:141(scatter_sum)
+      360    0.077    0.000    0.077    0.000 {method 'scatter_add_' of 'torch._C.TensorBase' objects}
+      220    0.000    0.000    0.066    0.000 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/segment_ops.py:56(segment_sum)
+       20    0.000    0.000    0.055    0.003 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/gns.py:74(forward)
+      560    0.001    0.000    0.041    0.000 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/nn/modules/activation.py:472(forward)
+      560    0.001    0.000    0.041    0.000 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/nn/functional.py:2429(silu)
+      560    0.039    0.000    0.039    0.000 {built-in method torch._C._nn.silu}
+      100    0.001    0.000    0.033    0.000 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/segment_ops.py:8(aggregate_nodes)
+      240    0.001    0.000    0.027    0.000 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/nn/modules/normalization.py:423(forward)
+      240    0.001    0.000    0.026    0.000 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/torch/nn/functional.py:2998(rms_norm)
+       20    0.002    0.000    0.026    0.001 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/atomic_system.py:88(ase_atoms_to_atom_graphs)
+      240    0.026    0.000    0.026    0.000 {built-in method torch.rms_norm}
+       60    0.001    0.000    0.024    0.000 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/forcefield_heads.py:36(forward)
+       40    0.001    0.000    0.019    0.000 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/forcefield_heads.py:176(denormalize)
+       20    0.004    0.000    0.015    0.001 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/pair_repulsion.py:60(forward)
+       20    0.000    0.000    0.015    0.001 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/gns.py:270(forward)
+       20    0.001    0.000    0.014    0.001 /Users/nk/Desktop/fair-training-resubmission-20261116/runtime-native/orb_models/forcefield/gns.py:487(featurize_edges)
+       60    0.000    0.000    0.013    0.000 /Users/nk/Desktop/matbench-discovery-pet-xs-pair-bo-submission-20261116/.venv-submission/lib/python3.14/site-packages/ase/calculators/calculator.py:824(check_state)
+
+
