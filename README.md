@@ -10,7 +10,17 @@ The trained head, model weights, training IDs and selection remain unchanged fro
 
 All 83 training and 100 unlabelled synthetic structures passed E/F/stress agreement at atol1e-4 + rtol1e-5 (maximum normalized error 0.36144, threshold 1). The prospective five-repeat paired training-geometry study reduced median latency from 43.35ms to 30.29ms (30.1%). This is a local deployment diagnostic, not a cross-model timing claim. Full source tests: 70 passed; dependency deprecation warnings remain. The factory selects the declared native backend and CPU reproduction stays available. e3nn MIT notices accompany the translated spherical-harmonic equations.
 
-The previous v0.1.2 official sweep completed in 432.31s plus 44.4s load, with all 92 curves finite. Default CDS was 0.79369431, conservative local rank 6/48 against upstream 6d587c1. The prospective native port plan predates those final results. Native v0.1.3 full official evaluation is pending; no top-three or acceptance claim is made. Historical test exposure remains disclosed.
+The previous v0.1.2 official sweep completed in 432.31s plus 44.4s load, with all 92 curves finite. Default CDS was 0.79369431, conservative local rank 6/48 against upstream 6d587c1. The prospective native port plan predates those final results. Native v0.1.3 full official evaluation is complete: all92curves finite,81/81eligible vibrational cases scored,106.5s sweep plus16.81s load on Apple M1 Metal. Default CDS0.8274968474 gives a conservative local comparison4/48 against upstream6d587c1. It did not meet the top-three goal; no benchmark PR or website-rank/acceptance claim is made. Historical test exposure remains disclosed. Raw curves and ranking receipt are attached to releasev0.1.3.
+
+## Subsequent rejected runtime experiments
+
+The source and learned state of v0.1.3 remain the selected deployment. Subsequent outcomes are retained separately:
+
+- [CPU adapter overhead](https://github.com/nkwork9999/orb-g2-groupcv/tree/experiments/native-overhead-rejected): all183 numerical cases and81 tests pass, but latency improved only4.66%, below the prospective20% threshold. Not deployed or officially evaluated.
+- [Compiled MLX CPU](https://github.com/nkwork9999/orb-g2-groupcv/tree/experiments/mlx-cpu-rejected): three E/F/stress smoke cases and73 tests pass; latency21.79ms versus GPU14.18ms. Full183 numerical gate was not run after timing rejection. Not deployed or officially evaluated.
+- [Metal command buffers](https://github.com/nkwork9999/orb-g2-groupcv/tree/experiments/commandbuffer-rejected):15 fresh-process blocks compared limits40/128/256. Default40 was fastest (11.015/11.317/11.916ms). No candidate adopted; unsafe fast synchronization was never enabled.
+
+These are local training-geometry timing studies, not controlled cross-model performance comparisons. The20% threshold is this project's prospective engineering criterion, not a Matbench submission rule. Its failures remain failures; they are not retrospectively relabeled to reach a desired rank. Further speed or hardware evaluation is required before the requested top-three submission can be made.
 
 ## Runtime deployment 0.1.2
 
