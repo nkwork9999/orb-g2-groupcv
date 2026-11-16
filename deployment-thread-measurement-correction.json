@@ -1,0 +1,9 @@
+{
+  "at_utc": "2026-11-16T14:16:00.218056+00:00",
+  "official_scores_read": false,
+  "timing_correction": "The mixed-thread profile changed torch thread counts immediately before every timed call. Lazy thread-pool initialization can contaminate the timed first dispatch. Retain its numerical equivalence checks but do not use its latency to select a fixed deployment.",
+  "fixed_measurement": "Set each thread count once per block, warm both backends on all20 fixed training structures, then alternate backend order without changing thread count inside the block. Five repeats per structure.",
+  "first_one_thread_compile_failure_remains_binding": true,
+  "eligibility": "compiled1 remains rejected from its first valid study. Eager2/4 require>=20% improvement versus fixed eager1. Compiled2/4 additionally require>=20% improvement over eager at the same count. Choose minimum median, fewer threads for a5% tie.",
+  "no_target_labels_used": true
+}

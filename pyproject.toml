@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "orb-g2-cv"
-version = "0.1.0"
+version = "0.1.1"
 requires-python = ">=3.14"
 description = "Frozen ORB with training-only group-CV molecular energy calibration"
 dependencies = ["numpy==2.5.4", "ase==3.29.0"]

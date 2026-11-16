@@ -1,0 +1,16 @@
+{
+  "record_type":"prospective runtime optimization plan",
+  "goal":"top3 by unchanged default Diatomics CDS among all active scorable models; ties conservatively ranked; no website acceptance claim",
+  "published_roster_commit":"6d587c184cdb4a4865dc0b15b04a5e6d77ed464f",
+  "reference_third_place_cds_approximately":0.8284,
+  "scientific_state":"Keep the83-molecule training-only GroupCV candidate and its36 learned coefficients unchanged. No new fitting or checkpoint reselection from G2 holdout or official reference scores.",
+  "historical_exposure":"Diatomics results/public ranking and runtime target influenced deployment design; retain test_set_informed:[diatomics].",
+  "selection_inputs":"Only training geometries, synthetic geometric invariance cases and label-free timings. Do not use current official candidate scores to choose the optimization.",
+  "optimization_A":"Use exact vectorized pair enumeration for small non-periodic or provably isolated vacuum systems; retain original neighbor-list calculation for periodic images/dense systems. Preserve original training feature implementation so refitting reproduces the same coefficients.",
+  "optimization_A_gate":"Agreement with frozen v0.1.0 energy/force/stress at1e-10 on training geometries and predeclared synthetic periodic/nonperiodic cases. At least2x lower head-only median runtime on fixed training geometries.",
+  "optimization_B":"TorchInductor compilation of the unchanged ORB GNS, CPU float32-highest, one compiler thread. Warmup on label-free heteronuclear/multiatom/isolated-atom inputs is charged to load time, not hidden.",
+  "optimization_B_gate":"Agreement with uncompiled output within atol1e-4 + rtol1e-5 for E/F/stress; at least20 percent lower median steady inference time on fixed first20 sorted training geometries with paired order. Otherwise retain uncompiled runtime.",
+  "official_evaluation":"Freeze deployment source/artifact after passing these label-free gates, then execute the unchanged official shared runner. Retain every result; no model or parameter search against its scores.",
+  "cost_reporting":"Report load/compile time, steady sweep time and hardware. Default CDS compares reported heterogeneous hardware; do not claim a hardware-controlled superiority comparison against published GPU timings.",
+  "prior_uncompiled_run":"The already-running v0.1.0 sweep is preserved as a deployment control. Its score is not a selection input for these runtime gates."
+}

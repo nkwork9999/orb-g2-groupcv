@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-11-16T14:04:07.605093+00:00",
+  "stage": "prospective extension after label-free one-thread profile; current candidate official scores still not inspected",
+  "new_candidate_official_scores_read": false,
+  "initial_compile_decision": {
+    "adopt": false,
+    "speedup": 1.1769952551092353,
+    "reason": "Fails the original20-percent latency-reduction gate; threshold is not relaxed."
+  },
+  "thread_candidates": [
+    1,
+    2,
+    4
+  ],
+  "backends": [
+    "eager",
+    "compiled"
+  ],
+  "inputs": "first20 sorted training geometries only; five paired randomized-order repeats, plus output-equivalence checks on all83 training geometries",
+  "selection": "Eager2/4 may replace eager1 only if at least20% faster; compiledt eligible only if at least20% faster than eagert at the same thread count. Require atol1e-4+rtol1e-5 E/F/stress equivalence. Choose minimum median latency among eligible deployments; prefer fewer threads for a within5% tie.",
+  "compiler_threads": 1,
+  "scientific_state": "unchanged36 coefficients; no retraining or official-score feedback",
+  "original_plan_sha256": "4a617b692e9abaed9b4b80995c3eee706f43ea800001f22fbabb9e02601f45bb"
+}

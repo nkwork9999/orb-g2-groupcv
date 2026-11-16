@@ -33,3 +33,19 @@ def test_checkpoint_integrity_and_precision_guards_precede_model_import(tmp_path
     with pytest.raises(ValueError):verify_file(p,'0'*64)
     with pytest.raises(ValueError):load_calculator(tmp_path/'absent.json',dtype='float64')
     with pytest.raises(ValueError):load_calculator(tmp_path/'absent.json',device='cuda')
+
+
+@pytest.mark.parametrize('threads',[0,-1,1.5,'2',True,8])
+def test_invalid_deployment_thread_count_is_rejected_before_checkpoint_io(tmp_path,threads):
+    import json
+    artifact={'schema_version':1,'base':{'kind':'orb-v3-conservative-inf-mpa','compile':False},'head':{'coefficients':[0.]*36,'width':.8},'runtime':{'torch_threads':threads}}
+    p=tmp_path/'bad.json';p.write_text(json.dumps(artifact))
+    with pytest.raises(ValueError):load_calculator(p)
+
+
+@pytest.mark.parametrize('compiled',['true',1,None])
+def test_invalid_compile_flag_is_rejected_before_checkpoint_io(tmp_path,compiled):
+    import json
+    artifact={'schema_version':1,'base':{'kind':'orb-v3-conservative-inf-mpa','compile':compiled},'head':{'coefficients':[0.]*36,'width':.8}}
+    p=tmp_path/'bad.json';p.write_text(json.dumps(artifact))
+    with pytest.raises(ValueError):load_calculator(p)

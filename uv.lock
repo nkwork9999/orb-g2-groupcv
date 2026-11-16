@@ -1266,7 +1266,7 @@ wheels = [
 
 [[package]]
 name = "orb-g2-cv"
-version = "0.1.0"
+version = "0.1.1"
 source = { editable = "." }
 dependencies = [
     { name = "ase" },

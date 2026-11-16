@@ -4,6 +4,12 @@ A frozen ORB-v3 conservative MPA backbone with a 36-coefficient smooth, conserva
 
 The model was trained on **83 multi-atom G2 molecules from 68 formula groups**. A metadata-only split fixed before target export reserves **19 molecules from 18 disjoint formula groups**. Isomers remain together. All one/two-atom systems were excluded from this fine-tuning dataset. Official Matbench Discovery reference labels were not used as fitting targets or hyperparameter objectives.
 
+## Runtime deployment 0.1.1
+
+The trained state is unchanged from source commit `0e192c1` / release v0.1.0. Deployment v0.1.1 uses four CPU threads and exact fast neighbor enumeration for small nonperiodic or provably image-free systems, falling back to the original periodic neighbor list otherwise. Energy/force/stress agreement on 139 training/synthetic geometries is within 2.3e-15 (head only). Training features retain the original implementation.
+
+Runtime selection used only training geometries and no reference labels. The head-only median speedup was 60.4x, not a whole-model speedup. The initial one-thread compilation study failed its prospective 20% latency-reduction threshold and remains rejected. A later mixed-thread timing study was invalidated because thread-pool switching contaminated timings; raw evidence is retained. Corrected fixed-thread blocks selected eager four-thread inference: median 0.06465 seconds versus eager one-thread 0.18982 seconds on the selected training structures. Compilation at two/four threads failed the same-thread 20% threshold and was rejected. These timings are deployment diagnostics, not controlled cross-model leaderboard comparisons. Plans, raw timings, equivalence tests and the deployment freeze are retained in this repository.
+
 ## Results available so far
 
 | Evaluation | Unchanged ORB | ORB-G2 GroupCV |

@@ -1,0 +1,18 @@
+{
+  "timestamp_utc": "2026-11-16T14:21:07.869388+00:00",
+  "selection": {
+    "backend": "eager",
+    "threads": 4,
+    "median_seconds": 0.06464981200406328
+  },
+  "official_scores_used_for_selection": false,
+  "coefficients_unchanged": true,
+  "artifact_sha256": "a09ead01011e33ceeec12140cae060caeeb6157f52e140b954fb5eefc4a52fab",
+  "files": {
+    "deployment-plan-top3.json": "4a617b692e9abaed9b4b80995c3eee706f43ea800001f22fbabb9e02601f45bb",
+    "deployment-thread-measurement-correction.json": "505425057cad6be30743bd66579b6849fef2f497885d1cba425c2e57e009e591",
+    "results/fixed-thread-profile.json": "012affd0f19d3a99232c916fc30bf53a5339a760d05158396cd3fa0ee5732b9c",
+    "orb_g2_cv/ase.py": "607da68ab5703d41ccf32b44234d3f728a2b66c78434f91dab85fc94eda48530",
+    "orb_g2_cv/potential.py": "3cdcb1729ab4640861682a68dcd645b5b641e956933b1ab4c3bc029aef1280dd"
+  }
+}

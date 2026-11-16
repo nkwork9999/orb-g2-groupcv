@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-11-16T13:55:47.363230+00:00",
+  "original_new_candidate_official_score_inspected": false,
+  "sha256": {
+    "deployment-plan-top3.json": "4a617b692e9abaed9b4b80995c3eee706f43ea800001f22fbabb9e02601f45bb",
+    "tests/reference_potential_v010.py": "bb2bf1ef0cef085a79005e463f16579f209a29ce4bd3a5f35e94e3a56afdd887",
+    "artifacts/orb-g2-groupcv-v1.json": "f2fb34215322f1cef9ea93cef72c0a3baa65b0b40315c82bb6d7642e9d514da1",
+    "data/train-cache.jsonl": "999b0ccd0c0327e8cf1152150c505f62e7bd71b394910c9a800cfd4a730de14f"
+  }
+}

@@ -206,5 +206,12 @@
       "diatomics"
     ]
   },
-  "scope": "Experimental molecular atomization-energy calibration, no force/stress labels fitted; no demonstrated bulk or MD improvement"
+  "scope": "Experimental molecular atomization-energy calibration, no force/stress labels fitted; no demonstrated bulk or MD improvement",
+  "runtime": {
+    "torch_threads": 4,
+    "neighbor_enumeration": "exact-small-system-fast-path",
+    "deployment_version": "0.1.1",
+    "training_artifact_sha256": "f2fb34215322f1cef9ea93cef72c0a3baa65b0b40315c82bb6d7642e9d514da1",
+    "training_source_commit": "0e192c18d5d59301db37a66d81b4ed586dbd418a"
+  }
 }

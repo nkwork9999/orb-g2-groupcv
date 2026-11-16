@@ -7,10 +7,22 @@ CENTERS=np.linspace(.6,4.4,9)
 CUTOFF=5.
 
 
-def edge_design(atoms,width):
+def edge_design(atoms,width,fast=False):
     if not np.isfinite(width) or width<=0 or not np.isfinite(atoms.positions).all():
         raise ValueError('finite coordinates and positive width required')
-    i,j,r,v=neighbor_list('ijdD',atoms,CUTOFF,self_interaction=False)
+    isolated=False
+    if fast and 0<len(atoms)<=128:
+        vectors=atoms.positions[None,:,:]-atoms.positions[:,None,:]
+        distances=np.linalg.norm(vectors,axis=2)
+        isolated=not np.any(atoms.pbc)
+        if not isolated:
+            minimum_translation=float(np.min(np.linalg.svd(atoms.cell.array,compute_uv=False)))
+            isolated=minimum_translation-float(distances.max())>CUTOFF
+        if isolated:
+            i,j=np.where((distances<CUTOFF)&~np.eye(len(atoms),dtype=bool))
+            r=distances[i,j];v=vectors[i,j]
+    if not isolated:
+        i,j,r,v=neighbor_list('ijdD',atoms,CUTOFF,self_interaction=False)
     keep=(atoms.numbers[i]<=17)&(atoms.numbers[j]<=17)
     i,j,r,v=i[keep],j[keep],r[keep],v[keep]
     if np.any(r<=0):raise ValueError('coincident atoms are outside the radial domain')
@@ -40,7 +52,7 @@ class RadialHead:
             raise ValueError('36 finite coefficients and a positive width required')
 
     def evaluate(self,atoms):
-        i,j,r,v,e,f=edge_design(atoms,self.width)
+        i,j,r,v,e,f=edge_design(atoms,self.width,fast=True)
         energy=float(.5*e.sum(axis=0)@self.coefficients)
         radial=f@self.coefficients
         forces=np.zeros((len(atoms),3));stress=np.zeros((3,3))

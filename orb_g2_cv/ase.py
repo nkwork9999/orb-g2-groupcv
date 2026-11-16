@@ -45,6 +45,12 @@ def load_calculator(checkpoint=None,device='cpu',dtype='float32',base_checkpoint
     artifact=json.loads(path.read_text())
     if artifact.get('schema_version')!=1 or artifact['base']['kind']!='orb-v3-conservative-inf-mpa':
         raise ValueError('unsupported calibrated artifact schema or backbone')
+    threads=artifact.get('runtime',{}).get('torch_threads',1)
+    compiled=artifact['base'].get('compile',False)
+    if type(threads) is not int or threads not in (1,2,4):
+        raise ValueError('deployment torch_threads must be one of1,2,4')
+    if type(compiled) is not bool:
+        raise ValueError('deployment compile flag must be boolean')
     head=RadialHead(artifact['head']['coefficients'],width=artifact['head']['width'])
     pinned=artifact['base']['checkpoint_sha256']
     supplied=base_checkpoint or os.environ.get('ORB_G2_BASE_CHECKPOINT')
@@ -67,6 +73,19 @@ def load_calculator(checkpoint=None,device='cpu',dtype='float32',base_checkpoint
     import torch
     from orb_models.forcefield import pretrained
     from orb_models.forcefield.calculator import ORBCalculator
-    torch.set_num_threads(1)
-    model=pretrained.orb_v3_conservative_inf_mpa(weights_path=str(base_path),device=device,precision='float32-highest',compile=False)
-    return CalibratedCalculator(ORBCalculator(model,device=device),head)
+    torch.set_num_threads(threads)
+    model=pretrained.orb_v3_conservative_inf_mpa(weights_path=str(base_path),device=device,precision='float32-highest',compile=compiled)
+    base=ORBCalculator(model,device=device)
+    if compiled:
+        from ase import Atoms
+        # Charge tracing/compilation to model load; retain no benchmark predictions.
+        for atoms in [
+            Atoms('CH',positions=[[0,0,0],[1.3,0,0]],cell=[50]*3,pbc=True),
+            Atoms('H',positions=[[0,0,0]],cell=[50]*3,pbc=True),
+            Atoms('CH',positions=[[0,0,0],[10,0,0]],cell=[50]*3,pbc=True),
+        ]:
+            base.get_potential_energy(atoms);base.get_forces(atoms);base.get_stress(atoms)
+        base.reset()
+    calculator=CalibratedCalculator(base,head)
+    if compiled:calculator.mbd_acceleration=('torch_compile',)
+    return calculator
